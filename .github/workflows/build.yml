@@ -1,25 +1,47 @@
 name: CI
 
+concurrency:
+  group: mixlink-ios-${{ github.ref }}
+  cancel-in-progress: true
+
 on:
   push:
-    branches: [ master ]
+    branches: [ develop ]
 
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: macos-13
+    runs-on: 'bitrise-runner-telegram iOS'
+    timeout-minutes: 180
+    env:
+      BAZEL_CACHE_DIR: /Users/Shared/mixlink-bazel-cache
+      BAZEL_HTTP_CACHE_URL: ${{ secrets.BAZEL_HTTP_CACHE_URL }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           submodules: 'recursive'
           fetch-depth: '0'
 
       - name: Set active Xcode path
         run: |
-          XCODE_VERSION=$(cat versions.json | python3 -c 'import json,sys;obj=json.load(sys.stdin);print(obj["xcode"]);')
-          sudo xcode-select -s /Applications/Xcode_$XCODE_VERSION.app/Contents/Developer
+          set -euo pipefail
+          XCODE_VERSION=$(python3 -c 'import json; print(json.load(open("versions.json"))["xcode"])')
+          XCODE_PATH="$(find /Applications -maxdepth 1 -type d \( -name "Xcode-${XCODE_VERSION}*.app" -o -name "Xcode_${XCODE_VERSION}*.app" \) -print -quit)"
+          if [ -z "$XCODE_PATH" ]; then
+            echo "Xcode $XCODE_VERSION not found under /Applications" >&2
+            find /Applications -maxdepth 1 -type d -name 'Xcode*.app' -print >&2
+            exit 1
+          fi
+          sudo xcode-select --switch "$XCODE_PATH/Contents/Developer"
+          xcodebuild -version
+
+      - name: Prepare Bazel cache
+        run: |
+          set -euo pipefail
+          mkdir -p "$BAZEL_CACHE_DIR"
+          df -h "$BAZEL_CACHE_DIR"
 
       - name: Create canonical source directory
         run: |
@@ -52,6 +74,7 @@ jobs:
           python3 build-system/Make/ImportCertificates.py --path build-system/fake-codesigning/certs
           python3 -u build-system/Make/Make.py \
             --bazelUserRoot="$BAZEL_USER_ROOT" \
+            --cacheDir="$BAZEL_CACHE_DIR" \
             build \
             --configurationPath="build-system/appstore-configuration.json" \
             --codesigningInformationPath=build-system/fake-codesigning \
@@ -73,6 +96,15 @@ jobs:
           done
           zip -r "./$OUTPUT_PATH/Telegram.DSYMs.zip" build/DSYMs 1>/dev/null
 
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: mixlink-ios-${{ env.BUILD_NUMBER }}
+          path: |
+            /Users/Shared/telegram-ios/build/artifacts/Telegram.ipa
+            /Users/Shared/telegram-ios/build/artifacts/Telegram.DSYMs.zip
+          if-no-files-found: error
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -80,9 +112,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: build-${{ env.BUILD_NUMBER }}
-          release_name: Telegram ${{ env.APP_VERSION }} (${{ env.BUILD_NUMBER }})
+          release_name: MixLink ${{ env.APP_VERSION }} (${{ env.BUILD_NUMBER }})
           body: |
-            An unsigned build of Telegram for iOS ${{ env.APP_VERSION }} (${{ env.BUILD_NUMBER }})
+            MixLink iOS ${{ env.APP_VERSION }} (${{ env.BUILD_NUMBER }})
           draft: false
           prerelease: false
 
@@ -94,7 +126,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: /Users/Shared/telegram-ios/build/artifacts/Telegram.ipa
-          asset_name: Telegram.ipa
+          asset_name: MixLink.ipa
           asset_content_type: application/zip
 
       - name: Upload Release DSYM

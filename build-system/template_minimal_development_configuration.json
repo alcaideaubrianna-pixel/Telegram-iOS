@@ -1,13 +1,13 @@
 {
-	"bundle_id": "org.{! a random string !}.Telegram",
-	"api_id": "{! get one at https://my.telegram.org/apps !}",
-	"api_hash": "{! get one at https://my.telegram.org/apps !}",
-	"team_id": "{! check README.md !}",
+	"bundle_id": "com.mixlink.app",
+	"api_id": "00001",
+	"api_hash": "7f4a7d3e9c1b5a6f8e2d0c4b6a9f1e3d",
+	"team_id": "HTM265HZW7",
 	"app_center_id": "0",
 	"is_internal_build": "true",
 	"is_appstore_build": "false",
 	"appstore_id": "0",
-	"app_specific_url_scheme": "tg",
+	"app_specific_url_scheme": "mixlink",
 	"premium_iap_product_id": "",
 	"enable_siri": false,
 	"enable_icloud": false

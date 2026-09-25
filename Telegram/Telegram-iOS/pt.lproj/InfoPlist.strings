@@ -1,3 +1,5 @@
+"CFBundleDisplayName" = "MixLink";
+
 /* Localized versions of Info.plist keys */
 
 "NSContactsUsageDescription" = "Telegram atualizará continuamente os seus contatos em servidores na nuvem fortemente criptografados para que você se conecte com seus amigos através de todos os seus dispositivos.";

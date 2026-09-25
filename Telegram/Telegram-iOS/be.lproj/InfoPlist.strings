@@ -1,3 +1,5 @@
+"CFBundleDisplayName" = "MixLink";
+
 /* Localized versions of Info.plist keys */
 
 "NSContactsUsageDescription" = "Telegram будзе запампоўваць вашы кантакты на свае моцна абароненыя і зашыфраваныя воблачныя серверы, каб вы маглі кантактаваць са сваімі сябрамі з любой вашай прылады.";

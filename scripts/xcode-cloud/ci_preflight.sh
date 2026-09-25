@@ -5,10 +5,16 @@ set -euo pipefail
 ROOT_DIR="${CI_PRIMARY_REPOSITORY_PATH:-$(cd "$(dirname "$0")/../.." && pwd)}"
 cd "$ROOT_DIR"
 
-: "${XCODE_CLOUD_CONFIGURATION_PATH:=build-system/template_minimal_development_configuration.json}"
+: "${XCODE_CLOUD_CONFIGURATION_PATH:=build-input/data/mixlink-cloud-configuration.json}"
 : "${XCODE_CLOUD_BUILD_CONFIGURATION:=debug_arm64}"
 : "${XCODE_CLOUD_BUILD_NUMBER:=1}"
 : "${XCODE_CLOUD_CACHE_DIR:=$HOME/Library/Caches/telegram-bazel}"
+: "${MIXLINK_TEAM_ID:=HTM265HZW7}"
+
+XCODE_CLOUD_CONFIGURATION_PATH="$ROOT_DIR/build-input/data/mixlink-cloud-configuration.json"
+mkdir -p "$(dirname "$XCODE_CLOUD_CONFIGURATION_PATH")"
+cp "$ROOT_DIR/build-system/template_minimal_development_configuration.json" "$XCODE_CLOUD_CONFIGURATION_PATH"
+sed -i '' "s/HTM265HZW7/$MIXLINK_TEAM_ID/" "$XCODE_CLOUD_CONFIGURATION_PATH"
 
 log() { printf '[telegram-ci] %s\n' "$*"; }
 fail() { printf '[telegram-ci] ERROR: %s\n' "$*" >&2; exit 1; }
@@ -16,8 +22,12 @@ fail() { printf '[telegram-ci] ERROR: %s\n' "$*" >&2; exit 1; }
 command -v python3 >/dev/null || fail "python3 is required"
 command -v xcodebuild >/dev/null || fail "xcodebuild is required"
 test -f "$XCODE_CLOUD_CONFIGURATION_PATH" || fail "configuration not found: $XCODE_CLOUD_CONFIGURATION_PATH"
+if grep -Eq '\{!.*!\}' "$XCODE_CLOUD_CONFIGURATION_PATH"; then
+  fail "configuration contains template placeholders: $XCODE_CLOUD_CONFIGURATION_PATH"
+fi
 
-XCODE_VERSION="$(xcodebuild -version | awk '/^Xcode / { print $2; exit }')"
+XCODE_VERSION_OUTPUT="$(xcodebuild -version)"
+XCODE_VERSION="$(printf '%s\n' "$XCODE_VERSION_OUTPUT" | awk '/^Xcode / { print $2 }')"
 log "Xcode $XCODE_VERSION"
 python3 --version
 

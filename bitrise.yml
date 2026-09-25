@@ -1,0 +1,74 @@
+format_version: "26"
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+
+project_type: other
+
+meta:
+  bitrise.io:
+    stack: osx-xcode-27.0.x
+
+app:
+  envs:
+    - MIXLINK_BUNDLE_ID: com.mixlink.app
+    - MIXLINK_TEAM_ID: HTM265HZW7
+    - BAZEL_CACHE_DIR: /Users/Shared/mixlink-bazel-cache
+    - MIXLINK_BUILD_CONFIGURATION: release_arm64
+
+workflows:
+  preflight:
+    description: Validate the MixLink Bazel/Xcode build without compiling the app.
+    steps:
+      - git-clone@8: {}
+      - script@1:
+          title: Run build preflight
+          inputs:
+            - content: |
+                #!/usr/bin/env bash
+                set -euo pipefail
+                ./scripts/xcode-cloud/ci_preflight.sh
+
+  build:
+    description: Build an unsigned MixLink IPA for CI validation.
+    steps:
+      - git-clone@8: {}
+      - script@1:
+          title: Build MixLink with Bazel
+          inputs:
+            - content: |
+                #!/usr/bin/env bash
+                set -euo pipefail
+
+                cd "$BITRISE_SOURCE_DIR"
+                mkdir -p "$BAZEL_CACHE_DIR"
+
+                BUILD_NUMBER_OFFSET="$(cat build_number_offset)"
+                COMMIT_COUNT="$(git rev-list --count HEAD)"
+                BUILD_NUMBER="$((COMMIT_COUNT + BUILD_NUMBER_OFFSET))"
+                mkdir -p build/artifacts
+
+                python3 build-system/Make/ImportCertificates.py \
+                  --path build-system/fake-codesigning/certs
+
+                python3 -u build-system/Make/Make.py \
+                  --cacheDir="$BAZEL_CACHE_DIR" \
+                  build \
+                  --configurationPath="build-system/appstore-configuration.json" \
+                  --codesigningInformationPath=build-system/fake-codesigning \
+                  --configuration="$MIXLINK_BUILD_CONFIGURATION" \
+                  --buildNumber="$BUILD_NUMBER" \
+                  --outputBuildArtifactsPath="$BITRISE_DEPLOY_DIR"
+
+      - deploy-to-bitrise-io@2: {}
+
+  release:
+    description: Reserved for signed App Store/TestFlight builds.
+    steps:
+      - git-clone@8: {}
+      - script@1:
+          title: Fail until Bitrise signing is configured
+          inputs:
+            - content: |
+                #!/usr/bin/env bash
+                set -euo pipefail
+                echo "Configure a Bitrise Distribution certificate, App Store profile, and App Store Connect API key before using release."
+                exit 1

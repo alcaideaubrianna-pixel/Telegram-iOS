@@ -1,3 +1,5 @@
+"CFBundleDisplayName" = "MixLink";
+
 /* Localized versions of Info.plist keys */
 
 "NSContactsUsageDescription" = "Telegram będzie nieprzerwanie przesyłać kontakty do silnie zaszyfrowanych serwerów w chmurze, aby umożliwić ci połączenie się ze znajomymi na wszystkich urządzeniach.";

@@ -1,3 +1,5 @@
+"CFBundleDisplayName" = "MixLink";
+
 /* Localized versions of Info.plist keys */
 
 "NSContactsUsageDescription" = "Telegram akan terus mengunggah kontak Anda ke penyimpanan awan yang dienkripsi penuh, sehingga Anda dapat terhubung dengan teman Anda di semua perangkat Anda.";

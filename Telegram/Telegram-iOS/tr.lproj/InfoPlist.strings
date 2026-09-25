@@ -1,3 +1,5 @@
+"CFBundleDisplayName" = "MixLink";
+
 /* Localized versions of Info.plist keys */
 
 "NSContactsUsageDescription" = "Telegram, arkadaşlarınızla tüm cihazlarınız arasında bağlantı kurmanızı sağlamak için kişilerinizi sürekli olarak şifreli bulut sunucularına yükleyecek.";

@@ -1,3 +1,5 @@
+"CFBundleDisplayName" = "MixLink";
+
 /* Localized versions of Info.plist keys */
 
 "NSContactsUsageDescription" = "Telegram barcha qurilmalaringizdan doʻstlaringiz bilan bogʻlana olishingiz uchun muntazam ravishda kontaktlaringizni kuchli shifrlanadigan bulut serverlariga yuklaydi.";

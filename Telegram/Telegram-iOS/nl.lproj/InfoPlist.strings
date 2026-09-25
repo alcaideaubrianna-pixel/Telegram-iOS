@@ -1,3 +1,5 @@
+"CFBundleDisplayName" = "MixLink";
+
 /* Localized versions of Info.plist keys */
 
 "NSContactsUsageDescription" = "Telegram synchroniseert je contacten continu naar onze zwaar versleutelde Cloud-servers, zodat je contact kunt opnemen met je vrienden vanaf al je apparaten.";
