@@ -46,6 +46,7 @@ class BazelCommandLine:
         self.show_actions = False
         self.enable_sandbox = False
         self.disable_provisioning_profiles = False
+        self.disable_extensions = False
         self.profile_swift = False
         self.embed_watch_app = False
         self.watch_api_id = None
@@ -137,6 +138,9 @@ class BazelCommandLine:
 
     def set_disable_provisioning_profiles(self):
         self.disable_provisioning_profiles = True
+
+    def set_disable_extensions(self):
+        self.disable_extensions = True
 
     def set_profile_swift(self, value):
         self.profile_swift = value
@@ -298,6 +302,8 @@ class BazelCommandLine:
 
         if self.disable_provisioning_profiles:
             combined_arguments += ['--//Telegram:disableProvisioningProfiles=true']
+        if self.disable_extensions:
+            combined_arguments += ['--//Telegram:disableExtensions=true']
 
         combined_arguments += self.common_args
         combined_arguments += self.common_build_args
@@ -699,6 +705,8 @@ def build(bazel, arguments):
     bazel_command_line.set_enable_sandbox(arguments.sandbox)
     if arguments.disableProvisioningProfiles:
         bazel_command_line.set_disable_provisioning_profiles()
+    if arguments.disableExtensions:
+        bazel_command_line.set_disable_extensions()
     bazel_command_line.set_profile_swift(arguments.profileSwift)
 
     bazel_command_line.set_split_swiftmodules(arguments.enableParallelSwiftmoduleGeneration)
@@ -1093,6 +1101,12 @@ if __name__ == '__main__':
         action='store_true',
         default=False,
         help='Skip provisioning profile references for unsigned CI validation builds.',
+    )
+    buildParser.add_argument(
+        '--disableExtensions',
+        action='store_true',
+        default=False,
+        help='Exclude app extensions from unsigned CI validation builds.',
     )
     buildParser.add_argument(
         '--outputBuildArtifactsPath',

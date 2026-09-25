@@ -58,6 +58,7 @@ workflows:
                   --configurationPath="build-system/template_minimal_development_configuration.json" \
                   --xcodeManagedCodesigning \
                   --disableProvisioningProfiles \
+                  --disableExtensions \
                   --configuration="$MIXLINK_BUILD_CONFIGURATION" \
                   --buildNumber="$BUILD_NUMBER" \
                   --outputBuildArtifactsPath="$BITRISE_DEPLOY_DIR"
