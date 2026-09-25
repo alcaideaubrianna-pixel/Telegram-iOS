@@ -1036,7 +1036,7 @@ ios_extension(
         ":AppNameInfoPlist",
     ],
     minimum_os_version = minimum_os_version,
-    provisioning_profile = select({
+    provisioning_profile = None if telegram_use_xcode_managed_codesigning else select({
         ":disableProvisioningProfilesSetting": None,
         "//conditions:default": "@build_configuration//provisioning:Share.mobileprovision",
     }),
@@ -1143,7 +1143,7 @@ ios_extension(
     ],
     minimum_os_version = minimum_os_version, # maintain the same minimum OS version across extensions
     #ipa_post_processor = ":SetMinOsVersionNotificationContentExtension",
-    provisioning_profile = select({
+    provisioning_profile = None if telegram_use_xcode_managed_codesigning else select({
         ":disableProvisioningProfilesSetting": None,
         "//conditions:default": "@build_configuration//provisioning:NotificationContent.mobileprovision",
     }),
@@ -1249,7 +1249,7 @@ ios_extension(
     minimum_os_version = minimum_os_version, # maintain the same minimum OS version across extensions
     ipa_post_processor = ":SetMinOsVersionWidgetExtension",
     #provides_main = True,
-    provisioning_profile = select({
+    provisioning_profile = None if telegram_use_xcode_managed_codesigning else select({
         ":disableProvisioningProfilesSetting": None,
         "//conditions:default": "@build_configuration//provisioning:Widget.mobileprovision",
     }),
@@ -1385,7 +1385,7 @@ ios_extension(
     ],
     minimum_os_version = minimum_os_version, # maintain the same minimum OS version across extensions
     #ipa_post_processor = ":SetMinOsVersionIntentsExtension",
-    provisioning_profile = select({
+    provisioning_profile = None if telegram_use_xcode_managed_codesigning else select({
         ":disableProvisioningProfilesSetting": None,
         "//conditions:default": "@build_configuration//provisioning:Intents.mobileprovision",
     }),
@@ -1480,7 +1480,7 @@ ios_extension(
     ],
     minimum_os_version = minimum_os_version, # maintain the same minimum OS version across extensions
     #ipa_post_processor = ":SetMinOsVersionBroadcastUploadExtension",
-    provisioning_profile = select({
+    provisioning_profile = None if telegram_use_xcode_managed_codesigning else select({
         ":disableProvisioningProfilesSetting": None,
         "//conditions:default": "@build_configuration//provisioning:BroadcastUpload.mobileprovision",
     }),
@@ -1540,7 +1540,7 @@ ios_extension(
         ":AppNameInfoPlist",
     ],
     minimum_os_version = minimum_os_version, # maintain the same minimum OS version across extensions
-    provisioning_profile = select({
+    provisioning_profile = None if telegram_use_xcode_managed_codesigning else select({
         ":disableProvisioningProfilesSetting": None,
         "//conditions:default": "@build_configuration//provisioning:NotificationService.mobileprovision",
     }),
