@@ -58,7 +58,7 @@ workflows:
                 python3 -u build-system/Make/Make.py \
                   --cacheDir="$BAZEL_CACHE_DIR" \
                   build \
-                  --configurationPath="build-system/appstore-configuration.json" \
+                  --configurationPath="build-system/template_minimal_development_configuration.json" \
                   --codesigningInformationPath=build-system/fake-codesigning \
                   --configuration="$MIXLINK_BUILD_CONFIGURATION" \
                   --buildNumber="$BUILD_NUMBER" \
