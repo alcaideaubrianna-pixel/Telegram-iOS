@@ -648,7 +648,7 @@ public final class ManagedAudioSessionImpl: NSObject, ManagedAudioSession {
                 }
             }), activate: { [weak self] state in
                 manualActivate(state)
-                queue.async {
+                queue.async { [weak self] in
                     if let strongSelf = self {
                         strongSelf.updateCurrentAudioRouteInfo()
                         availableOutputsChanged(strongSelf.availableOutputsValue, strongSelf.currentOutputValue)
