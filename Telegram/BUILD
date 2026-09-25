@@ -97,7 +97,7 @@ config_setting(
 config_setting(
     name = "disableProvisioningProfilesSetting",
     flag_values = {
-        ":disableProvisioningProfiles": "True",
+        ":disableProvisioningProfiles": "true",
     },
 )
 
