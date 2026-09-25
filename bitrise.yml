@@ -5,7 +5,7 @@ project_type: other
 
 meta:
   bitrise.io:
-    stack: osx-xcode-27.0.x
+    stack: osx-xcode-26.6.x
 
 app:
   envs:
@@ -71,14 +71,56 @@ workflows:
                 /Users/Shared/mixlink-bazel-cache
 
   release:
-    description: Reserved for signed App Store/TestFlight builds.
+    description: Signed App Store/TestFlight build using the encrypted Match repository.
     steps:
       - git-clone@8: {}
+      - activate-ssh-key@4:
+          run_if: '{{getenv "SSH_RSA_PRIVATE_KEY" | ne ""}}'
+      - restore-cache@2:
+          inputs:
+            - key: mixlink-bazel-{{ .Branch }}-{{ checksum "MODULE.bazel" }}
+            - fallback_keys: |
+                mixlink-bazel-{{ .Branch }}-
+                mixlink-bazel-main-
       - script@1:
-          title: Fail until Bitrise signing is configured
+          title: Build signed MixLink IPA with Bazel
           inputs:
             - content: |
                 #!/usr/bin/env bash
                 set -euo pipefail
-                echo "Configure a Bitrise Distribution certificate, App Store profile, and App Store Connect API key before using release."
-                exit 1
+
+                cd "$BITRISE_SOURCE_DIR"
+                mkdir -p "$BAZEL_CACHE_DIR" "$BITRISE_DEPLOY_DIR"
+
+                BUILD_NUMBER_OFFSET="$(cat build_number_offset)"
+                COMMIT_COUNT="$(git rev-list --count HEAD)"
+                BUILD_NUMBER="$((COMMIT_COUNT + BUILD_NUMBER_OFFSET))"
+
+                python3 -u build-system/Make/Make.py \
+                  --cacheDir="$BAZEL_CACHE_DIR" \
+                  build \
+                  --configurationPath="build-system/appstore-configuration.json" \
+                  --gitCodesigningRepository="git@github.com:alcaideaubrianna-pixel/mixlink-signing.git" \
+                  --gitCodesigningType=appstore \
+                  --configuration="$MIXLINK_BUILD_CONFIGURATION" \
+                  --buildNumber="$BUILD_NUMBER" \
+                  --outputBuildArtifactsPath="$BITRISE_DEPLOY_DIR"
+
+                IPA_PATH="$(find "$BITRISE_DEPLOY_DIR" -maxdepth 2 -type f -name '*.ipa' -print -quit)"
+                test -n "$IPA_PATH"
+                envman add --key BITRISE_IPA_PATH --value "$IPA_PATH"
+                echo "IPA prepared for upload: $(basename "$IPA_PATH")"
+
+      - deploy-to-itunesconnect-application-loader@2:
+          inputs:
+            - connection: api_key
+            - app_id: "6815920240"
+            - bundle_id: "$MIXLINK_BUNDLE_ID"
+            - ipa_path: "$BITRISE_IPA_PATH"
+            - platform: ios
+      - deploy-to-bitrise-io@2: {}
+      - save-cache@1:
+          inputs:
+            - key: mixlink-bazel-{{ .Branch }}-{{ checksum "MODULE.bazel" }}
+            - cache_paths: |
+                /Users/Shared/mixlink-bazel-cache
