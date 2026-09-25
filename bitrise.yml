@@ -31,6 +31,12 @@ workflows:
     description: Build an unsigned MixLink IPA for CI validation.
     steps:
       - git-clone@8: {}
+      - restore-cache@2:
+          inputs:
+            - key: mixlink-bazel-{{ .Branch }}-{{ checksum "MODULE.bazel" }}
+            - fallback_keys: |
+                mixlink-bazel-{{ .Branch }}-
+                mixlink-bazel-main-
       - script@1:
           title: Build MixLink with Bazel
           inputs:
@@ -59,6 +65,11 @@ workflows:
                   --outputBuildArtifactsPath="$BITRISE_DEPLOY_DIR"
 
       - deploy-to-bitrise-io@2: {}
+      - save-cache@1:
+          inputs:
+            - key: mixlink-bazel-{{ .Branch }}-{{ checksum "MODULE.bazel" }}
+            - cache_paths: |
+                /Users/Shared/mixlink-bazel-cache
 
   release:
     description: Reserved for signed App Store/TestFlight builds.
