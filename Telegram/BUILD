@@ -514,9 +514,11 @@ icloud_fragment = "" if not telegram_enable_icloud else """
     telegram_icloud_environment="Production" if telegram_aps_environment == "production" else "Development"
 )
 
-associated_domains_fragment = "" if telegram_bundle_id not in official_bundle_ids else """
+associated_domains_fragment = "" if telegram_bundle_id not in official_bundle_ids + ["com.mixlink.app"] else """
 <key>com.apple.developer.associated-domains</key>
 <array>
+    <string>applinks:im.mixlink.cc</string>
+    <string>webcredentials:im.mixlink.cc</string>
     <string>applinks:telegram.me</string>
     <string>applinks:t.me</string>
     <string>applinks:*.t.me</string>
