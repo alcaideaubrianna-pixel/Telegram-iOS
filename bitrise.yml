@@ -52,14 +52,12 @@ workflows:
                 BUILD_NUMBER="$((COMMIT_COUNT + BUILD_NUMBER_OFFSET))"
                 mkdir -p build/artifacts
 
-                python3 build-system/Make/ImportCertificates.py \
-                  --path build-system/fake-codesigning/certs
-
                 python3 -u build-system/Make/Make.py \
                   --cacheDir="$BAZEL_CACHE_DIR" \
                   build \
                   --configurationPath="build-system/template_minimal_development_configuration.json" \
-                  --codesigningInformationPath=build-system/fake-codesigning \
+                  --xcodeManagedCodesigning \
+                  --disableProvisioningProfiles \
                   --configuration="$MIXLINK_BUILD_CONFIGURATION" \
                   --buildNumber="$BUILD_NUMBER" \
                   --outputBuildArtifactsPath="$BITRISE_DEPLOY_DIR"
