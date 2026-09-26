@@ -67,7 +67,7 @@ workflows:
       - save-cache@1:
           inputs:
             - key: mixlink-bazel-{{ .Branch }}-{{ checksum "MODULE.bazel" }}
-            - cache_paths: |
+            - paths: |
                 /Users/Shared/mixlink-bazel-cache
 
   release:
@@ -143,5 +143,5 @@ workflows:
       - save-cache@1:
           inputs:
             - key: mixlink-bazel-{{ .Branch }}-{{ checksum "MODULE.bazel" }}
-            - cache_paths: |
+            - paths: |
                 /Users/Shared/mixlink-bazel-cache
