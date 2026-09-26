@@ -1637,6 +1637,8 @@ plist_fragment(
     <string>You can use Face ID to unlock the app.</string>
     <key>NSLocationAlwaysUsageDescription</key>
     <string>When you send your location to your friends, Telegram needs access to show them a map. You also need this to send locations from an Apple Watch.</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>MixLink needs location access to share your live location with people you choose.</string>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>When you send your location to your friends, Telegram needs access to show them a map.</string>
     <key>NSMicrophoneUsageDescription</key>
@@ -1803,10 +1805,9 @@ ios_application(
             ":ShareExtension",
             ":NotificationContentExtension",
             ":NotificationServiceExtension" + notificationServiceExtensionVersion,
-            ":IntentsExtension",
             ":WidgetExtension",
             ":BroadcastUploadExtension",
-        ],
+        ] + ([":IntentsExtension"] if telegram_enable_siri else []),
     }),
     # Embed the in-repo tgwatch watch app (Telegram/WatchApp) under Watch/ only when
     # --//Telegram:embedWatchApp is set (Make.py sets it for device configs when
