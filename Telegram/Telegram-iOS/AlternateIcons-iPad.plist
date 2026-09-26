@@ -67,7 +67,8 @@
     <dict>
         <key>CFBundleIconFiles</key>
         <array>
-            <string>WhiteFilledIcon</string>
+            <string>WhiteFilledIconIpad</string>
+            <string>WhiteFilledIconLargeIpad</string>
         </array>
         <key>UIPrerenderedIcon</key>
         <true/>
