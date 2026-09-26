@@ -118,11 +118,12 @@ workflows:
                 #!/usr/bin/env bash
                 set -euo pipefail
 
-                test -n "${MIXLINK_ASC_PRIVATE_KEY:-}"
+                test -n "${MIXLINK_ASC_PRIVATE_KEY_BASE64:-}"
                 API_KEY_PATH="$BITRISE_SOURCE_DIR/build/AuthKey_9J6A6YKJ7C.p8"
                 mkdir -p "$(dirname "$API_KEY_PATH")"
-                printf '%s\n' "$MIXLINK_ASC_PRIVATE_KEY" > "$API_KEY_PATH"
+                printf '%s' "$MIXLINK_ASC_PRIVATE_KEY_BASE64" | base64 --decode > "$API_KEY_PATH"
                 chmod 600 "$API_KEY_PATH"
+                openssl pkey -in "$API_KEY_PATH" -noout >/dev/null
                 envman add --key MIXLINK_ASC_API_KEY_URL --value "file://$API_KEY_PATH"
 
       - deploy-to-itunesconnect-application-loader@2:
