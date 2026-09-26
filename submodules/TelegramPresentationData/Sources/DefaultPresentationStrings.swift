@@ -41,9 +41,20 @@ public func formatWithArgumentRanges(_ value: String, _ ranges: [(Int, NSRange)]
     return (result as String, resultingRanges)
 }
 
-private let defaultLanguageCode = "zh-Hans"
+private let defaultLanguageLocalization: (code: String, resource: String, name: String) = {
+    for language in Locale.preferredLanguages {
+        let identifier = Locale(identifier: language).identifier.lowercased()
+        if identifier == "zh-hans" || identifier.hasPrefix("zh-cn") || identifier.hasPrefix("zh-sg") {
+            return ("zh-hans", "zh-Hans", "简体中文")
+        }
+        if identifier.hasPrefix("en") {
+            return ("en", "en", "English")
+        }
+    }
+    return ("en", "en", "English")
+}()
 
-public let defaultPresentationStrings = PresentationStrings(primaryComponent: PresentationStrings.Component(languageCode: "zh-hans", localizedName: "简体中文", pluralizationRulesCode: nil, dict: NSDictionary(contentsOf: URL(fileURLWithPath: getAppBundle().path(forResource: "Localizable", ofType: "strings", inDirectory: nil, forLocalization: defaultLanguageCode)!)) as! [String : String]), secondaryComponent: nil, groupingSeparator: "")
+public let defaultPresentationStrings = PresentationStrings(primaryComponent: PresentationStrings.Component(languageCode: defaultLanguageLocalization.code, localizedName: defaultLanguageLocalization.name, pluralizationRulesCode: nil, dict: NSDictionary(contentsOf: URL(fileURLWithPath: getAppBundle().path(forResource: "Localizable", ofType: "strings", inDirectory: nil, forLocalization: defaultLanguageLocalization.resource)!)) as! [String : String]), secondaryComponent: nil, groupingSeparator: "")
 
 public func dataSizeString(_ size: Int, forceDecimal: Bool = false, formatting: DataSizeStringFormatting) -> String {
     return dataSizeString(Int64(size), forceDecimal: forceDecimal, formatting: formatting)
