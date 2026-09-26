@@ -12,7 +12,8 @@ import glob
 from BuildEnvironment import resolve_executable, call_executable, run_executable_with_output, BuildEnvironmentVersions, BuildEnvironment
 from ProjectGeneration import generate
 from BazelLocation import locate_bazel
-from BuildConfiguration import CodesigningSource, GitCodesigningSource, DirectoryCodesigningSource, XcodeManagedCodesigningSource, BuildConfiguration, build_configuration_from_json
+from BuildConfiguration import CodesigningSource, GitCodesigningSource, DirectoryCodesigningSource, XcodeManagedCodesigningSource, BuildConfiguration, build_configuration_from_json, copy_certificates_from_directory
+from ImportCertificates import import_certificates
 import RemoteBuild
 import TartBuild
 import GenerateProfiles
@@ -523,6 +524,25 @@ def resolve_configuration(base_path, bazel_command_line: BazelCommandLine, argum
         provisioning_profiles_path=provisioning_path,
         additional_codesigning_output_path=additional_codesigning_output_path
     )
+    # Device builds need the distribution identity in a keychain. Git codesigning
+    # decrypts the certificate files, but Bazel does not import them itself.
+    certificates_path = configuration_repository_path + '/certs'
+    os.makedirs(certificates_path, exist_ok=True)
+    if not codesigning_data.use_xcode_managed_codesigning:
+        if arguments.gitCodesigningRepository is not None:
+            source_path = '{}/build-input/configuration-repository-workdir/decrypted/certs/{}'.format(
+                base_path, arguments.gitCodesigningType
+            )
+            if arguments.gitCodesigningType in ('appstore', 'adhoc'):
+                source_path = '{}/build-input/configuration-repository-workdir/decrypted/certs/distribution'.format(base_path)
+            elif arguments.gitCodesigningType == 'enterprise':
+                source_path = '{}/build-input/configuration-repository-workdir/decrypted/certs/enterprise'.format(base_path)
+            elif arguments.gitCodesigningType == 'development':
+                source_path = '{}/build-input/configuration-repository-workdir/decrypted/certs/development'.format(base_path)
+            copy_certificates_from_directory(source_path, certificates_path)
+        elif arguments.codesigningInformationPath is not None:
+            copy_certificates_from_directory(arguments.codesigningInformationPath + '/certs', certificates_path)
+        import_certificates(certificates_path)
     if codesigning_data.aps_environment is None:
         print('Could not find a valid aps-environment entitlement in the provided provisioning profiles')
         sys.exit(1)
