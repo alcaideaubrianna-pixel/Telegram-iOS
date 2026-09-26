@@ -48,8 +48,12 @@ workflows:
                 mkdir -p "$BAZEL_CACHE_DIR"
 
                 BUILD_NUMBER_OFFSET="$(cat build_number_offset)"
-                COMMIT_COUNT="$(git rev-list --count HEAD)"
-                BUILD_NUMBER="$((COMMIT_COUNT + BUILD_NUMBER_OFFSET))"
+                if [[ -n "${BITRISE_BUILD_NUMBER:-}" ]]; then
+                  BUILD_NUMBER="$((BITRISE_BUILD_NUMBER + BUILD_NUMBER_OFFSET))"
+                else
+                  COMMIT_COUNT="$(git rev-list --count HEAD)"
+                  BUILD_NUMBER="$((COMMIT_COUNT + BUILD_NUMBER_OFFSET))"
+                fi
                 mkdir -p build/artifacts
 
                 python3 -u build-system/Make/Make.py \
@@ -93,8 +97,12 @@ workflows:
                 mkdir -p "$BAZEL_CACHE_DIR" "$BITRISE_DEPLOY_DIR"
 
                 BUILD_NUMBER_OFFSET="$(cat build_number_offset)"
-                COMMIT_COUNT="$(git rev-list --count HEAD)"
-                BUILD_NUMBER="$((COMMIT_COUNT + BUILD_NUMBER_OFFSET))"
+                if [[ -n "${BITRISE_BUILD_NUMBER:-}" ]]; then
+                  BUILD_NUMBER="$((BITRISE_BUILD_NUMBER + BUILD_NUMBER_OFFSET))"
+                else
+                  COMMIT_COUNT="$(git rev-list --count HEAD)"
+                  BUILD_NUMBER="$((COMMIT_COUNT + BUILD_NUMBER_OFFSET))"
+                fi
 
                 python3 -u build-system/Make/Make.py \
                   --cacheDir="$BAZEL_CACHE_DIR" \
