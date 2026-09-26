@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define GLES_SILENCE_DEPRECATION
-
-#import <GLKit/GLKit.h>
-
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
@@ -39,26 +35,7 @@
 
 @end
 
-@interface RMIntroViewController : UIViewController<UIScrollViewDelegate, GLKViewDelegate>
-{
-    EAGLContext *_context;
-    
-    GLKView *_glkView;
-    
-    NSArray *_headlines;
-    NSArray *_descriptions;
-    
-    NSMutableArray *_pageViews;
-    
-    NSInteger _currentPage;
-    
-    UIScrollView *_pageScrollView;
-    UIPageControl *_pageControl;
-    
-    NSTimer *_updateAndRenderTimer;
-    
-    BOOL _isOpenGLLoaded;
-}
+@interface RMIntroViewController : UIViewController<UIScrollViewDelegate>
 
 @property (nonatomic) CGRect defaultFrame;
 
@@ -75,9 +52,6 @@
 - (void)animateIn;
 
 @property (nonatomic) bool isEnabled;
-
-- (void)startTimer;
-- (void)stopTimer;
 
 @end
 

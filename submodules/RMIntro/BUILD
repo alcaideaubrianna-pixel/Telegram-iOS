@@ -10,7 +10,8 @@ objc_library(
     module_name = "RMIntro",
     srcs = glob([
         "Sources/**/*.m",
-        "Sources/**/*.c",
+    ], exclude = [
+        "Sources/platform/ios/texture_helper.m",
     ]) + private_headers,
     hdrs = glob([
         "PublicHeaders/**/*.h",
@@ -30,7 +31,6 @@ objc_library(
     sdk_frameworks = [
         "Foundation",
         "UIKit",
-        "GLKit",
     ],
     visibility = [
         "//visibility:public",

@@ -401,23 +401,23 @@
 "Date.ChatDateHeaderYear" = "%1$@ %2$@, %3$@";
 
 // Tour
-"Tour.Title1" = "Telegram";
-"Tour.Text1" = "The world's **fastest** messaging app.\nIt is **free** and **secure**.";
+"Tour.Title1" = "MixLink";
+"Tour.Text1" = "Stay close to the people\nwho matter most.";
 
-"Tour.Title2" = "Fast";
-"Tour.Text2" = "**Telegram** delivers messages\nfaster than any other application.";
+"Tour.Title2" = "Stay Connected";
+"Tour.Text2" = "Enjoy conversations that feel\nnatural and easy.";
 
-"Tour.Title3" = "Powerful";
-"Tour.Text3" = "**Telegram** has no limits on\nthe size of your media and chats.";
+"Tour.Title3" = "Share Freely";
+"Tour.Text3" = "Send messages, photos and files\nright in your chats.";
 
-"Tour.Title4" = "Secure";
-"Tour.Text4" = "**Telegram** keeps your messages\nsafe from hacker attacks.";
+"Tour.Title4" = "Privacy Controls";
+"Tour.Text4" = "Manage your privacy settings\nand choose how you connect.";
 
-"Tour.Title5" = "Cloud-Based";
-"Tour.Text5" = "**Telegram** lets you access your\nmessages from multiple devices.";
+"Tour.Title5" = "Stay in Sync";
+"Tour.Text5" = "Continue your conversations\nacross your signed-in devices.";
 
-"Tour.Title6" = "Free";
-"Tour.Text6" = "**Telegram** provides free unlimited\ncloud storage for chats and media.";
+"Tour.Title6" = "Together";
+"Tour.Text6" = "Keep conversations and shared media\ntogether in one app.";
 
 "Tour.StartButton" = "Start Messaging";
 
@@ -753,10 +753,10 @@
 "Settings.BlockedUsers" = "Blocked Users";
 "Settings.ChatBackground" = "Chat Background";
 "Settings.Support" = "Ask a Question";
-"Settings.FAQ" = "Telegram FAQ";
+"Settings.FAQ" = "FAQ";
 "Settings.FAQ_URL" = "https://telegram.org/faq#general";
-"Settings.FAQ_Intro" = "Please note that Telegram Support is done by volunteers. We try to respond as quickly as possible, but it may take a while.\n\nPlease take a look at the Telegram FAQ: it has important troubleshooting tips and answers to most questions.";
-"Settings.FAQ_Button" = "FAQ";
+"Settings.FAQ_Intro" = "The FAQ includes troubleshooting tips and answers to common questions. If you need more help, contact Support.";
+"Settings.FAQ_Button" = "Open FAQ";
 "Settings.SaveIncomingPhotos" = "Save Incoming Photos";
 
 // Notifications and Sounds
@@ -836,7 +836,7 @@
 "BroadcastListInfo.AddRecipient" = "Add Recipient";
 
 "Settings.LogoutConfirmationTitle" = "Log out?";
-"Settings.LogoutConfirmationText" = "\nNote that you can seamlessly use Telegram on all your devices at once.\n\nRemember, logging out kills all your Secret Chats.";
+"Settings.LogoutConfirmationText" = "\nYou can use MixLink on all your devices at the same time.\n\nRemember, logging out ends all your Secret Chats.";
 
 "Login.PadPhoneHelp" = "\nYou can use your main mobile number to log in to Telegram on all devices.\nDon't use your iPad's SIM number here — we'll need to send you an SMS.\n\nIs this number correct?\n{number}";
 "Login.PadPhoneHelpTitle" = "Your Number";
@@ -935,7 +935,7 @@
 
 "Username.Title" = "Username";
 "Username.Placeholder" = "Your Username";
-"Username.Help" = "You can choose a username on **Telegram**. If you do, other people will be able to find you by this username and contact you without knowing your phone number.\n\nYou can use **a-z**, **0-9** and underscores. Minimum length is **5** characters.";
+"Username.Help" = "Choose a MixLink username so other people can find and contact you without knowing your phone number.\n\nYou can use **a-z**, **0-9** and underscores. Minimum length is **5** characters.";
 "Username.InvalidTooShort" = "A username must have at least 5 characters.";
 "Username.InvalidStartsWithNumber" = "Sorry, a username can't start with a number.";
 "Username.InvalidCharacters" = "Sorry, this username is invalid.";
@@ -1040,8 +1040,8 @@
 
 "Settings.PhoneNumber" = "Change Number";
 
-"PhoneNumberHelp.Help" = "You can change your Telegram number here. Your account and all your cloud data — messages, media, contacts, etc. will be moved to the new number.\n\n**Important:** all your Telegram contacts will get your **new number** added to their address book, provided they had your old number and you haven't blocked them in Telegram.";
-"PhoneNumberHelp.Alert" = "All your Telegram contacts will get your new number added to their address book, provided they had your old number and you haven't blocked them in Telegram.";
+"PhoneNumberHelp.Help" = "You can change the phone number linked to MixLink here. Your account and cloud data — including messages, media and contacts — will move to the new number.\n\n**Important:** your MixLink contacts who have your old number and are not blocked will receive your **new number** in their address book.";
+"PhoneNumberHelp.Alert" = "Your MixLink contacts who have your old number and are not blocked will receive your new number in their address book.";
 "PhoneNumberHelp.ChangeNumber" = "Change Number";
 
 "ChangePhoneNumberNumber.Title" = "Change Number";
@@ -1234,18 +1234,18 @@
 "PasscodeSettings.SimplePasscode" = "Simple Passcode";
 "PasscodeSettings.SimplePasscodeHelp" = "A simple passcode is a 4 digit number.";
 "PasscodeSettings.EncryptData" = "Encrypt Local Database";
-"PasscodeSettings.EncryptDataHelp" = "Experimental feature, use with caution. Encrypt your local Telegram data, using a derivative of your passcode as the key.";
+"PasscodeSettings.EncryptDataHelp" = "Experimental feature; use with caution. Encrypt your local MixLink data using a key derived from your passcode.";
 
-"EnterPasscode.EnterTitle" = "Enter your Telegram Passcode";
+"EnterPasscode.EnterTitle" = "Enter your MixLink Passcode";
 "EnterPasscode.ChangeTitle" = "Change Passcode";
-"EnterPasscode.EnterPasscode" = "Enter your Telegram Passcode";
+"EnterPasscode.EnterPasscode" = "Enter your MixLink Passcode";
 "EnterPasscode.EnterNewPasscodeNew" = "Enter a passcode";
 "EnterPasscode.EnterNewPasscodeChange" = "Enter your new passcode";
 "EnterPasscode.RepeatNewPasscode" = "Re-enter your new passcode";
 "EnterPasscode.EnterCurrentPasscode" = "Enter your current passcode";
-"EnterPasscode.TouchId" = "Unlock Telegram";
+"EnterPasscode.TouchId" = "Unlock MixLink";
 
-"DialogList.PasscodeLockHelp" = "Tap to lock Telegram";
+"DialogList.PasscodeLockHelp" = "Tap to lock MixLink";
 
 "PasscodeSettings.AutoLock" = "Auto-Lock";
 "PasscodeSettings.AutoLock.Disabled" = "Disabled";
@@ -1378,7 +1378,7 @@
 "TwoStepAuth.SetupEmail" = "Set Recovery E-Mail";
 "TwoStepAuth.ChangeEmail" = "Change Recovery E-Mail";
 "TwoStepAuth.PendingEmailHelp" = "Your recovery e-mail %@ is not yet active and pending confirmation.";
-"TwoStepAuth.GenericHelp" = "You have enabled Two-Step verification.\nYou'll need the password you set up here to log in to your Telegram account.";
+"TwoStepAuth.GenericHelp" = "You have enabled Two-Step verification.\nYou'll need the password you set up here to log in to your MixLink account.";
 
 "TwoStepAuth.ConfirmationTitle" = "Two-Step Verification";
 "TwoStepAuth.ConfirmationText" = "Please check your e-mail and click on the validation link to complete Two-Step Verification setup. Be sure to check the spam folder as well.";
@@ -1398,7 +1398,7 @@
 
 "TwoStepAuth.EmailTitle" = "Recovery E-Mail";
 "TwoStepAuth.EmailSkip" = "Skip";
-"TwoStepAuth.EmailSkipAlert" = "No, seriously.\n\nIf you forget your password, you will lose access to your Telegram account. There will be no way to restore it.";
+"TwoStepAuth.EmailSkipAlert" = "No, seriously.\n\nIf you forget your password, you will lose access to your MixLink account. There will be no way to restore it.";
 "TwoStepAuth.Email" = "E-Mail";
 "TwoStepAuth.EmailPlaceholder" = "Your E-Mail";
 "TwoStepAuth.EmailHelp" = "Please add your valid e-mail. It is the only way to recover a forgotten password.";
@@ -1473,7 +1473,7 @@
 "AuthSessions.TerminateSession" = "Terminate session";
 "AuthSessions.OtherSessions" = "ACTIVE SESSIONS";
 "AuthSessions.EmptyTitle" = "No other sessions";
-"AuthSessions.EmptyText" = "You can log in to Telegram from other mobile, tablet and desktop devices, using the same phone number. All your data will be instantly synchronized.";
+"AuthSessions.EmptyText" = "You can sign in to MixLink on other mobile, tablet and desktop devices with the same phone number. Your data will sync across your devices.";
 "AuthSessions.AppUnofficial" = "(ID: %@)";
 
 "WebPreview.GettingLinkInfo" = "Getting Link Info...";
@@ -2290,7 +2290,7 @@ Unused sets are archived when you add more.";
 
 "Call.EncryptionKey.Title" = "Encryption Key";
 
-"Application.Name" = "Telegram";
+"Application.Name" = "MixLink";
 "DialogList.Pin" = "Pin";
 "DialogList.Unpin" = "Unpin";
 "DialogList.PinLimitError" = "Sorry, you can pin no more than %@ chats to the top.";
@@ -2645,7 +2645,7 @@ Unused sets are archived when you add more.";
 
 "Privacy.PaymentsTitle" = "PAYMENTS";
 "Privacy.PaymentsClearInfo" = "Clear payment & shipping info";
-"Privacy.PaymentsClearInfoHelp" = "You can delete your shipping info and instruct all payment providers to remove your saved credit cards. Note that Telegram never stores your credit card data.";
+"Privacy.PaymentsClearInfoHelp" = "You can delete your shipping info and instruct all payment providers to remove your saved credit cards. Note that MixLink never stores your credit card data.";
 "Privacy.PaymentsClear.PaymentInfo" = "Payment Info";
 "Privacy.PaymentsClear.ShippingInfo" = "Shipping Info";
 
@@ -2864,10 +2864,10 @@ Unused sets are archived when you add more.";
 "Group.Members.AddMemberBotErrorNotAllowed" = "Sorry, you don't have the necessary permissions to add bots to this group.";
 
 "Privacy.Calls.P2P" = "Peer-to-Peer";
-"Privacy.Calls.P2PHelp" = "Disabling peer-to-peer will relay all calls through Telegram servers to avoid revealing your IP address, but will slightly decrease audio quality.";
+"Privacy.Calls.P2PHelp" = "Disabling peer-to-peer relays calls through service servers to avoid revealing your IP address, but may slightly decrease audio quality.";
 
 "Privacy.Calls.Integration" = "iOS Call Integration";
-"Privacy.Calls.IntegrationHelp" = "iOS Call Integration shows Telegram calls on the lock screen and in the system's call history. If iCloud sync is enabled, your call history is shared with Apple.";
+"Privacy.Calls.IntegrationHelp" = "iOS Call Integration shows MixLink calls on the Lock Screen and in the system call history. If iCloud sync is enabled, your call history is shared with Apple.";
 
 "Call.ReportPlaceholder" = "What went wrong?";
 "Call.ReportIncludeLog" = "Send technical information";
@@ -3257,7 +3257,7 @@ Unused sets are archived when you add more.";
 "AuthSessions.Sessions" = "Sessions";
 "AuthSessions.LoggedIn" = "Websites";
 "AuthSessions.LogOutApplications" = "Disconnect All Websites";
-"AuthSessions.LogOutApplicationsHelp" = "You can log in on websites that support signing in with Telegram.";
+"AuthSessions.LogOutApplicationsHelp" = "You can sign in to websites that support MixLink sign-in.";
 "AuthSessions.LoggedInWithTelegram" = "CONNECTED WEBSITES";
 "AuthSessions.LogOut" = "Disconnect";
 "AuthSessions.Message" = "You allowed this bot to message you when you logged in on %@.";
@@ -3316,13 +3316,13 @@ Unused sets are archived when you add more.";
 
 "Privacy.SecretChatsTitle" = "SECRET CHATS";
 "Privacy.SecretChatsLinkPreviews" = "Link Previews";
-"Privacy.SecretChatsLinkPreviewsHelp" = "Link previews will be generated on Telegram servers. We do not store data about the links you send.";
+"Privacy.SecretChatsLinkPreviewsHelp" = "Link previews are generated on MixLink servers. We do not store data about the links you send.";
 
 "Privacy.ContactsTitle" = "CONTACTS";
 "Privacy.ContactsSync" = "Sync Contacts";
 "Privacy.ContactsSyncHelp" = "Turn on to continuously sync contacts from this device with your account.";
 "Privacy.ContactsReset" = "Delete Synced Contacts";
-"Privacy.ContactsResetConfirmation" = "This will remove your contacts from the Telegram servers.\nIf 'Sync Contacts' is enabled, contacts will be re-synced.";
+"Privacy.ContactsResetConfirmation" = "This will remove your contacts from MixLink servers.\nIf 'Sync Contacts' is enabled, contacts will be synced again.";
 
 "Login.TermsOfServiceDecline" = "Decline";
 "Login.TermsOfServiceAgree" = "Agree & Continue";
@@ -3348,14 +3348,14 @@ Unused sets are archived when you add more.";
 "PrivacyPolicy.DeclineLastWarning" = "Warning, this will irreversibly delete your Telegram account along with all the data you store in the Telegram cloud.\n\nWe will provide a tool to download your data before June, 23 – so you may want to wait a little before deleting.";
 "PrivacyPolicy.DeclineDeleteNow" = "Delete Now";
 
-"Settings.Passport" = "Telegram Passport";
+"Settings.Passport" = "Identity Verification";
 
 "Passport.Title" = "Passport";
 
 "Passport.RequestHeader" = "%@ requests access to your personal data to sign you up for their services.";
 
-"Passport.InfoTitle" = "What is Telegram Passport?";
-"Passport.InfoText" = "With **Telegram Passport** you can easily sign up for websites and services that require identity verification.\n\nYour information, personal data, and documents are protected by end-to-end encryption. Nobody, including Telegram, can access them without your permission.";
+"Passport.InfoTitle" = "What is Identity Verification?";
+"Passport.InfoText" = "Use identity verification to securely share the information requested by a website or service.\n\nYour personal information and documents are protected with end-to-end encryption. They are shared only with your permission.";
 "Passport.InfoLearnMore" = "Learn More";
 "Passport.InfoFAQ_URL" = "https://telegram.org/faq#passport";
 
@@ -3376,19 +3376,19 @@ Unused sets are archived when you add more.";
 "Passport.AcceptHelp" = "You are sending your documents directly to %1$@ and allowing their @%2$@ to send you messages.";
 "Passport.Authorize" = "Authorize";
 
-"Passport.DeletePassport" = "Delete Telegram Passport";
-"Passport.DeletePassportConfirmation" = "Are you sure you want to delete your Telegram Passport? All details will be lost.";
+"Passport.DeletePassport" = "Delete Identity Verification Data";
+"Passport.DeletePassportConfirmation" = "Are you sure you want to delete your identity verification data? All details will be lost.";
 
-"Passport.PasswordHelp" = "Please enter your Telegram Password\nto decrypt your data";
+"Passport.PasswordHelp" = "Please enter your password\nto decrypt your data";
 "Passport.PasswordPlaceholder" = "Enter your password";
 "Passport.InvalidPasswordError" = "Invalid password. Please try again.";
 "Passport.FloodError" = "Limit exceeded. Please try again later.";
-"Passport.UpdateRequiredError" = "Sorry, your Telegram app is out of date and can’t handle this request. Please update Telegram.";
+"Passport.UpdateRequiredError" = "This app version can’t handle this request. Please update MixLink and try again.";
 
 "Passport.ForgottenPassword" = "Forgotten Password";
-"Passport.PasswordReset" = "All documents uploaded to your Telegram Passport will be lost. You will be able to upload new documents.";
+"Passport.PasswordReset" = "All uploaded identity documents will be lost. You will be able to upload new documents.";
 
-"Passport.PasswordDescription" = "Please create a password to secure your personal data with end-to-end encryption.\n\nThis password will also be required whenever you log in to Telegram on a new device.";
+"Passport.PasswordDescription" = "Create a password to secure your personal data with end-to-end encryption.\n\nYou will also need this password when you sign in to MixLink on a new device.";
 "Passport.PasswordCreate" = "Create a Password";
 "Passport.PasswordCompleteSetup" = "Complete Password Setup";
 "Passport.PasswordNext" = "Next";
@@ -3508,14 +3508,14 @@ Unused sets are archived when you add more.";
 
 "Passport.Phone.Title" = "Phone Number";
 "Passport.Phone.UseTelegramNumber" = "Use %@";
-"Passport.Phone.UseTelegramNumberHelp" = "Use the same phone number as on Telegram.";
+"Passport.Phone.UseTelegramNumberHelp" = "Use the phone number linked to your MixLink account.";
 "Passport.Phone.EnterOtherNumber" = "OR ENTER NEW PHONE NUMBER";
 "Passport.Phone.Help" = "Note: You will receive a confirmation code on the phone number you provide.";
 "Passport.Phone.Delete" = "Delete Phone Number";
 
 "Passport.Email.Title" = "Email";
 "Passport.Email.UseTelegramEmail" = "Use %@";
-"Passport.Email.UseTelegramEmailHelp" = "Use the same address as on Telegram.";
+"Passport.Email.UseTelegramEmailHelp" = "Use the email address linked to your MixLink account.";
 "Passport.Email.EnterOtherEmail" = "OR ENTER NEW EMAIL ADDRESS";
 "Passport.Email.EmailPlaceholder" = "Enter your email address";
 "Passport.Email.Help" = "Note: You will receive a confirmation code to the email address you provide.";
@@ -3541,7 +3541,7 @@ Unused sets are archived when you add more.";
 "Passport.ScanPassport" = "Scan Your Passport";
 "Passport.ScanPassportHelp" = "Scan your passport or identity card with machine-readable zone to fill personal details automatically.";
 
-"TwoStepAuth.PasswordRemovePassportConfirmation" = "Are you sure you want to disable your password?\n\nWarning! All data saved in your Telegram Passport will be lost!";
+"TwoStepAuth.PasswordRemovePassportConfirmation" = "Are you sure you want to disable your password?\n\nWarning! All data saved in your MixLink Passport will be lost!";
 
 "Application.Update" = "Update";
 
@@ -3586,7 +3586,7 @@ Unused sets are archived when you add more.";
 
 "Passport.CorrectErrors" = "Tap to correct errors";
 
-"Passport.NotLoggedInMessage" = "Please log in to your account to use Telegram Passport";
+"Passport.NotLoggedInMessage" = "Please log in to your account to use MixLink Passport";
 
 "Update.Title" = "Telegram Update";
 "Update.AppVersion" = "Telegram %@";
@@ -3596,7 +3596,7 @@ Unused sets are archived when you add more.";
 "ReportPeer.ReasonCopyright" = "Copyright";
 
 "PrivacySettings.DataSettings" = "Data Settings";
-"PrivacySettings.DataSettingsHelp" = "Control which of your data is stored in the cloud and used by Telegram to enable advanced features.";
+"PrivacySettings.DataSettingsHelp" = "Control which of your data is stored in the cloud and used by MixLink to enable advanced features.";
 
 "PrivateDataSettings.Title" = "Data Settings";
 "Privacy.ChatsTitle" = "CHATS";
@@ -3880,7 +3880,7 @@ Unused sets are archived when you add more.";
 "Login.CodeExpired" = "Code expired, please login again.";
 "Login.CancelSignUpConfirmation" = "Do you want to stop the registration process?";
 
-"Passcode.AppLockedAlert" = "Telegram\nLocked";
+"Passcode.AppLockedAlert" = "MixLink\nLocked";
 
 "ChatList.ReadAll" = "Read All";
 "ChatList.Read" = "Read";
@@ -4432,7 +4432,7 @@ Unused sets are archived when you add more.";
 "ChatList.ClearChatConfirmation" = "Are you sure you want to delete all\nmessages in the chat with %@?";
 
 "Settings.CheckPhoneNumberTitle" = "Is %@ still your number?";
-"Settings.CheckPhoneNumberText" = "Keep your number up to date to ensure you can always log in to Telegram. [Learn more]()";
+"Settings.CheckPhoneNumberText" = "Keep your number up to date so you can always sign in to MixLink. [Learn more]()";
 "Settings.KeepPhoneNumber" = "Keep %@";
 "Settings.ChangePhoneNumber" = "Change Number";
 "Settings.CheckPhoneNumberFAQAnchor" = "q-i-have-a-new-phone-number-what-do-i-do";
@@ -4503,8 +4503,8 @@ Sorry for the inconvenience.";
 
 "Privacy.AddNewPeer" = "Add Users or Groups";
 "PrivacyPhoneNumberSettings.WhoCanSeeMyPhoneNumber" = "WHO CAN SEE MY PHONE NUMBER";
-"PrivacyPhoneNumberSettings.CustomHelp" = "Users who already have your number saved in the contacts will also see it on Telegram.";
-"PrivacyPhoneNumberSettings.CustomDisabledHelp" = "Users who add your number to their contacts will see it on Telegram only if they are your contacts.";
+"PrivacyPhoneNumberSettings.CustomHelp" = "Users who already have your number saved in their contacts can also see it in MixLink.";
+"PrivacyPhoneNumberSettings.CustomDisabledHelp" = "Users who add your number to their contacts can see it in MixLink only if they are your contacts.";
 
 "PrivacyPhoneNumberSettings.DiscoveryHeader" = "WHO CAN FIND ME BY MY NUMBER";
 
@@ -5127,8 +5127,8 @@ Sorry for the inconvenience.";
 "AuthSessions.AddDevice.ScanTitle" = "Scan QR Code";
 "AuthSessions.AddDevice.InvalidQRCode" = "Invalid QR Code";
 "AuthSessions.AddDeviceIntro.Title" = "Log in by QR Code";
-"AuthSessions.AddDeviceIntro.Text1" = "Download Telegram on your computer from [desktop.telegram.org]()";
-"AuthSessions.AddDeviceIntro.Text2" = "Run Telegram on your computer to get the QR code";
+"AuthSessions.AddDeviceIntro.Text1" = "Open a desktop app configured to use your MixLink server.";
+"AuthSessions.AddDeviceIntro.Text2" = "Display its QR code, then scan it here.";
 "AuthSessions.AddDeviceIntro.Text3" = "Scan the QR code to connect your account";
 "AuthSessions.AddDeviceIntro.Action" = "Scan QR Code";
 "AuthSessions.AddedDeviceTitle" = "Login Successful";
@@ -5147,7 +5147,7 @@ Sorry for the inconvenience.";
 "ChatList.Search.ShowMore" = "Show more";
 "ChatList.Search.ShowLess" = "Show less";
 
-"AuthSessions.OtherDevices" = "The official Telegram App is available for iPhone, iPad, Android, macOS, Windows and Linux. [Learn More]()";
+"AuthSessions.OtherDevices" = "Only apps configured to use your MixLink server can connect to this account.";
 
 "MediaPlayer.UnknownArtist" = "Unknown Artist";
 "MediaPlayer.UnknownTrack" = "Unknown Track";
@@ -5165,7 +5165,7 @@ Sorry for the inconvenience.";
 
 "Theme.Colors.Proceed" = "Proceed";
 
-"AuthSessions.AddDevice.UrlLoginHint" = "This code can be used to allow someone to log in to your Telegram account.\n\nTo confirm Telegram login, please go to Settings > Devices > Scan QR and scan the code.";
+"AuthSessions.AddDevice.UrlLoginHint" = "This code can be used to allow someone to log in to your MixLink account.\n\nTo confirm MixLink login, please go to Settings > Devices > Scan QR and scan the code.";
 
 "Appearance.RemoveThemeColor" = "Remove";
 "Appearance.RemoveThemeColorConfirmation" = "Remove Color";
@@ -6670,7 +6670,7 @@ Sorry for the inconvenience.";
 "Privacy.PaymentsClear.ShippingInfoCleared" = "Shipping info cleared.";
 "Privacy.PaymentsClear.AllInfoCleared" = "Payment and shipping info cleared.";
 
-"Settings.Tips" = "Telegram Features";
+"Settings.Tips" = "MixLink Features";
 "Settings.TipsUsername" = "TelegramTips";
 
 "Calls.NoVoiceAndVideoCallsPlaceholder" = "Your recent voice and video calls will appear here.";
@@ -7249,7 +7249,7 @@ Sorry for the inconvenience.";
 "Conversation.InviteRequestInfo" = "You received this message because you requested to join %1$@ on %2$@.";
 "Conversation.InviteRequestInfoConfirm" = "I understand";
 
-"AuthSessions.HeaderInfo" = "Link [Telegram Desktop](desktop) or [Telegram Web](web) by scanning a QR code.";
+"AuthSessions.HeaderInfo" = "Scan a QR code from a compatible desktop or web app to link that device.";
 "AuthSessions.LinkDesktopDevice" = "Link Desktop Device";
 "AuthSessions.AddDevice.ScanInstallInfo" = "Go to [getdesktop.telegram.org](desktop) or [web.telegram.org](web) to get the QR code";
 
@@ -7452,7 +7452,7 @@ Sorry for the inconvenience.";
 "Attachment.DeselectedItems_1" = "%@ item deselected";
 "Attachment.DeselectedItems_any" = "%@ items deselected";
 
-"PrivacyPhoneNumberSettings.CustomPublicLink" = "Users who have your number saved in their contacts will also see it on Telegram.\n\nThis public link opens a chat with you:\n[https://t.me/%@]()";
+"PrivacyPhoneNumberSettings.CustomPublicLink" = "Users who have your number saved in their contacts can also see it in MixLink.\n\nThis public link opens a chat with you:\n[https://t.me/%@]()";
 
 "DownloadList.DownloadingHeader" = "Downloading";
 "DownloadList.DownloadedHeader" = "Recently Downloaded";
@@ -7664,12 +7664,12 @@ Sorry for the inconvenience.";
 "Channel.AddUserKickedError" = "Sorry, you can't add this user because they are on the list of Removed Users and you can't unban them.";
 "Channel.AddAdminKickedError" = "Sorry, you can't add this user as an admin because they are in the Removed Users list and you can't unban them.";
 
-"Premium.Stickers.Description" = "Unlock this sticker and many more by subscribing to Telegram Premium.";
+"Premium.Stickers.Description" = "Unlock this sticker and many more by subscribing to MixLink Premium.";
 "Premium.Stickers.Proceed" = "Unlock Premium Stickers";
 
 "Premium.Reactions.Proceed" = "Unlock Premium Reactions";
 "Premium.AppIcons.Proceed" = "Unlock Premium Icons";
-"Premium.NoAds.Proceed" = "About Telegram Premium";
+"Premium.NoAds.Proceed" = "About MixLink Premium";
 
 "AccessDenied.LocationPreciseDenied" = "To share your specific location in this chat, please go to Settings > Privacy > Location Services > Telegram and set Precise Location to On.";
 
@@ -7699,19 +7699,19 @@ Sorry for the inconvenience.";
 "Premium.LimitReached" = "Limit Reached";
 "Premium.IncreaseLimit" = "Increase Limit";
 
-"Premium.MaxFoldersCountText" = "You have reached the limit of **%1$@** folders. You can double the limit to **%2$@** folders by subscribing to **Telegram Premium**.";
+"Premium.MaxFoldersCountText" = "You have reached the limit of **%1$@** folders. You can double the limit to **%2$@** folders by subscribing to **MixLink Premium**.";
 "Premium.MaxFoldersCountNoPremiumText" = "You have reached the limit of **%1$@** folders. We are working to let you increase this limit in the future.";
 "Premium.MaxFoldersCountFinalText" = "Sorry, you can't create more than **%1$@** folders.";
 
-"Premium.MaxChatsInFolderText" = "Sorry, you can't add more than **%1$@** chats to a folder. You can increase this limit to **%2$@** by upgrading to **Telegram Premium**.";
+"Premium.MaxChatsInFolderText" = "Sorry, you can't add more than **%1$@** chats to a folder. You can increase this limit to **%2$@** by upgrading to **MixLink Premium**.";
 "Premium.MaxChatsInFolderNoPremiumText" = "Sorry, you can't add more than **%1$@** chats to a folder. We are working to let you increase this limit in the future.";
 "Premium.MaxChatsInFolderFinalText" = "Sorry, you can't add more than **%@** chats to a folder.";
 
-"Premium.MaxFileSizeText" = "Double this limit to %@ per file by subscribing to **Telegram Premium**.";
+"Premium.MaxFileSizeText" = "Double this limit to %@ per file by subscribing to **MixLink Premium**.";
 "Premium.MaxFileSizeNoPremiumText" = "The document can't be sent, because it is larger than **%@**. We are working to let you increase this limit in the future.";
 "Premium.MaxFileSizeFinalText" = "The document can't be sent, because it is larger than **%@**.";
 
-"Premium.MaxPinsText" = "Sorry, you can't pin more than **%1$@** chats to the top. Unpin some that are currently pinned or subscribe to **Telegram Premium** to double the limit to **%2$@** chats.";
+"Premium.MaxPinsText" = "Sorry, you can't pin more than **%1$@** chats to the top. Unpin some that are currently pinned or subscribe to **MixLink Premium** to double the limit to **%2$@** chats.";
 "Premium.MaxPinsNoPremiumText" = "Sorry, you can't pin more than **%@** chats to the top. Unpin some that are currently pinned.";
 "Premium.MaxPinsFinalText" = "Sorry, you can't pin more than **%@** chats to the top. Unpin some that are currently pinned.";
 
@@ -7723,21 +7723,21 @@ Sorry for the inconvenience.";
 "Premium.MaxSavedGifsText" = "An older GIF was replaced with this one. You can [increase the limit]() to %@ GIFS.";
 "Premium.MaxSavedGifsFinalText" = "An older GIF was replaced with this one.";
 
-"Premium.MaxAccountsText" = "You have reached the limit of **%@** connected accounts. You can add more by subscribing to **Telegram Premium**.";
+"Premium.MaxAccountsText" = "You have reached the limit of **%@** connected accounts. You can add more by subscribing to **MixLink Premium**.";
 "Premium.MaxAccountsNoPremiumText" = "You have reached the limit of **%@** connected accounts.";
 "Premium.MaxAccountsFinalText" = "You have reached the limit of **%@** connected accounts.";
 
 "Premium.Free" = "Free";
 "Premium.Premium" = "Premium";
 
-"Premium.Title" = "Telegram Premium";
-"Premium.Description" = "Go **beyond the limits**, get **exclusive features** and support us by subscribing to **Telegram Premium**.";
+"Premium.Title" = "MixLink Premium";
+"Premium.Description" = "Unlock **exclusive features** and **expanded limits** with a MixLink Premium subscription.";
 
-"Premium.PersonalTitle" = "[%@]() is a subscriber\nof Telegram Premium";
-"Premium.PersonalDescription" = "Owners of **Telegram Premium** accounts have exclusive access to multiple additional features.";
+"Premium.PersonalTitle" = "[%@]() is a subscriber\nof MixLink Premium";
+"Premium.PersonalDescription" = "Owners of **MixLink Premium** accounts have exclusive access to multiple additional features.";
 
 "Premium.SubscribedTitle" = "You are all set!";
-"Premium.SubscribedDescription" = "Thank you for subsribing to **Telegram Premium**. Here's what is now unlocked.";
+"Premium.SubscribedDescription" = "Thank you for subsribing to **MixLink Premium**. Here's what is now unlocked.";
 
 "Premium.DoubledLimits" = "Doubled Limits";
 "Premium.DoubledLimitsInfo" = "Up to 1000 channels, 20 folders, 10 pins, 20 public links, 4 accounts and more.";
@@ -7747,48 +7747,48 @@ Sorry for the inconvenience.";
 
 "Premium.FasterSpeed" = "Faster Download Speed";
 "Premium.FasterSpeedInfo" = "No more limits on the speed with which media and documents are downloaded.";
-"Premium.FasterSpeedStandaloneInfo" = "Subscribe to **Telegram Premium** to download media and files at the fastest possible speed.";
+"Premium.FasterSpeedStandaloneInfo" = "Subscribe to **MixLink Premium** to download media and files at the fastest possible speed.";
 
 "Premium.VoiceToText" = "Voice-to-Text Conversion";
 "Premium.VoiceToTextInfo" = "Ability to read the transcript of any incoming voice message.";
-"Premium.VoiceToTextStandaloneInfo" = "Subscribe to **Telegram Premium** to be able to convert voice and video messages to text.";
+"Premium.VoiceToTextStandaloneInfo" = "Subscribe to **MixLink Premium** to be able to convert voice and video messages to text.";
 
 "Premium.NoAds" = "No Ads";
-"Premium.NoAdsInfo" = "No more ads in public channels where Telegram sometimes shows ads.";
-"Premium.NoAdsStandaloneInfo" = "Remove ads such as this one by subscribing to **Telegram Premium**.";
+"Premium.NoAdsInfo" = "Enjoy an ad-free experience in supported public channels.";
+"Premium.NoAdsStandaloneInfo" = "Remove ads such as this one by subscribing to **MixLink Premium**.";
 
 "Premium.Reactions" = "Unique Reactions";
 "Premium.ReactionsInfo" = "Additional animated reactions on messages, available only to Premium subscribers.";
 
 "Premium.ReactionsStandalone" = "Additional Reactions";
-"Premium.ReactionsStandaloneInfo" = "Unlock a wider range of reactions on messages by subscribing to **Telegram Premium**.";
+"Premium.ReactionsStandaloneInfo" = "Unlock a wider range of reactions on messages by subscribing to **MixLink Premium**.";
 
 "Premium.Stickers" = "Premium Stickers";
 "Premium.StickersInfo" = "Exclusive enlarged stickers featuring additional effects, updated monthly.";
 
 "Premium.ChatManagement" = "Advanced Chat Management";
 "Premium.ChatManagementInfo" = "Tools to set the default folder, auto-archive and hide new chats from non-contacts.";
-"Premium.ChatManagementStandaloneInfo" = "Subscribers of **Telegram Premium** can set the default folder, auto-archive and hide new chats from non-contacts.";
+"Premium.ChatManagementStandaloneInfo" = "Subscribers of **MixLink Premium** can set the default folder, auto-archive and hide new chats from non-contacts.";
 
 "Premium.Badge" = "Profile Badge";
-"Premium.BadgeInfo" = "A badge next to your name showing that you are helping support Telegram.";
+"Premium.BadgeInfo" = "A badge next to your name showing your support for MixLink.";
 
 "Premium.Avatar" = "Animated Profile Pictures";
 "Premium.AvatarInfo" = "Video avatars animated in chat lists and chats to allow for additional self-expression.";
 
-"Premium.AppIcon" = "Telegram App Icon";
-"Premium.AppIconInfo" = "Choose from a selection of Telegram app icons for your homescreen.";
+"Premium.AppIcon" = "MixLink App Icon";
+"Premium.AppIconInfo" = "Choose from a selection of MixLink app icons for your Home Screen.";
 
 "Premium.AppIconStandalone" = "Additional App Icons";
-"Premium.AppIconStandaloneInfo" = "Unlock a wider range of app icons by subscribing to **Telegram Premium**.";
+"Premium.AppIconStandaloneInfo" = "Unlock a wider range of app icons by subscribing to **MixLink Premium**.";
 
 "Premium.SubscribeFor" = "Subscribe for %@ / month";
 "Premium.SubscribeForAnnual" = "Subscribe for %@ / year";
 
-"Premium.AboutTitle" = "ABOUT TELEGRAM PREMIUM";
-"Premium.AboutText" = "While the free version of Telegram already gives its users more than any other messaging application, **Telegram Premium** pushes its capabilities even further.\n\n**Telegram Premium** is a paid option, because most Premium Features require additional expenses from Telegram to third parties such as data center providers and server manufacturers. Contributions from **Telegram Premium** users allow us to cover such costs and also help Telegram stay free for everyone.";
+"Premium.AboutTitle" = "ABOUT MIXLINK PREMIUM";
+"Premium.AboutText" = "MixLink Premium adds optional features and higher usage limits to the MixLink experience. The available features and subscription details are shown before purchase.";
 
-"Premium.Terms" = "By purchasing a Premium subscription, you agree to the Telegram [Terms of Service](terms) and [Privacy Policy](privacy).";
+"Premium.Terms" = "By purchasing a Premium subscription, you agree to the [Terms of Service](terms) and [Privacy Policy](privacy).";
 
 "Conversation.CopyProtectionSavingDisabledSecret" = "Saving is restricted";
 "Conversation.CopyProtectionForwardingDisabledSecret" = "Forwarding is restricted";
@@ -7849,7 +7849,7 @@ Sorry for the inconvenience.";
 "Premium.Restore.Success" = "Done";
 "Premium.Restore.ErrorUnknown" = "An error occurred. Please try again.";
 
-"Settings.Premium" = "Telegram Premium";
+"Settings.Premium" = "MixLink Premium";
 
 "Settings.AddAnotherAccount.PremiumHelp" = "You can add up to four accounts with different phone numbers.";
 
@@ -7925,9 +7925,9 @@ Sorry for the inconvenience.";
 
 "PeerInfo.GiftPremium" = "Gift Premium";
 
-"Premium.Gift.Title" = "Gift Telegram Premium";
-"Premium.Gift.Description" = "Let **%@** enjoy exclusive features of Telegram with **Telegram Premium**.";
-"Premium.Gift.Info" = "You can review the list of features and terms of use for Telegram Premium [here]().";
+"Premium.Gift.Title" = "Gift MixLink Premium";
+"Premium.Gift.Description" = "Let **%@** enjoy exclusive features of MixLink with **MixLink Premium**.";
+"Premium.Gift.Info" = "You can review the list of features and terms of use for MixLink Premium [here]().";
 "Premium.Gift.GiftSubscription" = "Gift Subscription for %@";
 
 "Premium.Gift.Months_1" = "%@ Month";
@@ -7936,16 +7936,16 @@ Sorry for the inconvenience.";
 "Premium.Gift.Years_1" = "%@ Year";
 "Premium.Gift.Years_any" = "%@ Years";
 
-"Premium.GiftedTitle" = "Telegram Premium";
+"Premium.GiftedTitle" = "MixLink Premium";
 
-"Premium.GiftedTitle.3Month" = "[%@]() has gifted you a 3-month subscription for Telegram Premium";
-"Premium.GiftedTitle.6Month" = "[%@]() has gifted you a 6-month subscription for Telegram Premium";
-"Premium.GiftedTitle.12Month" = "[%@]() has gifted you a 12-month subscription for Telegram Premium";
+"Premium.GiftedTitle.3Month" = "[%@]() has gifted you a 3-month subscription for MixLink Premium";
+"Premium.GiftedTitle.6Month" = "[%@]() has gifted you a 6-month subscription for MixLink Premium";
+"Premium.GiftedTitle.12Month" = "[%@]() has gifted you a 12-month subscription for MixLink Premium";
 "Premium.GiftedDescription" = "You now have access to additional features.";
 
-"Premium.GiftedTitleYou.3Month" = "You gifted [%@]() a 3-month subscription for Telegram Premium";
-"Premium.GiftedTitleYou.6Month" = "You gifted [%@]() a 6-month subscription for Telegram Premium";
-"Premium.GiftedTitleYou.12Month" = "You gifted [%@]() a 12-month subscription for Telegram Premium";
+"Premium.GiftedTitleYou.3Month" = "You gifted [%@]() a 3-month subscription for MixLink Premium";
+"Premium.GiftedTitleYou.6Month" = "You gifted [%@]() a 6-month subscription for MixLink Premium";
+"Premium.GiftedTitleYou.12Month" = "You gifted [%@]() a 12-month subscription for MixLink Premium";
 "Premium.GiftedDescriptionYou" = "They now have access to additional features.";
 
 "SettingsSearch.DeleteAccount.DeleteMyAccount" = " ";
@@ -7981,7 +7981,7 @@ Sorry for the inconvenience.";
 
 "Privacy.VoiceMessages" = "Voice Messages";
 
-"Privacy.VoiceMessages.Tooltip" = "Only subscribers of [Telegram Premium]() can restrict receiving voice messages.";
+"Privacy.VoiceMessages.Tooltip" = "Only subscribers of [MixLink Premium]() can restrict receiving voice messages.";
 
 "Privacy.VoiceMessages.WhoCanSend" = "WHO CAN SEND ME VOICE MESSAGES";
 "Privacy.VoiceMessages.CustomHelp" = "You can restrict who can send you voice messages with granular precision.";
@@ -8100,7 +8100,7 @@ Sorry for the inconvenience.";
 
 "Premium.EmojiStatusShortTitle" = "This is %1$@'s current status.";
 "Premium.EmojiStatusTitle" = "This is %1$@'s current status from #[%2$@]().";
-"Premium.EmojiStatusText" = "Emoji status is a premium feature.\n Other features included in **Telegram Premium**:";
+"Premium.EmojiStatusText" = "Emoji status is a premium feature.\n Other features included in **MixLink Premium**:";
 
 "Login.SelectCountry" = "Country";
 
@@ -8125,9 +8125,9 @@ Sorry for the inconvenience.";
 "Login.WrongCodeError" = "Wrong code, please try again.";
 
 "PrivacySettings.LoginEmail" = "Login Email";
-"PrivacySettings.LoginEmailInfo" = "Change your email address for Telegram login codes.";
+"PrivacySettings.LoginEmailInfo" = "Change your email address for MixLink login codes.";
 "Login.EmailChanged" = "Your email has been changed.";
-"PrivacySettings.LoginEmailAlertText" = "This email address will be used every time you login to your Telegram account from a new device.";
+"PrivacySettings.LoginEmailAlertText" = "This email address will be used every time you login to your MixLink account from a new device.";
 "PrivacySettings.LoginEmailAlertChange" = "Change Email";
 
 "Login.InvalidEmailAddressError" = "An error occurred. Please try again.";
@@ -8365,8 +8365,8 @@ Sorry for the inconvenience.";
 "DownloadList.IncreaseSpeed" = "Increase Speed";
 "Conversation.IncreaseSpeed" = "Increase Speed";
 
-"Premium.ChatManagement.Proceed" = "About Telegram Premium";
-"Premium.FasterSpeed.Proceed" = "About Telegram Premium";
+"Premium.ChatManagement.Proceed" = "About MixLink Premium";
+"Premium.FasterSpeed.Proceed" = "About MixLink Premium";
 
 "OwnershipTransfer.EnterPassword" = "Enter Password";
 "OwnershipTransfer.EnterPasswordText" = "Please enter your 2-Step Verification password to confirm the action.";
@@ -8806,7 +8806,7 @@ Sorry for the inconvenience.";
 "AvatarEditor.Set" = "Set";
 "AvatarEditor.Suggest" = "Suggest";
 
-"Premium.UpgradeDescription" = "Your current **Telegram Premium** plan can be upgraded at a **discount**.";
+"Premium.UpgradeDescription" = "Your current **MixLink Premium** plan can be upgraded at a **discount**.";
 "Premium.CurrentPlan" = "your current plan";
 "Premium.UpgradeFor" = "Upgrade for %@ / month";
 "Premium.UpgradeForAnnual" = "Upgrade for %@ / year";
@@ -8817,15 +8817,15 @@ Sorry for the inconvenience.";
 "ChatList.PremiumAnnualUpgradeTitle" = "Save on your subscription up to %@";
 "ChatList.PremiumAnnualUpgradeText" = "Upgrade to the annual payment plan for Telegram Premium to enjoy the discount.";
 
-"Premium.Emoji.Description" = "Unlock this emoji and many more by subscribing to Telegram Premium.";
+"Premium.Emoji.Description" = "Unlock this emoji and many more by subscribing to MixLink Premium.";
 "Premium.Emoji.Proceed" = "Unlock Premium Emoji";
 
 "Localization.TranslateEntireChat" = "Translate Entire Chat";
 
 "Premium.Translation" = "Real-Time Translation";
 "Premium.TranslationInfo" = "Real-time translation of channels and chats into other languages.";
-"Premium.TranslationStandaloneInfo" = "Subscribe to **Telegram Premium** to be able to translate all messages in a chat at once.";
-"Premium.Translation.Proceed" = "About Telegram Premium";
+"Premium.TranslationStandaloneInfo" = "Subscribe to **MixLink Premium** to be able to translate all messages in a chat at once.";
+"Premium.Translation.Proceed" = "About MixLink Premium";
 
 "Settings.PauseMusicOnRecording" = "Pause Music While Recoding";
 
@@ -8973,7 +8973,7 @@ Sorry for the inconvenience.";
 
 "Login.CodeSentCallText" = "Calling **%@** to dictate the code.";
 
-"Premium.Purchase.OnlyOneSubscriptionAllowed" = "You have already purchased Telegram Premium for another account. You can only have one Telegram Premium subscription on one Apple ID.";
+"Premium.Purchase.OnlyOneSubscriptionAllowed" = "You have already purchased MixLink Premium for another account. You can only have one MixLink Premium subscription on one Apple ID.";
 
 "Call.VoiceOver.Minimize" = "Minimize Call";
 
@@ -9121,7 +9121,7 @@ Sorry for the inconvenience.";
 
 "Attachment.Gift" = "Gift";
 
-"Premium.Gift.TitleShort" = "Telegram Premium";
+"Premium.Gift.TitleShort" = "MixLink Premium";
 
 "VoiceOver.GiftPremium" = "Gift Telegram Premium";
 
@@ -9182,11 +9182,11 @@ Sorry for the inconvenience.";
 "Wallpaper.ApplyForAll" = "Apply For All Chats";
 "Wallpaper.ApplyForChat" = "Apply For This Chat";
 
-"Premium.MaxSharedFolderMembershipText" = "You can only add **%1$@** shareable folders. Upgrade to **Telegram Premium** to increase this limit up to **%2$@**.";
+"Premium.MaxSharedFolderMembershipText" = "You can only add **%1$@** shareable folders. Upgrade to **MixLink Premium** to increase this limit up to **%2$@**.";
 "Premium.MaxSharedFolderMembershipNoPremiumText" = "You can only add **%1$@** shareable folders. We are working to let you increase this limit in the future.";
 "Premium.MaxSharedFolderMembershipFinalText" = "Sorry, you can only add **%1$@** shareable folders.";
 
-"Premium.MaxSharedFolderLinksText" = "You can only create **%1$@** invite links. Upgrade to **Telegram Premium** to increase the links limit to **%2$@**.";
+"Premium.MaxSharedFolderLinksText" = "You can only create **%1$@** invite links. Upgrade to **MixLink Premium** to increase the links limit to **%2$@**.";
 "Premium.MaxSharedFolderLinksNoPremiumText" = "You can only create **%1$@** invite links. We are working to let you increase this limit in the future.";
 "Premium.MaxSharedFolderLinksFinalText" = "Sorry, you can only create **%1$@** invite links";
 
@@ -9204,7 +9204,7 @@ Sorry for the inconvenience.";
 
 "Conversation.OpenChatFolder" = "VIEW CHAT LIST";
 
-"Premium.MaxChannelsText" = "You can only join **%1$@** groups and channels. Upgrade to **Telegram Premium** to increase the links limit to **%2$@**.";
+"Premium.MaxChannelsText" = "You can only join **%1$@** groups and channels. Upgrade to **MixLink Premium** to increase the links limit to **%2$@**.";
 "Premium.MaxChannelsNoPremiumText" = "You can only join **%1$@** groups and channels. We are working to let you increase this limit in the future.";
 "Premium.MaxChannelsFinalText" = "Sorry, you can only join **%1$@** groups and channels";
 
@@ -9851,11 +9851,11 @@ Sorry for the inconvenience.";
 "Premium.Stories.Format.Title" = "Links and Formatting";
 "Premium.Stories.Format.Text" = "Add links and formatting in captions to your stories.";
 
-"Premium.MaxStoriesWeeklyText" = "You can post **%@** stories in a week. Upgrade to **Telegram Premium** to increase this limit to **%@**.";
+"Premium.MaxStoriesWeeklyText" = "You can post **%@** stories in a week. Upgrade to **MixLink Premium** to increase this limit to **%@**.";
 "Premium.MaxStoriesWeeklyNoPremiumText" = "You have reached the limit of **%@** stories per week.";
 "Premium.MaxStoriesWeeklyFinalText" = "You have reached the limit of **%@** stories per week.";
 
-"Premium.MaxStoriesMonthlyText" = "You can post **%@** stories in a month. Upgrade to **Telegram Premium** to increase this limit to **%@**.";
+"Premium.MaxStoriesMonthlyText" = "You can post **%@** stories in a month. Upgrade to **MixLink Premium** to increase this limit to **%@**.";
 "Premium.MaxStoriesMonthlyNoPremiumText" = "You have reached the limit of **%@** stories per month.";
 "Premium.MaxStoriesMonthlyFinalText" = "You have reached the limit of **%@** stories per month.";
 
@@ -10209,8 +10209,8 @@ Sorry for the inconvenience.";
 "Chat.ErrorQuoteOutdatedText" = "**%@** updated the message you are quoting. Edit your quote to make it up-to-date.";
 "Chat.ErrorQuoteOutdatedActionEdit" = "Edit";
 
-"Premium.BoostByGiftDescription" = "Boost your channel by gifting your subscribers Telegram Premium. [Get boosts >]()";
-"Premium.BoostByGiftDescription2" = "Boost your channel by gifting your subscribers Telegram Premium. [Get boosts >]()";
+"Premium.BoostByGiftDescription" = "Boost your channel by gifting your subscribers MixLink Premium. [Get boosts >]()";
+"Premium.BoostByGiftDescription2" = "Boost your channel by gifting your subscribers MixLink Premium. [Get boosts >]()";
 
 "ChatContextMenu.QuoteSelectionTip" = "Hold on a word, then move cursor to select more| text to quote.";
 
@@ -10564,9 +10564,9 @@ Sorry for the inconvenience.";
 "Wallpaper.ApplyForMe" = "Apply for Me";
 "Wallpaper.ApplyForBoth" = "Apply for Me and %@";
 
-"Premium.VoiceToText.Proceed" = "About Telegram Premium";
-"Premium.Wallpaper.Proceed" = "About Telegram Premium";
-"Premium.Colors.Proceed" = "About Telegram Premium";
+"Premium.VoiceToText.Proceed" = "About MixLink Premium";
+"Premium.Wallpaper.Proceed" = "About MixLink Premium";
+"Premium.Colors.Proceed" = "About MixLink Premium";
 
 "Notification.YouChangedWallpaperBoth" = "You set a new wallpaper for %@ and you.";
 
@@ -10719,7 +10719,7 @@ Sorry for the inconvenience.";
 
 "Story.ViewList.ContextSortChannelInfo" = "Choose the order for the list of reactions.";
 
-"Premium.Gift.MultipleDescription" = "Give %1$@%2$@ access to exclusive features with **Telegram Premium**.";
+"Premium.Gift.MultipleDescription" = "Give %1$@%2$@ access to exclusive features with **MixLink Premium**.";
 
 "Premium.Gift.NamesAndMore_1" = " and %@ more";
 "Premium.Gift.NamesAndMore_any" = " and %@ more";
@@ -10748,7 +10748,7 @@ Sorry for the inconvenience.";
 
 "Story.ViewMessage" = "View Message";
 
-"Premium.Gift.Terms" = "By gifting Telegram Premium, you agree to the Telegram [Terms of Service](terms) and [Privacy Policy](privacy).";
+"Premium.Gift.Terms" = "By gifting a Premium subscription, you agree to the [Terms of Service](terms) and [Privacy Policy](privacy).";
 "Premium.Gift.Sent.One.Title" = "Gift Sent!";
 "Premium.Gift.Sent.One.Text" = "%@ has been notified about the gift you purchased.\n\nThey now have access to additional features.";
 "Premium.Gift.Sent.Multiple.Title" = "Gifts Sent!";
@@ -10757,11 +10757,11 @@ Sorry for the inconvenience.";
 "Premium.Gift.Sent.Close" = "Close";
 
 "Premium.Gift.ApplyLink" = "Apply for Free";
-"Premium.Gift.ApplyLink.AlreadyHasPremium.Title" = "You already have Telegram Premium";
+"Premium.Gift.ApplyLink.AlreadyHasPremium.Title" = "You already have MixLink Premium";
 "Premium.Gift.ApplyLink.AlreadyHasPremium.Text" = "You can activate this gift link after **%@** or [send the link]() to a friend.";
 
-"Premium.Gift.Link.Text" = "This link allows you or [anyone you choose]() to activate a **Telegram Premium** subscription.";
-"Premium.Gift.UsedLink.Text" = "This link was used to activate a **Telegram Premium** subscription.";
+"Premium.Gift.Link.Text" = "This link allows you or [anyone you choose]() to activate a **MixLink Premium** subscription.";
+"Premium.Gift.UsedLink.Text" = "This link was used to activate a **MixLink Premium** subscription.";
 
 "Premium.WhatsIncluded" = "WHAT'S INCLUDED";
 
@@ -10924,7 +10924,7 @@ Sorry for the inconvenience.";
 "Chat.ConfirmationDeleteFromSavedMessages" = "Delete from Saved Messages";
 "Chat.ConfirmationRemoveFromSavedMessages" = "Remove from Saved Messages";
 
-"Premium.MaxSavedPinsText" = "Sorry, you can't pin more than **%1$@** chats to the top. Unpin some that are currently pinned or subscribe to **Telegram Premium** to double the limit to **%2$@** chats.";
+"Premium.MaxSavedPinsText" = "Sorry, you can't pin more than **%1$@** chats to the top. Unpin some that are currently pinned or subscribe to **MixLink Premium** to double the limit to **%2$@** chats.";
 "Premium.MaxSavedPinsNoPremiumText" = "Sorry, you can't pin more than **%@** chats to the top. Unpin some that are currently pinned.";
 "Premium.MaxSavedPinsFinalText" = "Sorry, you can't pin more than **%@** chats to the top. Unpin some that are currently pinned.";
 
@@ -10970,9 +10970,9 @@ Sorry for the inconvenience.";
 "Privacy.Messages.ValueEveryone" = "Everybody";
 "Privacy.Messages.ValueContactsAndPremium" = "My Contacts and Premium Users";
 "Privacy.Messages.SectionFooter" = "You can restrict incoming messages to only contacts and Premium users.";
-"Privacy.Messages.PremiumInfoFooter" = "[What is Telegram Premium?]()";
+"Privacy.Messages.PremiumInfoFooter" = "[What is MixLink Premium?]()";
 "Privacy.Messages.PremiumToast.Title" = "Premium Required";
-"Privacy.Messages.PremiumToast.Text" = "Subscribe to **Telegram Premium** to select this option";
+"Privacy.Messages.PremiumToast.Text" = "Subscribe to **MixLink Premium** to select this option";
 "Privacy.Messages.PremiumToast.Action" = "Add";
 
 "Settings.Privacy.Messages" = "Messages";
@@ -10985,8 +10985,8 @@ Sorry for the inconvenience.";
 "Settings.Privacy.LastSeenRevealedToast" = "Your last seen time is now visible.";
 "Settings.Privacy.MessageReadTimeRevealedToast" = "Your read times are now visible.";
 
-"Settings.Privacy.ReadTimePremium" = "Subscribe to Telegram Premium";
-"Settings.Privacy.ReadTimePremiumFooter" = "It you subscribe to Telegram Premium, you will still see other users' last seen and read time even if you hid yours from them (unless they specifically restricted it).";
+"Settings.Privacy.ReadTimePremium" = "Subscribe to MixLink Premium";
+"Settings.Privacy.ReadTimePremiumFooter" = "With MixLink Premium, you can see other users' last-seen and read times even if you hide yours from them, unless they specifically restrict it.";
 
 "Chat.ToastMessagingRestrictedToPremium.Text" = "**%@** only accepts messages from contacts and **Premium** users.";
 "Chat.ToastMessagingRestrictedToPremium.Action" = "View";
@@ -11034,10 +11034,10 @@ Sorry for the inconvenience.";
 "Chat.PrivateMessageSeenTimestamp.TodayAt" = "read today at %@";
 "Chat.PrivateMessageSeenTimestamp.YesterdayAt" = "read yesterday at %@";
 
-"Settings.Privacy.ReadTimePremiumActive" = "Subcribed to Telegram Premium";
-"Settings.Privacy.ReadTimePremiumActiveFooter" = "Because you are a Telegram Premium subscriber, you will see the last seen and read time of all users who are sharing it with you – even if you are hiding yours.";
+"Settings.Privacy.ReadTimePremiumActive" = "Subscribed to MixLink Premium";
+"Settings.Privacy.ReadTimePremiumActiveFooter" = "As a MixLink Premium subscriber, you can see the last-seen and read times shared with you, even if you hide yours.";
 
-"Privacy.VoiceMessages.NonPremiumHelp" = "Subscribe to Telegram Premium to restrict who can send you voice or video messages.\n\n[What is Telegram Premium?]()";
+"Privacy.VoiceMessages.NonPremiumHelp" = "Subscribe to MixLink Premium to restrict who can send you voice or video messages.\n\n[What is MixLink Premium?]()";
 
 "ChatList.DeleteSavedPeerMyNotesConfirmation" = "Are you sure you want to delete all messages from %@?";
 "ChatList.DeleteSavedPeerMyNotesConfirmationTitle" = "My Notes";
@@ -11106,7 +11106,7 @@ Sorry for the inconvenience.";
 "ChannelBoost.Table.Group.Wallpaper_any" = "%@ Group Backgrounds";
 "ChannelBoost.Table.Group.CustomWallpaper" = "Custom Group Background";
 
-"Premium.Group.BoostByGiftDescription" = "Boost your group by gifting your members Telegram Premium. [Get boosts >]()";
+"Premium.Group.BoostByGiftDescription" = "Boost your group by gifting your members MixLink Premium. [Get boosts >]()";
 
 "Conversation.BoostGroup" = "BOOST";
 
@@ -11115,7 +11115,7 @@ Sorry for the inconvenience.";
 
 "Premium.MessageTags" = "Tags for Messages";
 "Premium.MessageTagsInfo" = "Organize your Saved Messages with tags for quicker access.";
-"Premium.MessageTags.Proceed" = "About Telegram Premium";
+"Premium.MessageTags.Proceed" = "About MixLink Premium";
 
 "Chat.SavedMessagesTabInfoText" = "Messages you send to [Saved Messages]()";
 
@@ -11181,11 +11181,11 @@ Sorry for the inconvenience.";
 
 "Premium.LastSeen" = "Last Seen Times";
 "Premium.LastSeenInfo" = "View the last seen and read times of others even if you hide yours.";
-"Premium.LastSeen.Proceed" = "About Telegram Premium";
+"Premium.LastSeen.Proceed" = "About MixLink Premium";
 
 "Premium.MessagePrivacy" = "Message Privacy";
 "Premium.MessagePrivacyInfo" = "Restrict people you don't know from sending you messages.";
-"Premium.MessagePrivacy.Proceed" = "About Telegram Premium";
+"Premium.MessagePrivacy.Proceed" = "About MixLink Premium";
 
 "BoostGift.GroupsAndChannelsTitle" = "INCLUDED GROUPS AND CHANNELS";
 "BoostGift.GroupsAndChannelsInfo" = "Choose additional groups or channels users need to join to take part in the giveaway.";
@@ -11391,11 +11391,11 @@ Sorry for the inconvenience.";
 "ChannelBoost.Header.Features" = "features";
 
 "Premium.FolderTags" = "Folder Tags";
-"Premium.FolderTagsInfo" = "Add colorful labels to chats for faster access with Telegram Premium.";
-"Premium.FolderTagsStandaloneInfo" = "Add colorful labels to chats for faster access with Telegram Premium.";
-"Premium.FolderTags.Proceed" = "About Telegram Premium";
+"Premium.FolderTagsInfo" = "Add colorful labels to chats for faster access with MixLink Premium.";
+"Premium.FolderTagsStandaloneInfo" = "Add colorful labels to chats for faster access with MixLink Premium.";
+"Premium.FolderTags.Proceed" = "About MixLink Premium";
 
-"Premium.Business" = "Telegram Business";
+"Premium.Business" = "MixLink Business";
 "Premium.BusinessInfo" = "Upgrade your account with business features such as location, opening hours and quick replies.";
 
 "Premium.Business.Location.Title" = "Location";
@@ -11422,9 +11422,9 @@ Sorry for the inconvenience.";
 "Premium.Business.Chatbots.Title" = "Chatbots";
 "Premium.Business.Chatbots.Text" = "Add any third party chatbots that will process customer interactions.";
 
-"Business.Title" = "Telegram Business";
-"Business.Description" = "Turn your account into a **business page** with these additional features.";
-"Business.SubscribedDescription" = "You have now unlocked these additional business features.";
+"Business.Title" = "MixLink Business";
+"Business.Description" = "Upgrade your account with these additional business features.";
+"Business.SubscribedDescription" = "Business features are now available on your account.";
 
 "Business.Location" = "Location";
 "Business.OpeningHours" = "Opening Hours";
@@ -11465,7 +11465,7 @@ Sorry for the inconvenience.";
 
 "Conversation.BoostToUnrestrictText" = "Boost this group to send messages";
 
-"Settings.Business" = "Telegram Business";
+"Settings.Business" = "MixLink Business";
 
 "Story.Editor.DiscardText" = "If you go back now, you will lose any changes you made.";
 
@@ -11967,7 +11967,7 @@ Sorry for the inconvenience.";
 
 "Business.AdsTitle" = "ADS IN CHANNELS";
 "Business.DontHideAds" = "Do Not Hide Ads";
-"Business.AdsInfo" = "As a Premium subscriber, you don't see any ads on Telegram, but you can turn them on, for example, to view your own ads that you launched on the [Telegram Ad Platform >]()";
+"Business.AdsInfo" = "As a Premium subscriber, ads are hidden in supported areas. Available ad preferences can be managed in this section.";
 "Business.AdsInfo_URL" = "https://promote.telegram.org";
 
 "ChatList.PremiumGraceTitle" = "⚠️ Don't lose access to Telegram Premium!";
@@ -13946,11 +13946,11 @@ Sorry for the inconvenience.";
 
 "Privacy.Messages.Stars_1" = "%@ Star";
 "Privacy.Messages.Stars_any" = "%@ Stars";
-"Privacy.Messages.Unlock" = "Unlock with Telegram Premium";
+"Privacy.Messages.Unlock" = "Unlock with MixLink Premium";
 
 "Premium.PaidMessages" = "Paid Messages";
 "Premium.PaidMessagesInfo" = "Charge a fee for messages from non-contacts or new senders.";
-"Premium.PaidMessages.Proceed" = "About Telegram Premium";
+"Premium.PaidMessages.Proceed" = "About MixLink Premium";
 
 "PeerInfo.Gifts.Reorder" = "Reorder";
 "PeerInfo.Gifts.Context.Pin" = "Pin";
@@ -14053,7 +14053,7 @@ Sorry for the inconvenience.";
 "Premium.MaxExpiringStoriesTextNumberFormat_any" = "**%d** stories";
 "Premium.MaxExpiringStoriesTextPremiumNumberFormat_1" = "**%d** story";
 "Premium.MaxExpiringStoriesTextPremiumNumberFormat_any" = "**%d** stories";
-"Premium.MaxExpiringStoriesTextFormat" = "You can post %@ in **24** hours. Subscribe to **Telegram Premium** to increase this limit to **%@**.";
+"Premium.MaxExpiringStoriesTextFormat" = "You can post %@ in **24** hours. Subscribe to **MixLink Premium** to increase this limit to **%@**.";
 
 "Premium.MaxExpiringStoriesNoPremiumTextNumberFormat_1" = "**%d** story";
 "Premium.MaxExpiringStoriesNoPremiumTextNumberFormat_any" = "**%d** stories";
@@ -14066,7 +14066,7 @@ Sorry for the inconvenience.";
 "Stars.AccountRevenue.Proceeds.Info" = "Stars from your total balance can be withdrawn as rewards 21 days after they are earned.";
 "Stars.AccountRevenue.Withdraw.Info" = "You can collect rewards for Stars using Fragment. You cannot withdraw less than 1000 stars. [Learn More >]()";
 
-"Privacy.Gifts.PremiumToast.Text" = "Subscribe to **Telegram Premium** to use this setting.";
+"Privacy.Gifts.PremiumToast.Text" = "Subscribe to **MixLink Premium** to use this setting.";
 "Privacy.Gifts.PremiumToast.Action" = "Open";
 
 "Gift.Send.ErrorDisallowed" = "**%@** doesn't accept this kind of gifts.";
@@ -14623,10 +14623,10 @@ Sorry for the inconvenience.";
 "BalanceNeeded.FragmentSubtitle" = "You can add funds to your balance via the third-party platform Fragment.";
 "BalanceNeeded.FragmentAction" = "Add Funds via Fragment";
 
-"Settings.Ton.Description" = "Use GRAM to submit post suggestions to channels on Telegram.";
+"Settings.Ton.Description" = "Use GRAM to submit post suggestions to channels on MixLink.";
 
 "Settings.TransactionsTon.Title" = "GRAM";
-"Settings.TransactionsTon.Subtitle" = "Use GRAM to submit post suggestions to channels on Telegram.";
+"Settings.TransactionsTon.Subtitle" = "Use GRAM to submit post suggestions to channels on MixLink.";
 
 "Chat.DeletePaidMessageStars.Title" = "Stars Will Be Lost";
 "Chat.DeletePaidMessageStars.Text" = "You won't receive **Stars** for this post if you delete it now. The post must remain visible for at least **24 hours** after publication.";
@@ -14690,7 +14690,7 @@ Sorry for the inconvenience.";
 "Stars.SellGiftMinAmountToast.Text" = "You cannot sell gift for less than %@";
 
 "Premium.Week.SignUp" = "Sign up for %@";
-"Premium.Week.SignUpInfo" = "Get Telegram Premium for 1 week";
+"Premium.Week.SignUpInfo" = "Get MixLink Premium for 1 week";
 
 "Settings.MyTon" = "My GRAM";
 
@@ -14808,7 +14808,7 @@ Sorry for the inconvenience.";
 "Gift.Buy.PayInTon.Tooltip" = "Pay with GRAM to skip the 21-day wait before transferring the gift again.";
 
 "Premium.PremiumGift.Title" = "Premium Gift";
-"Premium.PremiumGift.Description" = "Subscribe to **Telegram Premium** to send up to **5** of these gifts and unlock access to multiple additional features.";
+"Premium.PremiumGift.Description" = "Subscribe to **MixLink Premium** to send up to **5** of these gifts and unlock access to multiple additional features.";
 
 "Stars.SellGift.TonAmountTitle" = "PRICE IN GRAM";
 "Stars.SellGift.OnlyTon" = "Only Accept GRAM";
@@ -15211,7 +15211,7 @@ Error: %8$@";
 "Gift.Setup.AuctionInfo.Bidders_1" = "%@ bidder";
 "Gift.Setup.AuctionInfo.Bidders_any" = "%@ bidders";
 
-"PrivacySettings.LoginEmailSetupInfo" = "Setup your email address for Telegram login codes.";
+"PrivacySettings.LoginEmailSetupInfo" = "Setup your email address for MixLink login codes.";
 
 "LoginEmail.Title" = "Add Email";
 "LoginEmail.Description" = "Please add your email address to keep access to your account.";
@@ -16292,10 +16292,10 @@ Error: %8$@";
 "Chat.AdminAction.ToastReactionsDeletedTextMultiple" = "Reactions Deleted.";
 "Chat.AdminAction.ToastMessagesAndReactionsDeletedText" = "Messages and reactions deleted.";
 
-"Premium.SignUp.SignUpNewInfo" = "Get Telegram Premium for %@";
+"Premium.SignUp.SignUpNewInfo" = "Get MixLink Premium for %@";
 "Premium.SignUp.SignUpNewInfo.Days_1" = "%@ day";
 "Premium.SignUp.SignUpNewInfo.Days_any" = "%@ days";
-"Premium.SignUp.SignUpNewInfoNone" = "Get Telegram Premium";
+"Premium.SignUp.SignUpNewInfoNone" = "Get MixLink Premium";
 
 "Login.Fee.Support.NewText.Days_1" = "%@ day";
 "Login.Fee.Support.NewText.Days_any" = "%@ days";

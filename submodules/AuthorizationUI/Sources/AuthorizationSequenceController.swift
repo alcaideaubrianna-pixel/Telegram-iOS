@@ -47,6 +47,7 @@ public final class AuthorizationSequenceController: NavigationController, ASAuth
     
     private var stateDisposable: Disposable?
     private let actionDisposable = MetaDisposable()
+    private let defaultLocalizationDisposable = MetaDisposable()
     private var applicationStateDisposable: Disposable?
     
     private var didPlayPresentationAnimation = false
@@ -82,6 +83,12 @@ public final class AuthorizationSequenceController: NavigationController, ASAuth
         }
         
         super.init(mode: .single, theme: NavigationControllerTheme(statusBar: navigationStatusBar, navigationBar: AuthorizationSequenceController.navigationBarTheme(presentationData.theme), emptyAreaColor: .black), isFlat: true)
+
+        let systemLanguageCode = defaultPresentationStrings.primaryComponent.languageCode
+        if systemLanguageCode == "zh-hans" && presentationData.strings.primaryComponent.languageCode == "en" {
+            self.presentationData = presentationData.withStrings(defaultPresentationStrings)
+            self.defaultLocalizationDisposable.set(self.engine.localization.downloadAndApplyLocalization(accountManager: sharedContext.accountManager, languageCode: systemLanguageCode).start())
+        }
         
         self.inAppPurchaseManager = InAppPurchaseManager(engine: .unauthorized(self.engine))
         
@@ -120,6 +127,7 @@ public final class AuthorizationSequenceController: NavigationController, ASAuth
     deinit {
         self.stateDisposable?.dispose()
         self.actionDisposable.dispose()
+        self.defaultLocalizationDisposable.dispose()
         self.applicationStateDisposable?.dispose()
     }
     

@@ -72,7 +72,7 @@ public final class AuthorizationSequenceSplashController: ViewController {
         
         self.controller = RMIntroViewController(backgroundColor: theme.list.plainBackgroundColor, primaryColor: theme.list.itemPrimaryTextColor, buttonColor: theme.intro.startButtonColor, accentColor: theme.list.itemAccentColor, regularDotColor: theme.intro.dotColor, highlightedDotColor: theme.list.itemAccentColor, suggestedLocalizationSignal: localizationSignal)
         
-        self.startButton = SolidRoundedButtonNode(title: "Start Messaging", theme: SolidRoundedButtonTheme(theme: theme), glass: false, height: 50.0, cornerRadius: 50.0 * 0.5, isShimmering: true)
+        self.startButton = SolidRoundedButtonNode(title: defaultPresentationStrings.Tour_StartButton, theme: SolidRoundedButtonTheme(theme: theme), glass: false, height: 50.0, cornerRadius: 50.0 * 0.5, isShimmering: true)
         self.startButton.accessibilityIdentifier = "Auth.Welcome.StartButton"
 
         super.init(navigationBarPresentationData: nil)
@@ -82,9 +82,11 @@ public final class AuthorizationSequenceSplashController: ViewController {
         self.supportedOrientations = ViewControllerSupportedOrientations(regularSize: .all, compactSize: .portrait)
         
         self.statusBar.statusBarStyle = theme.intro.statusBarStyle.style
+
+        let defaultLocalizationCode = defaultPresentationStrings.primaryComponent.languageCode
         
         self.controller.startMessaging = { [weak self] in
-            self?.activateLocalization("en")
+            self?.activateLocalization(defaultLocalizationCode)
         }
         self.controller.startMessagingInAlternativeLanguage = { [weak self] code in
             if let code = code {
@@ -93,7 +95,7 @@ public final class AuthorizationSequenceSplashController: ViewController {
         }
         
         self.startButton.pressed = { [weak self] in
-            self?.activateLocalization("en")
+            self?.activateLocalization(defaultLocalizationCode)
         }
         
         self.controller.createStartButton = { [weak self] width in
@@ -193,7 +195,7 @@ public final class AuthorizationSequenceSplashController: ViewController {
             if let current = transaction.getSharedData(SharedDataKeys.localizationSettings)?.get(LocalizationSettings.self) {
                 return current.primaryComponent.languageCode
             } else {
-                return "en"
+                return defaultPresentationStrings.primaryComponent.languageCode
             }
         }
         let suggestedCode = self.suggestedLocalization.get()

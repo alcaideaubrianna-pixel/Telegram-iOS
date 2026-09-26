@@ -401,23 +401,23 @@
 "Date.ChatDateHeaderYear" = "%3$@年%1$@%2$@日";
 
 // Tour
-"Tour.Title1" = "Telegram";
-"Tour.Text1" = "世界上**最快的**聊天工具\n**免费**又**安全**";
+"Tour.Title1" = "MixLink";
+"Tour.Text1" = "和重要的人\n随时保持联系。";
 
-"Tour.Title2" = "快速";
-"Tour.Text2" = "**Telegram** 收发信息\n比任何应用都快";
+"Tour.Title2" = "轻松沟通";
+"Tour.Text2" = "轻松开启对话，\n让交流自然发生。";
 
-"Tour.Title3" = "强大";
-"Tour.Text3" = "**Telegram** 不论消息或是媒体文件\n都无大小限制";
+"Tour.Title3" = "自由分享";
+"Tour.Text3" = "在聊天中发送消息、照片和文件。";
 
-"Tour.Title4" = "安全";
-"Tour.Text4" = "**Telegram** 保障您的消息安全\n免受黑客攻击";
+"Tour.Title4" = "隐私设置";
+"Tour.Text4" = "灵活管理隐私设置，\n安心掌控交流方式。";
 
-"Tour.Title5" = "云端";
-"Tour.Text5" = "**Telegram** 让您能从\n多个设备收发消息。";
+"Tour.Title5" = "多端同步";
+"Tour.Text5" = "在已登录的设备间\n继续查看和发送消息。";
 
-"Tour.Title6" = "免费";
-"Tour.Text6" = "**Telegram** 提供免费无限量的聊天与媒体的云端存储。";
+"Tour.Title6" = "一处畅聊";
+"Tour.Text6" = "让聊天与分享的媒体\n都集中在一个应用中。";
 
 "Tour.StartButton" = "开始聊天";
 
@@ -753,10 +753,10 @@
 "Settings.BlockedUsers" = "已屏蔽的用户";
 "Settings.ChatBackground" = "聊天壁纸";
 "Settings.Support" = "向我们提问";
-"Settings.FAQ" = "Telegram 常见问题";
+"Settings.FAQ" = "常见问题";
 "Settings.FAQ_URL" = "https://telegram.org/faq#general-questions";
-"Settings.FAQ_Intro" = "请注意：Telegram 的技术支持由志愿者提供。我们会尽快回复，但仍可能需要等待一段时间。\n\n请前往“常见问题”看看：那里有各种常见问题和故障排除指南。";
-"Settings.FAQ_Button" = "常见问题";
+"Settings.FAQ_Intro" = "常见问题页面提供故障排查建议和问题解答。如需更多帮助，请联系支持团队。";
+"Settings.FAQ_Button" = "查看常见问题";
 "Settings.SaveIncomingPhotos" = "自动保存图片";
 
 // Notifications and Sounds
@@ -836,7 +836,7 @@
 
 
 "Settings.LogoutConfirmationTitle" = "您确定要登出吗？";
-"Settings.LogoutConfirmationText" = "此操作将取消您的所有私密聊天。\n\n您可以同时在所有设备上使用 Telegram，并在同一个应用中使用多个帐号。";
+"Settings.LogoutConfirmationText" = "\n您可以在所有设备上同时使用 MixLink。\n\n请注意，退出登录会结束所有私密聊天。";
 
 "Login.PadPhoneHelp" = "您可以使用主要手机号码在所有设备上登录到 Telegram。\n请不要使用您 iPad SIM 卡的号码 — 我们需要给您发送短信。\n\n此号码是否正确？\n{number}";
 "Login.PadPhoneHelpTitle" = "您的手机号码";
@@ -935,7 +935,7 @@
 
 "Username.Title" = "用户名";
 "Username.Placeholder" = "您的用户名";
-"Username.Help" = "您可以在 **Telegram** 上设置一个用户名。设置后，别人可以通过此用户名找到您并与您联系，而不需要您的手机号码。\n\n您可以使用 **a-z**、**0-9** 和下划线。最小长度为 **5** 个字符。";
+"Username.Help" = "设置 MixLink 用户名后，其他人无需知道您的手机号，也可以通过用户名找到并联系您。\n\n用户名可使用 **a-z**、**0-9** 和下划线，长度至少为 **5** 个字符。";
 "Username.InvalidTooShort" = "用户名必须包含至少 5 个字符。";
 "Username.InvalidStartsWithNumber" = "用户名不能以数字开头。";
 "Username.InvalidCharacters" = "您只能使用 a-z、0-9 和下划线。";
@@ -1040,7 +1040,7 @@
 
 "Settings.PhoneNumber" = "更改号码";
 
-"PhoneNumberHelp.Help" = "您可以在此更换当前绑定到 Telegram 的手机号码。您的帐号和所有云端数据（消息、媒体文件、联系人等）都会迁移到新号码下。";
+"PhoneNumberHelp.Help" = "您可以在此更换绑定到 MixLink 的手机号码。您的帐号和云端数据（包括消息、媒体和联系人）都会迁移到新号码下。";
 "PhoneNumberHelp.Alert" = "如果其他用户在其通讯录中存有您的新号码，或者您的隐私设置允许其查看您的号码，该用户将会看到您的新号码。您可以在“设置” > “隐私与安全” > “手机号码”中更改此设置。";
 "PhoneNumberHelp.ChangeNumber" = "更换手机号码";
 
@@ -1229,23 +1229,23 @@
 "PasscodeSettings.TurnPasscodeOn" = "开启密码锁";
 "PasscodeSettings.TurnPasscodeOff" = "关闭锁定码";
 "PasscodeSettings.ChangePasscode" = "修改锁定码";
-"PasscodeSettings.Help" = "当您设置好锁定码后，聊天页面会出现一个锁形图标。点击它来锁定 Telegram 应用。\n\n注意：如果您忘记了锁定码，您将需要重新安装应用。所有的私密聊天将会丢失。";
+"PasscodeSettings.Help" = "当您设置好锁定码后，聊天页面会出现一个锁形图标。点击它来锁定 MixLink 应用。\n\n注意：如果您忘记了锁定码，您将需要重新安装应用。所有的私密聊天将会丢失。";
 "PasscodeSettings.UnlockWithTouchId" = "使用 Touch ID 解锁";
 "PasscodeSettings.SimplePasscode" = "简易锁定码";
 "PasscodeSettings.SimplePasscodeHelp" = "简易锁定码由四位数字组成。";
 "PasscodeSettings.EncryptData" = "加密本地数据库";
-"PasscodeSettings.EncryptDataHelp" = "这是一个试验性功能，请谨慎使用。它通过锁定码生成密钥，来加密本地储存的 Telegram 数据。";
+"PasscodeSettings.EncryptDataHelp" = "这是一个试验性功能，请谨慎使用。它会通过锁定码生成密钥，以加密本地储存的 MixLink 数据。";
 
-"EnterPasscode.EnterTitle" = "请输入 Telegram 锁定码";
+"EnterPasscode.EnterTitle" = "请输入 MixLink 锁定码";
 "EnterPasscode.ChangeTitle" = "修改锁定码";
-"EnterPasscode.EnterPasscode" = "请输入 Telegram 锁定码";
+"EnterPasscode.EnterPasscode" = "请输入 MixLink 锁定码";
 "EnterPasscode.EnterNewPasscodeNew" = "请输入一个锁定码";
 "EnterPasscode.EnterNewPasscodeChange" = "请输入新的锁定码";
 "EnterPasscode.RepeatNewPasscode" = "请再次输入新的锁定码";
 "EnterPasscode.EnterCurrentPasscode" = "请输入当前的锁定码";
-"EnterPasscode.TouchId" = "解锁 Telegram";
+"EnterPasscode.TouchId" = "解锁 MixLink";
 
-"DialogList.PasscodeLockHelp" = "点击以锁定 Telegram";
+"DialogList.PasscodeLockHelp" = "点击以锁定 MixLink";
 
 "PasscodeSettings.AutoLock" = "自动锁定";
 "PasscodeSettings.AutoLock.Disabled" = "停用";
@@ -1378,7 +1378,7 @@
 "TwoStepAuth.SetupEmail" = "设置恢复电子邮箱";
 "TwoStepAuth.ChangeEmail" = "更改密码恢复电子邮箱";
 "TwoStepAuth.PendingEmailHelp" = "您的密码恢复电子邮箱 %@ 正在等待验证，在完成验证之前它将不会启用。";
-"TwoStepAuth.GenericHelp" = "您已启用两步验证。\n您将需要此处设置的密码以登录到您的 Telegram 帐号。";
+"TwoStepAuth.GenericHelp" = "您已启用两步验证。\n您将需要此处设置的密码以登录到您的 MixLink 帐号。";
 
 "TwoStepAuth.ConfirmationTitle" = "两步验证";
 "TwoStepAuth.ConfirmationText" = "请检查你的电子邮箱，并点击验证链接来完成两步验证的设置。请务必也检查垃圾邮件文件夹。";
@@ -1398,7 +1398,7 @@
 
 "TwoStepAuth.EmailTitle" = "密码恢复电子邮箱";
 "TwoStepAuth.EmailSkip" = "跳过";
-"TwoStepAuth.EmailSkipAlert" = "您确定不设置密码恢复邮箱吗？\n\n一旦您忘记了密码，您将无法再访问您的 Telegram 帐号，并且再也没有办法恢复帐号数据。";
+"TwoStepAuth.EmailSkipAlert" = "您确定不设置密码恢复邮箱吗？\n\n一旦您忘记了密码，您将无法再访问您的 MixLink 帐号，并且再也没有办法恢复帐号数据。";
 "TwoStepAuth.Email" = "电子邮箱";
 "TwoStepAuth.EmailPlaceholder" = "您的电子邮箱";
 "TwoStepAuth.EmailHelp" = "请添加您的有效电子邮箱。这是忘记密码时唯一的恢复方法。";
@@ -1410,7 +1410,7 @@
 
 "TwoStepAuth.RecoveryUnavailable" = "因为您在设置密码时没有同时提供密码恢复电子邮箱，您剩下的选择就只有回忆起您的密码或重置您的帐号。";
 "TwoStepAuth.RecoveryFailed" = "您剩下的选择只有回忆起您的密码或重置您的帐号。";
-"TwoStepAuth.ResetAccountHelp" = "如果您确认重置帐号，您将丢失 Telegram 中所有的聊天、消息、媒体和文件。";
+"TwoStepAuth.ResetAccountHelp" = "如果您确认重置帐号，您将丢失 MixLink 中所有的聊天、消息、媒体和文件。";
 "TwoStepAuth.ResetAccountConfirmation" = "如果您重置了帐号，将会丢失所有的聊天、消息、媒体和文件。";
 
 "TwoStepAuth.RecoveryTitle" = "电子邮箱验证码";
@@ -1473,7 +1473,7 @@
 "AuthSessions.TerminateSession" = "注销会话";
 "AuthSessions.OtherSessions" = "活跃会话";
 "AuthSessions.EmptyTitle" = "没有其它的会话";
-"AuthSessions.EmptyText" = "您可以从其它的手机、平板和桌面设备用同样的手机号码登录到 Telegram。所有数据将被实时同步。";
+"AuthSessions.EmptyText" = "您可以使用同一个手机号码在其他手机、平板和电脑上登录 MixLink，数据会在设备间同步。";
 "AuthSessions.AppUnofficial" = "（ID: %@）";
 
 "WebPreview.GettingLinkInfo" = "正在获取链接信息…";
@@ -2290,7 +2290,7 @@ Unused sets are archived when you add more.";
 
 "Call.EncryptionKey.Title" = "加密密钥";
 
-"Application.Name" = "Telegram";
+"Application.Name" = "MixLink";
 "DialogList.Pin" = "置顶";
 "DialogList.Unpin" = "取消置顶";
 "DialogList.PinLimitError" = "抱歉，您最多只能置顶 %@ 个聊天。";
@@ -2645,7 +2645,7 @@ Unused sets are archived when you add more.";
 
 "Privacy.PaymentsTitle" = "付款";
 "Privacy.PaymentsClearInfo" = "清除付款和配送信息";
-"Privacy.PaymentsClearInfoHelp" = "您可以删除您的配送信息并通知所有的支付服务提供商清除您已保存的信用卡信息。请注意：Telegram 从来不会存储您的信用卡数据。";
+"Privacy.PaymentsClearInfoHelp" = "您可以删除您的配送信息并通知所有的支付服务提供商清除您已保存的信用卡信息。请注意：MixLink 从来不会存储您的信用卡数据。";
 "Privacy.PaymentsClear.PaymentInfo" = "付款信息";
 "Privacy.PaymentsClear.ShippingInfo" = "配送信息";
 
@@ -2864,10 +2864,10 @@ Unused sets are archived when you add more.";
 "Group.Members.AddMemberBotErrorNotAllowed" = "抱歉，您没有向此群组添加机器人的权限。";
 
 "Privacy.Calls.P2P" = "端对端连接";
-"Privacy.Calls.P2PHelp" = "停用端对端连接后，所有通话流量将使用 Telegram 服务器中转以避免泄露您的 IP 地址，但可能会降低音质及画质。";
+"Privacy.Calls.P2PHelp" = "停用端对端连接后，通话流量将通过服务端中转，以避免泄露您的 IP 地址，但可能会略微降低音质和画质。";
 
 "Privacy.Calls.Integration" = "iOS 通话集成";
-"Privacy.Calls.IntegrationHelp" = "iOS 通话集成能在锁屏界面上和系统的通话记录里显示 Telegram 通话的提示/信息。如果启用了 iCloud 同步，您的通话记录将被共享给 Apple。";
+"Privacy.Calls.IntegrationHelp" = "iOS 通话集成会在锁定屏幕和系统通话记录中显示 MixLink 通话。如果启用了 iCloud 同步，您的通话记录将与 Apple 共享。";
 
 "Call.ReportPlaceholder" = "出了什么问题？";
 "Call.ReportIncludeLog" = "发送技术信息";
@@ -3138,8 +3138,8 @@ Unused sets are archived when you add more.";
 
 "TwoStepAuth.AdditionalPassword" = "两步验证密码";
 
-"PasscodeSettings.HelpTop" = "设置锁定码后，一个“锁”的图标将会出现在聊天列表顶部，点击该图标以锁定 Telegram 应用。";
-"PasscodeSettings.HelpBottom" = "注意：如果您忘记了锁定码，您将只能卸载然后重新安装 Telegram。而此操作将导致您丢失所有的私密对话记录。";
+"PasscodeSettings.HelpTop" = "设置锁定码后，一个“锁”的图标将会出现在聊天列表顶部，点击该图标以锁定 MixLink 应用。";
+"PasscodeSettings.HelpBottom" = "注意：如果您忘记了锁定码，您将只能卸载然后重新安装 MixLink。而此操作将导致您丢失所有的私密对话记录。";
 
 "Channel.Setup.TypePublicHelp" = "公开频道可以通过搜索找到，任何人都可以加入。";
 "Channel.Setup.TypePrivateHelp" = "私密频道只能通过邀请链接加入。";
@@ -3257,8 +3257,8 @@ Unused sets are archived when you add more.";
 "AuthSessions.Sessions" = "会话";
 "AuthSessions.LoggedIn" = "网站";
 "AuthSessions.LogOutApplications" = "取消所有网站的授权";
-"AuthSessions.LogOutApplicationsHelp" = "您可以在支持的网站上使用 Telegram 登录。";
-"AuthSessions.LoggedInWithTelegram" = "使用 Telegram 账号登录的网站";
+"AuthSessions.LogOutApplicationsHelp" = "您可以在支持 MixLink 登录的网站上登录。";
+"AuthSessions.LoggedInWithTelegram" = "已连接的网站";
 "AuthSessions.LogOut" = "登出";
 "AuthSessions.Message" = "您已允许此机器人在您登录 %@ 时向您发送消息。";
 
@@ -3316,13 +3316,13 @@ Unused sets are archived when you add more.";
 
 "Privacy.SecretChatsTitle" = "私密聊天";
 "Privacy.SecretChatsLinkPreviews" = "链接预览";
-"Privacy.SecretChatsLinkPreviewsHelp" = "链接预览将在 Telegram 服务器上生成，我们不会储存与您所发送的链接有关的任何数据。";
+"Privacy.SecretChatsLinkPreviewsHelp" = "链接预览将在 MixLink 服务器上生成，我们不会储存与您发送的链接有关的数据。";
 
 "Privacy.ContactsTitle" = "联系人";
 "Privacy.ContactsSync" = "同步通讯录";
 "Privacy.ContactsSyncHelp" = "开启以持续将此设备上的联系人同步到您的账号。";
 "Privacy.ContactsReset" = "删除已同步的联系人";
-"Privacy.ContactsResetConfirmation" = "这将把您的联系人信息从 Telegram 服务端删除。\n如果“同步联系人”选项处于启用状态，联系人信息将被重新同步。";
+"Privacy.ContactsResetConfirmation" = "这将从 MixLink 服务器删除您的联系人信息。\n如果已启用“同步联系人”，联系人信息之后会重新同步。";
 
 "Login.TermsOfServiceDecline" = "拒绝";
 "Login.TermsOfServiceAgree" = "同意并继续";
@@ -3348,14 +3348,14 @@ Unused sets are archived when you add more.";
 "PrivacyPolicy.DeclineLastWarning" = "警告，这将不可逆转地删除您的 Telegram 帐号以及所有储存在 Telegram 云服务器中的数据。\n\n注意：为保留个人数据，您可以先行取消，在导出数据并保存后，再删除您的帐号。（若要导出个人数据，请打开 Telegram 最新桌面版，并进入设置 > 高级 > 导出 Telegram 数据 。）";
 "PrivacyPolicy.DeclineDeleteNow" = "立即删除";
 
-"Settings.Passport" = "Telegram 通行证";
+"Settings.Passport" = "身份验证";
 
 "Passport.Title" = "通行证";
 
 "Passport.RequestHeader" = "%@ 请求访问您的个人数据以便为您提供服务。";
 
-"Passport.InfoTitle" = "Telegram 通行证是什么？";
-"Passport.InfoText" = "有了 Telegram 通行证，您可以轻易地注册需要身份验证的网站和服务。\n\n您的信息、个人数据和证件都将受到端到端加密保护。未经您的允许，任何人（包括 Telegram）都无法读取它们。";
+"Passport.InfoTitle" = "什么是身份验证？";
+"Passport.InfoText" = "您可以使用身份验证，安全地向网站或服务提供所需信息。\n\n您的个人信息和证件均受到端到端加密保护，只有在您授权后才会分享。";
 "Passport.InfoLearnMore" = "了解更多";
 "Passport.InfoFAQ_URL" = "https://telegram.org/faq#passport";
 
@@ -3376,19 +3376,19 @@ Unused sets are archived when you add more.";
 "Passport.AcceptHelp" = "您的文件将被直接发送给 %1$@。同时，也将允许 %2$@ 给您发送信息。";
 "Passport.Authorize" = "授权";
 
-"Passport.DeletePassport" = "删除 Telegram 通行证";
-"Passport.DeletePassportConfirmation" = "您确定想要删除您的 Telegram 通行证吗？所有信息都将丢失。";
+"Passport.DeletePassport" = "删除身份验证资料";
+"Passport.DeletePassportConfirmation" = "确定要删除身份验证资料吗？所有信息都将丢失。";
 
-"Passport.PasswordHelp" = "请输入 Telegram 密码\n以解密您的数据";
+"Passport.PasswordHelp" = "请输入密码\n以解密您的数据";
 "Passport.PasswordPlaceholder" = "请输入密码";
 "Passport.InvalidPasswordError" = "密码错误，请重试。";
 "Passport.FloodError" = "尝试次数过多。请稍后再试。";
-"Passport.UpdateRequiredError" = "抱歉，您的 Telegram 版本太低，无法处理此请求。 请升级 Telegram。";
+"Passport.UpdateRequiredError" = "当前 MixLink 版本无法处理此请求，请更新应用后重试。";
 
 "Passport.ForgottenPassword" = "密码遗失";
-"Passport.PasswordReset" = "所有上传到您 Telegram 通行证的证件都将丢失。之后，您将能够上传新的证件。";
+"Passport.PasswordReset" = "所有已上传的身份验证文件都将丢失。之后，您可以重新上传文件。";
 
-"Passport.PasswordDescription" = "请创建一个密码使用端到端加密保护个人数据。\n\n每次您在新的设备登录到 Telegram 时也将需要输入这个密码。";
+"Passport.PasswordDescription" = "请创建密码，以通过端到端加密保护您的个人数据。\n\n在新设备登录 MixLink 时也需要输入此密码。";
 "Passport.PasswordCreate" = "创建密码";
 "Passport.PasswordCompleteSetup" = "完成密码设置";
 "Passport.PasswordNext" = "下一步";
@@ -3508,14 +3508,14 @@ Unused sets are archived when you add more.";
 
 "Passport.Phone.Title" = "手机号码";
 "Passport.Phone.UseTelegramNumber" = "使用 %@";
-"Passport.Phone.UseTelegramNumberHelp" = "使用当前 Telegram 帐号绑定的手机号码。";
+"Passport.Phone.UseTelegramNumberHelp" = "使用绑定到 MixLink 帐号的手机号码。";
 "Passport.Phone.EnterOtherNumber" = "或输入新的手机号码";
 "Passport.Phone.Help" = "注意：您将在您提供的手机号码上收到一份验证码。";
 "Passport.Phone.Delete" = "删除手机号码";
 
 "Passport.Email.Title" = "电子邮箱";
 "Passport.Email.UseTelegramEmail" = "使用 %@";
-"Passport.Email.UseTelegramEmailHelp" = "使用当前 Telegram 帐号中设定的电子邮箱。";
+"Passport.Email.UseTelegramEmailHelp" = "使用绑定到 MixLink 帐号的电子邮箱。";
 "Passport.Email.EnterOtherEmail" = "或输入一个新的电子邮箱地址";
 "Passport.Email.EmailPlaceholder" = "输入您的电子邮箱地址";
 "Passport.Email.Help" = "您所提供的电子邮箱将会收到一份验证码。";
@@ -3541,7 +3541,7 @@ Unused sets are archived when you add more.";
 "Passport.ScanPassport" = "扫描您的护照";
 "Passport.ScanPassportHelp" = "扫描您护照或身份证的机读区以自动填写个人信息。";
 
-"TwoStepAuth.PasswordRemovePassportConfirmation" = "您确定要停用密码吗？\n\n所有存储在 Telegram 通行证里的数据都将丢失。";
+"TwoStepAuth.PasswordRemovePassportConfirmation" = "您确定要停用密码吗？\n\n所有存储在 MixLink 通行证里的数据都将丢失。";
 
 "Application.Update" = "升级";
 
@@ -3586,7 +3586,7 @@ Unused sets are archived when you add more.";
 
 "Passport.CorrectErrors" = "点击以纠正错误";
 
-"Passport.NotLoggedInMessage" = "请登录到您的账号以使用 Telegram 通行证。";
+"Passport.NotLoggedInMessage" = "请登录到您的账号以使用 MixLink 通行证。";
 
 "Update.Title" = "Telegram 更新";
 "Update.AppVersion" = "Telegram %@";
@@ -3596,7 +3596,7 @@ Unused sets are archived when you add more.";
 "ReportPeer.ReasonCopyright" = "版权";
 
 "PrivacySettings.DataSettings" = "数据设置";
-"PrivacySettings.DataSettingsHelp" = "控制您存储在 Telegram 云端的数据，这些数据能让 Telegram 提供更好的服务。";
+"PrivacySettings.DataSettingsHelp" = "控制您存储在 MixLink 云端的数据，这些数据能让 MixLink 提供更好的服务。";
 
 "PrivateDataSettings.Title" = "数据设置";
 "Privacy.ChatsTitle" = "聊天";
@@ -3880,7 +3880,7 @@ Unused sets are archived when you add more.";
 "Login.CodeExpired" = "验证码已过期，请重新登录。";
 "Login.CancelSignUpConfirmation" = "您想终止注册吗？";
 
-"Passcode.AppLockedAlert" = "Telegram\n已被锁定";
+"Passcode.AppLockedAlert" = "MixLink\n已锁定";
 
 "ChatList.ReadAll" = "全部已读";
 "ChatList.Read" = "已读";
@@ -4435,7 +4435,7 @@ Unused sets are archived when you add more.";
 "ChatList.ClearChatConfirmation" = "您确定要删除\n与 %@ 聊天的所有消息记录吗？";
 
 "Settings.CheckPhoneNumberTitle" = "您的手机号码仍是%@吗？";
-"Settings.CheckPhoneNumberText" = "让你的电话号码保持最新，来确保你可以随时登录Telegram。 [了解更多]()";
+"Settings.CheckPhoneNumberText" = "请保持电话号码为最新，以确保您随时可以登录 MixLink。[了解更多]()";
 "Settings.KeepPhoneNumber" = "继续使用 %@";
 "Settings.ChangePhoneNumber" = "修改号码";
 "Settings.CheckPhoneNumberFAQAnchor" = "查看更多";
@@ -4506,7 +4506,7 @@ Sorry for the inconvenience.";
 
 "Privacy.AddNewPeer" = "添加用户或群组";
 "PrivacyPhoneNumberSettings.WhoCanSeeMyPhoneNumber" = "谁可以看到我的手机号码";
-"PrivacyPhoneNumberSettings.CustomHelp" = "已将您的手机号码保存到联系人的用户也将在 Telegram 上看到它。";
+"PrivacyPhoneNumberSettings.CustomHelp" = "通讯录中已保存您手机号的用户也能在 MixLink 中看到该号码。";
 "PrivacyPhoneNumberSettings.CustomDisabledHelp" = "对于将您的号码加入联系人列表的用户，只有当您将其添加为联系人后，对方才会看到您的号码。";
 
 "PrivacyPhoneNumberSettings.DiscoveryHeader" = "谁可以通过手机号码找到我";
@@ -5130,8 +5130,8 @@ Sorry for the inconvenience.";
 "AuthSessions.AddDevice.ScanTitle" = "通过二维码登录";
 "AuthSessions.AddDevice.InvalidQRCode" = "无效的二维码";
 "AuthSessions.AddDeviceIntro.Title" = "扫描二维码登录";
-"AuthSessions.AddDeviceIntro.Text1" = "从 [desktop.telegram.org]() 下载 Telegram 电脑版";
-"AuthSessions.AddDeviceIntro.Text2" = "启动 Telegram 电脑版获取二维码";
+"AuthSessions.AddDeviceIntro.Text1" = "在电脑上打开已配置为连接 MixLink 服务器的桌面客户端。";
+"AuthSessions.AddDeviceIntro.Text2" = "显示客户端的二维码，然后在此处扫描。";
 "AuthSessions.AddDeviceIntro.Text3" = "扫描二维码以便登录您的帐号";
 "AuthSessions.AddDeviceIntro.Action" = "扫描二维码";
 "AuthSessions.AddedDeviceTitle" = "登录成功";
@@ -5150,7 +5150,7 @@ Sorry for the inconvenience.";
 "ChatList.Search.ShowMore" = "显示更多";
 "ChatList.Search.ShowLess" = "显示更少";
 
-"AuthSessions.OtherDevices" = "Telegram 官方应用可用于 iPhone、iPad、Android、macOS、Windows 和 Linux。[了解更多]()";
+"AuthSessions.OtherDevices" = "只有配置为连接 MixLink 服务器的应用才能登录此帐号。";
 
 "MediaPlayer.UnknownArtist" = "未知艺术家";
 "MediaPlayer.UnknownTrack" = "未知音乐";
@@ -5168,7 +5168,7 @@ Sorry for the inconvenience.";
 
 "Theme.Colors.Proceed" = "下一步";
 
-"AuthSessions.AddDevice.UrlLoginHint" = "此二维码可用于登录您的 Telegram 账号。\n\n若要确认登录 Telegram，请转到设置 > 设备 > 扫码登录，然后选择扫描二维码。";
+"AuthSessions.AddDevice.UrlLoginHint" = "此二维码可用于登录您的 MixLink 账号。\n\n若要确认登录 MixLink，请转到设置 > 设备 > 扫码登录，然后选择扫描二维码。";
 
 "Appearance.RemoveThemeColor" = "移除";
 "Appearance.RemoveThemeColorConfirmation" = "移除颜色";
@@ -6673,7 +6673,7 @@ Sorry for the inconvenience.";
 "Privacy.PaymentsClear.ShippingInfoCleared" = "配送信息已清空。";
 "Privacy.PaymentsClear.AllInfoCleared" = "支付与配送信息已清空。";
 
-"Settings.Tips" = "Telegram 功能";
+"Settings.Tips" = "MixLink 功能介绍";
 "Settings.TipsUsername" = "TelegramTips";
 
 "Calls.NoVoiceAndVideoCallsPlaceholder" = "最近的语音和视频通话记录将在此处显示。";
@@ -7252,7 +7252,7 @@ Sorry for the inconvenience.";
 "Conversation.InviteRequestInfo" = "您收到这条消息是因为您曾在 %2$@ 申请加入 %1$@。";
 "Conversation.InviteRequestInfoConfirm" = "我已知晓";
 
-"AuthSessions.HeaderInfo" = "通过扫描二维码登录 [Telegram 桌面版](desktop)或 [Telegram 网页版](web)。";
+"AuthSessions.HeaderInfo" = "扫描兼容桌面端或网页版应用的二维码，即可关联该设备。";
 "AuthSessions.LinkDesktopDevice" = "添加设备";
 "AuthSessions.AddDevice.ScanInstallInfo" = "前往 [getdesktop.telegram.org](desktop) 或 [web.telegram.org](web) 获取二维码";
 
@@ -7455,7 +7455,7 @@ Sorry for the inconvenience.";
 
 "Attachment.DeselectedItems_any" = "已取消选择 %@ 个项目。";
 
-"PrivacyPhoneNumberSettings.CustomPublicLink" = "将您的手机号码保存为联系人的用户也将在 Telegram 上看到您的手机号码。\n\n 此公开链接将打开与您的聊天：\n [https://t.me/%@]()";
+"PrivacyPhoneNumberSettings.CustomPublicLink" = "将您的手机号码保存为联系人的用户也能在 MixLink 中看到该号码。\n\n此公开链接会打开与您的聊天：\n[https://t.me/%@]()";
 
 "DownloadList.DownloadingHeader" = "正在下载";
 "DownloadList.DownloadedHeader" = "最近下载";
@@ -7667,12 +7667,12 @@ Sorry for the inconvenience.";
 "Channel.AddUserKickedError" = "抱歉，由于该用户在被移除用户名单上，您无法将其加入频道或解除其封禁。";
 "Channel.AddAdminKickedError" = "抱歉，由于该用户在被移除的用户列表中，您不能将其添加为管理员或解除其封禁。";
 
-"Premium.Stickers.Description" = "订阅 Telegram 高级版即可解锁这个和更多贴纸。";
+"Premium.Stickers.Description" = "订阅 MixLink 高级版即可解锁这个和更多贴纸。";
 "Premium.Stickers.Proceed" = "解锁高级贴纸";
 
 "Premium.Reactions.Proceed" = "解锁高级回应";
 "Premium.AppIcons.Proceed" = "解锁高级会员图标";
-"Premium.NoAds.Proceed" = "关于 Telegram 高级版";
+"Premium.NoAds.Proceed" = "关于 MixLink 高级版";
 
 "AccessDenied.LocationPreciseDenied" = "要在此聊天中分享您的具体位置，请在设置 > 隐私 > 定位服务 > Telegram 中开启精确位置。";
 
@@ -7702,19 +7702,19 @@ Sorry for the inconvenience.";
 "Premium.LimitReached" = "达到上限";
 "Premium.IncreaseLimit" = "提升上限";
 
-"Premium.MaxFoldersCountText" = "您已达到 **%1$@** 个文件夹的限额。 您可以订阅 **Telegram 高级版**，将此上限翻倍至 **%2$@** 个文件夹。";
+"Premium.MaxFoldersCountText" = "您已达到 **%1$@** 个文件夹的限额。 您可以订阅 **MixLink 高级版**，将此上限翻倍至 **%2$@** 个文件夹。";
 "Premium.MaxFoldersCountNoPremiumText" = "你已达到 ** %1$@** 文件夹的上限。我们正在努力让你在未来提高此上限。";
 "Premium.MaxFoldersCountFinalText" = "抱歉，您不能创建多于 **%1$@** 个文件夹。";
 
-"Premium.MaxChatsInFolderText" = "抱歉，您无法在单个文件夹中添加超过 **%1$@** 个聊天。订阅 **Telegram 高级版** 后可将此上限提高至 **%2$@** 个聊天。";
+"Premium.MaxChatsInFolderText" = "抱歉，您无法在单个文件夹中添加超过 **%1$@** 个聊天。订阅 **MixLink 高级版** 后可将此上限提高至 **%2$@** 个聊天。";
 "Premium.MaxChatsInFolderNoPremiumText" = "抱歉，您无法在此文件夹中添加超过 **%1$@** 个聊天。请再创建一个新的文件夹。我们在以后将尽力为您提高该限制。";
 "Premium.MaxChatsInFolderFinalText" = "抱歉，您不能向文件夹中添加多于 **%@** 个聊天。";
 
-"Premium.MaxFileSizeText" = "您可以订阅 **Telegram 高级版**，将此上限翻倍至每个文件 %@。";
+"Premium.MaxFileSizeText" = "您可以订阅 **MixLink 高级版**，将此上限翻倍至每个文件 %@。";
 "Premium.MaxFileSizeNoPremiumText" = "由于大小超过了 **%@**，文档无法发送。我们正在努力能让您在未来提高此上限。";
 "Premium.MaxFileSizeFinalText" = "由于大小超过了 **%@**，无法发送此文档。";
 
-"Premium.MaxPinsText" = "您无法置顶超过 **%1$@** 个聊天。请取消一些置顶的聊天，或者订阅 **Telegram 高级版**，将此上限翻倍至 **%2$@** 个聊天。";
+"Premium.MaxPinsText" = "您无法置顶超过 **%1$@** 个聊天。请取消一些置顶的聊天，或者订阅 **MixLink 高级版**，将此上限翻倍至 **%2$@** 个聊天。";
 "Premium.MaxPinsNoPremiumText" = "抱歉，您最多只能置顶 **%@** 个聊天。请先取消置顶一些当前已置顶的聊天。";
 "Premium.MaxPinsFinalText" = "抱歉，您最多只能置顶 **%@** 个聊天。请先取消置顶一些当前已置顶的聊天。";
 
@@ -7726,21 +7726,21 @@ Sorry for the inconvenience.";
 "Premium.MaxSavedGifsText" = "一张旧的 GIF 动态图已被这张图替换。您可以 [提升上限]() 至 %@ 张 GIF 动态图。";
 "Premium.MaxSavedGifsFinalText" = "一张旧的 GIF 被这张替代了。";
 
-"Premium.MaxAccountsText" = "您已达到 **%@** 个关联帐号的限制。 您可以通过订阅 **Telegram 高级版** 添加更多。";
+"Premium.MaxAccountsText" = "您已达到 **%@** 个关联帐号的限制。 您可以通过订阅 **MixLink 高级版** 添加更多。";
 "Premium.MaxAccountsNoPremiumText" = "您已达到 **%@** 个关联帐户的限制。";
 "Premium.MaxAccountsFinalText" = "你已经达到 **%@** 个关联账号的上限。";
 
 "Premium.Free" = "免费";
 "Premium.Premium" = "高级版";
 
-"Premium.Title" = "Telegram 高级版";
-"Premium.Description" = "订阅 **Telegram Premium** 后，您能 **超越限制** 并 **解锁数十项专属** 功能。";
+"Premium.Title" = "MixLink 高级版";
+"Premium.Description" = "订阅 MixLink 高级版，解锁**专属功能**并提升**使用上限**。";
 
-"Premium.PersonalTitle" = "[%@]() 是 Telegram 高级版的订阅者";
-"Premium.PersonalDescription" = "拥有 **Telegram 高级版** 帐号即可专享多项附加功能。";
+"Premium.PersonalTitle" = "[%@]() 是 MixLink 高级版的订阅者";
+"Premium.PersonalDescription" = "拥有 **MixLink 高级版** 帐号即可专享多项附加功能。";
 
 "Premium.SubscribedTitle" = "一切都已就绪！";
-"Premium.SubscribedDescription" = "欢迎订阅 **Telegram Premium**。你已成功解锁以下特权。";
+"Premium.SubscribedDescription" = "欢迎订阅 **MixLink Premium**。你已成功解锁以下特权。";
 
 "Premium.DoubledLimits" = "上限加倍";
 "Premium.DoubledLimitsInfo" = "多达 1000 个频道、30 个文件夹、10 个置顶、20 个公开链接、4 个帐号等等。";
@@ -7750,48 +7750,48 @@ Sorry for the inconvenience.";
 
 "Premium.FasterSpeed" = "更快的下载速度";
 "Premium.FasterSpeedInfo" = "下载媒体文件和文档时不再受到速度限制。";
-"Premium.FasterSpeedStandaloneInfo" = "订阅 **Telegram 高级版** 以最快的速度下载媒体和文件。";
+"Premium.FasterSpeedStandaloneInfo" = "订阅 **MixLink 高级版** 以最快的速度下载媒体和文件。";
 
 "Premium.VoiceToText" = "语音转文字";
 "Premium.VoiceToTextInfo" = "能够将收到的语音消息转换成文字以方便阅读。";
-"Premium.VoiceToTextStandaloneInfo" = "订阅 **Telegram 高级版** 以将语音或视频消息转换为文字。 ";
+"Premium.VoiceToTextStandaloneInfo" = "订阅 **MixLink 高级版** 以将语音或视频消息转换为文字。 ";
 
 "Premium.NoAds" = "无广告";
-"Premium.NoAdsInfo" = "Telegram 公开频道中不再有不定期展示的广告。";
-"Premium.NoAdsStandaloneInfo" = "通过订阅 **Telegram 高级版** 来移除像这样的广告。";
+"Premium.NoAdsInfo" = "在支持的公开频道中畅享无广告体验。";
+"Premium.NoAdsStandaloneInfo" = "通过订阅 **MixLink 高级版** 来移除像这样的广告。";
 
 "Premium.Reactions" = "专属表情回应";
 "Premium.ReactionsInfo" = "使用更多动画表情回应消息，仅高级版订阅者可用。";
 
 "Premium.ReactionsStandalone" = "额外的回应";
-"Premium.ReactionsStandaloneInfo" = "订阅 **Telegram 高级版**以解锁更多表情回应。";
+"Premium.ReactionsStandaloneInfo" = "订阅 **MixLink 高级版**以解锁更多表情回应。";
 
 "Premium.Stickers" = "高级版贴纸";
 "Premium.StickersInfo" = "具有额外特效的专属放大贴纸，定期更新。";
 
 "Premium.ChatManagement" = "高级聊天管理";
 "Premium.ChatManagementInfo" = "可设定默认文件夹、自动归档以及隐藏来自非联系人的新聊天。";
-"Premium.ChatManagementStandaloneInfo" = "**Telegram 高级版**的订阅者可以设置默认进入的文件夹、自动归档以及隐藏非联系人的新聊天。";
+"Premium.ChatManagementStandaloneInfo" = "**MixLink 高级版**的订阅者可以设置默认进入的文件夹、自动归档以及隐藏非联系人的新聊天。";
 
 "Premium.Badge" = "形象勋章";
-"Premium.BadgeInfo" = "在您的名字后方显示专属徽章，以表示您已订阅 Telegram 高级版。";
+"Premium.BadgeInfo" = "在您的名字旁显示专属徽章，表达您对 MixLink 的支持。";
 
 "Premium.Avatar" = "动态头像";
 "Premium.AvatarInfo" = "视频头像会在聊天列表和聊天中动起来，为您提供更多自我表达空间。";
 
-"Premium.AppIcon" = "Telegram 应用图标";
-"Premium.AppIconInfo" = "从一系列图标中选择你的 Telegram 应用程序的桌面图标。";
+"Premium.AppIcon" = "MixLink 应用图标";
+"Premium.AppIconInfo" = "从多款 MixLink 应用图标中选择您喜欢的主屏幕图标。";
 
 "Premium.AppIconStandalone" = "高级应用图标";
-"Premium.AppIconStandaloneInfo" = "通过订阅 **Telegram 高级版** 来解锁更加广泛的应用图标选择。";
+"Premium.AppIconStandaloneInfo" = "通过订阅 **MixLink 高级版** 来解锁更加广泛的应用图标选择。";
 
 "Premium.SubscribeFor" = "以每月 %@ 的价格订阅";
 "Premium.SubscribeForAnnual" = "以每年 %@ 的价格订阅";
 
-"Premium.AboutTitle" = "关于Telegram 高级版";
-"Premium.AboutText" = "虽然免费版本的 Telegram 已经为用户提供了比其他任何即时通讯应用程序更多的功能，但 **Telegram Premium** 进一步推动了它。\n\n**Telegram Premium** 是付费选项，因为大多数高级功能需要 Telegram 向第三方（如数据中心提供商和服务器制造商）支付额外费用。 **Telegram Premium** 用户的贡献使我们能够支付此类费用，并帮助 Telegram 保持为所有人免费提供。";
+"Premium.AboutTitle" = "关于 MixLink 高级版";
+"Premium.AboutText" = "MixLink 高级版为 MixLink 带来可选功能和更高的使用上限。购买前会向您说明当前提供的功能和订阅详情。";
 
-"Premium.Terms" = "购买高级版订阅，即表示你同意 Telegram 的 [服务条款](terms) 和 [隐私政策](privacy)。";
+"Premium.Terms" = "购买高级版订阅，即表示您同意[服务条款](terms)和[隐私政策](privacy)。";
 
 "Conversation.CopyProtectionSavingDisabledSecret" = "不可保存消息";
 "Conversation.CopyProtectionForwardingDisabledSecret" = "不可转发消息";
@@ -7854,7 +7854,7 @@ Sorry for the inconvenience.";
 "Premium.Restore.Success" = "完成";
 "Premium.Restore.ErrorUnknown" = "出错了，请重试。";
 
-"Settings.Premium" = "Telegram 高级版";
+"Settings.Premium" = "MixLink 高级版";
 
 "Settings.AddAnotherAccount.PremiumHelp" = "您最多可以添加四个具有不同手机号码的帐号。";
 
@@ -7930,9 +7930,9 @@ Sorry for the inconvenience.";
 
 "PeerInfo.GiftPremium" = "赠予高级版订阅";
 
-"Premium.Gift.Title" = "赠予 Telegram 高级版订阅";
-"Premium.Gift.Description" = "将 **Telegram 高级版** 的专属功能赠予 **%@**。";
-"Premium.Gift.Info" = "您可以在 [这里]() 查看 Telegram 高级版的功能列表和更多详情。";
+"Premium.Gift.Title" = "赠予 MixLink 高级版订阅";
+"Premium.Gift.Description" = "将 **MixLink 高级版** 的专属功能赠予 **%@**。";
+"Premium.Gift.Info" = "您可以在 [这里]() 查看 MixLink 高级版的功能列表和更多详情。";
 "Premium.Gift.GiftSubscription" = "花费 %@ 赠予订阅";
 
 
@@ -7941,16 +7941,16 @@ Sorry for the inconvenience.";
 
 "Premium.Gift.Years_any" = "%@ 年";
 
-"Premium.GiftedTitle" = "Telegram 高级版";
+"Premium.GiftedTitle" = "MixLink 高级版";
 
-"Premium.GiftedTitle.3Month" = "[%@]() 已赠予您 3 个月的 Telegram 高级版订阅";
-"Premium.GiftedTitle.6Month" = "[%@]() 已赠予您 6 个月的 Telegram 高级版订阅";
-"Premium.GiftedTitle.12Month" = "[%@]() 已赠予您 12 个月的 Telegram 高级版订阅";
+"Premium.GiftedTitle.3Month" = "[%@]() 已赠予您 3 个月的 MixLink 高级版订阅";
+"Premium.GiftedTitle.6Month" = "[%@]() 已赠予您 6 个月的 MixLink 高级版订阅";
+"Premium.GiftedTitle.12Month" = "[%@]() 已赠予您 12 个月的 MixLink 高级版订阅";
 "Premium.GiftedDescription" = "您现在可以使用额外的功能了。";
 
-"Premium.GiftedTitleYou.3Month" = "您已赠予 [%@]() 3 个月的 Telegram 高级版订阅。";
-"Premium.GiftedTitleYou.6Month" = "您已赠予 [%@]() 6 个月的 Telegram 高级版订阅。";
-"Premium.GiftedTitleYou.12Month" = "您已赠予 [%@]() 12 个月的 Telegram 高级版订阅。";
+"Premium.GiftedTitleYou.3Month" = "您已赠予 [%@]() 3 个月的 MixLink 高级版订阅。";
+"Premium.GiftedTitleYou.6Month" = "您已赠予 [%@]() 6 个月的 MixLink 高级版订阅。";
+"Premium.GiftedTitleYou.12Month" = "您已赠予 [%@]() 12 个月的 MixLink 高级版订阅。";
 "Premium.GiftedDescriptionYou" = "对方现在可以使用额外的功能了。";
 
 "SettingsSearch.DeleteAccount.DeleteMyAccount" = "\"删除帐号\" \"删除账号\" \"删除帐户\"";
@@ -7986,7 +7986,7 @@ Sorry for the inconvenience.";
 
 "Privacy.VoiceMessages" = "语音消息";
 
-"Privacy.VoiceMessages.Tooltip" = "只有 [Telegram 高级版]() 订阅者才可以限制接受语音消息。";
+"Privacy.VoiceMessages.Tooltip" = "只有 [MixLink 高级版]() 订阅者才可以限制接受语音消息。";
 
 "Privacy.VoiceMessages.WhoCanSend" = "谁可以给我发送语音或视频消息？";
 "Privacy.VoiceMessages.CustomHelp" = "您可以精确地控制谁可以向您发送语音或视频消息。";
@@ -8105,7 +8105,7 @@ Sorry for the inconvenience.";
 
 "Premium.EmojiStatusShortTitle" = "这是 %1$@ 的当前状态。";
 "Premium.EmojiStatusTitle" = "这是 %1$@ 的当前状态，该表情来自#[%2$@]()。";
-"Premium.EmojiStatusText" = "表情符号状态是一项高级功能。**Telegram 高级版** 包含的其它功能：";
+"Premium.EmojiStatusText" = "表情符号状态是一项高级功能。**MixLink 高级版** 包含的其它功能：";
 
 "Login.SelectCountry" = "国家";
 
@@ -8130,9 +8130,9 @@ Sorry for the inconvenience.";
 "Login.WrongCodeError" = "验证码错误，请重试。";
 
 "PrivacySettings.LoginEmail" = "邮箱登录";
-"PrivacySettings.LoginEmailInfo" = "为获取 Telegram 登录验证码，请修改你的邮箱地址。";
+"PrivacySettings.LoginEmailInfo" = "为获取 MixLink 登录验证码，请修改你的邮箱地址。";
 "Login.EmailChanged" = "您的电子邮箱地址已变更。";
-"PrivacySettings.LoginEmailAlertText" = "你每次从新的设备登入Telegram 时都会使用该电子邮箱。";
+"PrivacySettings.LoginEmailAlertText" = "你每次从新的设备登入MixLink 时都会使用该电子邮箱。";
 "PrivacySettings.LoginEmailAlertChange" = "更改邮箱";
 
 "Login.InvalidEmailAddressError" = "发生错误。请重试。";
@@ -8370,8 +8370,8 @@ Sorry for the inconvenience.";
 "DownloadList.IncreaseSpeed" = "提升速度";
 "Conversation.IncreaseSpeed" = "增加速度";
 
-"Premium.ChatManagement.Proceed" = "关于 Telegram 高级版";
-"Premium.FasterSpeed.Proceed" = "关于 Telegram 高级版";
+"Premium.ChatManagement.Proceed" = "关于 MixLink 高级版";
+"Premium.FasterSpeed.Proceed" = "关于 MixLink 高级版";
 
 "OwnershipTransfer.EnterPassword" = "输入密码";
 "OwnershipTransfer.EnterPasswordText" = "请输入您的两步验证密码以确认操作。";
@@ -8812,7 +8812,7 @@ Sorry for the inconvenience.";
 "AvatarEditor.Set" = "设置";
 "AvatarEditor.Suggest" = "建议";
 
-"Premium.UpgradeDescription" = "您可以使用**优惠价格**升级当前的 **Telegram 高级版**订阅计划。";
+"Premium.UpgradeDescription" = "您可以使用**优惠价格**升级当前的 **MixLink 高级版**订阅计划。";
 "Premium.CurrentPlan" = "您的当前计划";
 "Premium.UpgradeFor" = "支付 %@ 并升级";
 "Premium.UpgradeForAnnual" = "支付每年 %@ 并升级";
@@ -8823,15 +8823,15 @@ Sorry for the inconvenience.";
 "ChatList.PremiumAnnualUpgradeTitle" = "您的订阅可享受最多 %@ 的优惠";
 "ChatList.PremiumAnnualUpgradeText" = "升级为 Telegram 高级版的年付计划即可享受优惠。";
 
-"Premium.Emoji.Description" = "订阅 **Telegram 高级版**解锁该表情及更多其他表情。";
+"Premium.Emoji.Description" = "订阅 **MixLink 高级版**解锁该表情及更多其他表情。";
 "Premium.Emoji.Proceed" = "解锁高级表情";
 
 "Localization.TranslateEntireChat" = "翻译全部聊天记录";
 
 "Premium.Translation" = "即时翻译";
 "Premium.TranslationInfo" = "将频道和聊天内容即时翻译成其他语言。";
-"Premium.TranslationStandaloneInfo" = "订阅 **Telegram 高级版**即可一次性翻译聊天中的所有消息。";
-"Premium.Translation.Proceed" = "关于 Telegram 高级版";
+"Premium.TranslationStandaloneInfo" = "订阅 **MixLink 高级版**即可一次性翻译聊天中的所有消息。";
+"Premium.Translation.Proceed" = "关于 MixLink 高级版";
 
 "Settings.PauseMusicOnRecording" = "录音时暂停音乐";
 
@@ -8979,7 +8979,7 @@ Sorry for the inconvenience.";
 
 "Login.CodeSentCallText" = "正在呼叫您的手机（**%@**）以播放验证码。";
 
-"Premium.Purchase.OnlyOneSubscriptionAllowed" = "您已经为另一个帐户购买了 Telegram 高级版。一个 Apple ID 只能订阅一个Telegram 高级版。";
+"Premium.Purchase.OnlyOneSubscriptionAllowed" = "您已经为另一个帐户购买了 MixLink 高级版。一个 Apple ID 只能订阅一个MixLink 高级版。";
 
 "Call.VoiceOver.Minimize" = "通话最小化";
 
@@ -9127,7 +9127,7 @@ Sorry for the inconvenience.";
 
 "Attachment.Gift" = "赠礼";
 
-"Premium.Gift.TitleShort" = "Telegram 高级版";
+"Premium.Gift.TitleShort" = "MixLink 高级版";
 
 "VoiceOver.GiftPremium" = "赠送 Telegram 高级版";
 
@@ -9188,11 +9188,11 @@ Sorry for the inconvenience.";
 "Wallpaper.ApplyForAll" = "应用于所有聊天";
 "Wallpaper.ApplyForChat" = "应用于此聊天";
 
-"Premium.MaxSharedFolderMembershipText" = "你只能拥有 **%1$@** 个可分享文件夹。\n升级至 **Telegram 高级版**并将上限提升至 **%2$@ 个**。";
+"Premium.MaxSharedFolderMembershipText" = "你只能拥有 **%1$@** 个可分享文件夹。\n升级至 **MixLink 高级版**并将上限提升至 **%2$@ 个**。";
 "Premium.MaxSharedFolderMembershipNoPremiumText" = "您只能添加 **%1$@ ** 个可共享的文件夹，此上限可能会在将来提高。";
 "Premium.MaxSharedFolderMembershipFinalText" = "抱歉，您只能添加 **%1$@** 个可共享的文件夹。";
 
-"Premium.MaxSharedFolderLinksText" = "您只能创建 **%1$@** 个邀请链接。升级至 **Telegram 高级版**即可创建最多 **%2$@ 个**。";
+"Premium.MaxSharedFolderLinksText" = "您只能创建 **%1$@** 个邀请链接。升级至 **MixLink 高级版**即可创建最多 **%2$@ 个**。";
 "Premium.MaxSharedFolderLinksNoPremiumText" = "您只能创建 %1$@ 个邀请链接，此上限可能会在未来提高。";
 "Premium.MaxSharedFolderLinksFinalText" = "抱歉，你只能创建 **%1$@** 个邀请链接";
 
@@ -9210,7 +9210,7 @@ Sorry for the inconvenience.";
 
 "Conversation.OpenChatFolder" = "查看聊天列表";
 
-"Premium.MaxChannelsText" = "您只能加入 **%1$@** 个群组和频道。升级到 **Telegram 高级版** 以将链接上限提高到 **%2$@ 个**。";
+"Premium.MaxChannelsText" = "您只能加入 **%1$@** 个群组和频道。升级到 **MixLink 高级版** 以将链接上限提高到 **%2$@ 个**。";
 "Premium.MaxChannelsNoPremiumText" = "您只能加入 **%1$@** 个群组和频道，此上限可能会在将来提高。";
 "Premium.MaxChannelsFinalText" = "抱歉，您只能加入 **%1$@** 个群组和频道。";
 
@@ -9857,11 +9857,11 @@ Sorry for the inconvenience.";
 "Premium.Stories.Format.Title" = "链接和格式";
 "Premium.Stories.Format.Text" = "在动态说明文字中添加链接和格式。";
 
-"Premium.MaxStoriesWeeklyText" = "您每周最多可以发送 **%@ 条** 动态。\n订阅 **Telegram 高级版** 后可将此上限提升至 **%@ 条**。";
+"Premium.MaxStoriesWeeklyText" = "您每周最多可以发送 **%@ 条** 动态。\n订阅 **MixLink 高级版** 后可将此上限提升至 **%@ 条**。";
 "Premium.MaxStoriesWeeklyNoPremiumText" = "您发布的动态数量已达到每周上限 **%@** 条。";
 "Premium.MaxStoriesWeeklyFinalText" = "您发布的动态数量已达到每周上限 **%@** 条。";
 
-"Premium.MaxStoriesMonthlyText" = "您每月最多可以发送 **%@ 条** 动态。\n订阅 **Telegram 高级版** 后可将此上限提升至 **%@ 条**。";
+"Premium.MaxStoriesMonthlyText" = "您每月最多可以发送 **%@ 条** 动态。\n订阅 **MixLink 高级版** 后可将此上限提升至 **%@ 条**。";
 "Premium.MaxStoriesMonthlyNoPremiumText" = "您发布的动态数量已达到每月上限 **%@** 条。";
 "Premium.MaxStoriesMonthlyFinalText" = "您发布的动态数量已达到每月上限 **%@** 条。";
 
@@ -10216,7 +10216,7 @@ Sorry for the inconvenience.";
 "Chat.ErrorQuoteOutdatedActionEdit" = "编辑";
 
 
-"Premium.BoostByGiftDescription2" = "通过向订阅者赠送 Telegram 高级版来助推您的频道。 [获得助推 >]()";
+"Premium.BoostByGiftDescription2" = "通过向订阅者赠送 MixLink 高级版来助推您的频道。 [获得助推 >]()";
 
 "ChatContextMenu.QuoteSelectionTip" = "长按文字，然后移动光标来选择更多|文字以进行引文。";
 
@@ -10570,9 +10570,9 @@ Sorry for the inconvenience.";
 "Wallpaper.ApplyForMe" = "为自己应用";
 "Wallpaper.ApplyForBoth" = "为自己和 %@ 应用";
 
-"Premium.VoiceToText.Proceed" = "关于 Telegram 高级版";
-"Premium.Wallpaper.Proceed" = "关于 Telegram 高级版";
-"Premium.Colors.Proceed" = "关于 Telegram 高级版";
+"Premium.VoiceToText.Proceed" = "关于 MixLink 高级版";
+"Premium.Wallpaper.Proceed" = "关于 MixLink 高级版";
+"Premium.Colors.Proceed" = "关于 MixLink 高级版";
 
 "Notification.YouChangedWallpaperBoth" = "您已为自己和 %@ 设置新壁纸";
 
@@ -10721,11 +10721,11 @@ Sorry for the inconvenience.";
 "Chat.Giveaway.Message.WinnersInfo.One" = "获胜者已在私密消息中收到他们的礼物链接。";
 "Chat.Giveaway.Message.WinnersInfo.Many" = "所有获奖者都已在私密消息中收到礼物链接。";
 
-"Settings.PremiumGift" = "赠送 Telegram 高级版";
+"Settings.PremiumGift" = "赠送 MixLink 高级版";
 
 "Story.ViewList.ContextSortChannelInfo" = "选择表情符号回应列表的顺序。";
 
-"Premium.Gift.MultipleDescription" = "将 **Telegram 高级版** 的专属功能赠予 %1$@ 和 %2$@。";
+"Premium.Gift.MultipleDescription" = "将 **MixLink 高级版** 的专属功能赠予 %1$@ 和 %2$@。";
 
 
 "Premium.Gift.NamesAndMore_any" = " 等 %@ 更多";
@@ -10733,7 +10733,7 @@ Sorry for the inconvenience.";
 
 "Premium.Gift.YouWillReceiveBoosts_any" = "您将获得  []() **%@** 次助推。";
 
-"Premium.Gift.ContactSelection.Title" = "赠送 Telegram 高级版";
+"Premium.Gift.ContactSelection.Title" = "赠送 MixLink 高级版";
 "Premium.Gift.ContactSelection.Placeholder" = "搜索要赠予高级版的对象...";
 "Premium.Gift.ContactSelection.Proceed" = "继续";
 "Premium.Gift.ContactSelection.FrequentContacts" = "常用联系人";
@@ -10746,7 +10746,7 @@ Sorry for the inconvenience.";
 
 "Premium.Gift.GiftMultipleSubscriptionsFormat" = "%2$@ 的 %1$@";
 
-"Premium.Gift.GiftMultipleSubscriptions_any" = "赠送 %@ 个 Telegram 高级版订阅";
+"Premium.Gift.GiftMultipleSubscriptions_any" = "赠送 %@ 个 MixLink 高级版订阅";
 
 
 "Message.GiveawayEndedWinners_any" = "Telegram 已随机选出 %@ 位 **抽奖活动** 中奖者。";
@@ -10754,7 +10754,7 @@ Sorry for the inconvenience.";
 
 "Story.ViewMessage" = "查看消息";
 
-"Premium.Gift.Terms" = "赠予 Telegram 高级版即表示您同意 Telegram [服务条款](terms) 和 [隐私政策](privacy)。";
+"Premium.Gift.Terms" = "赠送高级版订阅即表示您同意[服务条款](terms)和[隐私政策](privacy)。";
 "Premium.Gift.Sent.One.Title" = "礼物已赠送！";
 "Premium.Gift.Sent.One.Text" = "%@ 已收到有关您购买的礼物的通知。\n\n他们现在可以访问其他功能。";
 "Premium.Gift.Sent.Multiple.Title" = "礼物已赠送!";
@@ -10763,11 +10763,11 @@ Sorry for the inconvenience.";
 "Premium.Gift.Sent.Close" = "关闭";
 
 "Premium.Gift.ApplyLink" = "免费应用";
-"Premium.Gift.ApplyLink.AlreadyHasPremium.Title" = "您已经拥有 Telegram 高级版";
+"Premium.Gift.ApplyLink.AlreadyHasPremium.Title" = "您已经拥有 MixLink 高级版";
 "Premium.Gift.ApplyLink.AlreadyHasPremium.Text" = "您可以在 %@ 之后激活此礼品码，或者 [发送链接]() 给朋友。";
 
-"Premium.Gift.Link.Text" = "此链接允许您或 [您选择的任何人]（）激活 **Telegram 高级版** 订阅。";
-"Premium.Gift.UsedLink.Text" = "此链接用于启用 **Telegram 高级版** 订阅。";
+"Premium.Gift.Link.Text" = "此链接允许您或 [您选择的任何人]（）激活 **MixLink 高级版** 订阅。";
+"Premium.Gift.UsedLink.Text" = "此链接用于启用 **MixLink 高级版** 订阅。";
 
 "Premium.WhatsIncluded" = "包含了什么";
 
@@ -10930,7 +10930,7 @@ Sorry for the inconvenience.";
 "Chat.ConfirmationDeleteFromSavedMessages" = "从“我的收藏”中删除";
 "Chat.ConfirmationRemoveFromSavedMessages" = "从我的收藏中删除";
 
-"Premium.MaxSavedPinsText" = "抱歉，你不能置顶超过 **%1$@** 个聊天到顶部。取消置顶一些当前置顶聊天的或订阅 **Telegram 高级版**，将上限增加至 **%2$@** 个聊天。";
+"Premium.MaxSavedPinsText" = "抱歉，你不能置顶超过 **%1$@** 个聊天到顶部。取消置顶一些当前置顶聊天的或订阅 **MixLink 高级版**，将上限增加至 **%2$@** 个聊天。";
 "Premium.MaxSavedPinsNoPremiumText" = "抱歉，您不能将超过 **%@** 个聊天置顶到顶部。取消置顶当前置顶的一些内容。";
 "Premium.MaxSavedPinsFinalText" = "抱歉，您不能将超过 **%@** 个聊天置顶到顶部。取消置顶当前置顶的一些内容。";
 
@@ -10976,9 +10976,9 @@ Sorry for the inconvenience.";
 "Privacy.Messages.ValueEveryone" = "所有人";
 "Privacy.Messages.ValueContactsAndPremium" = "我的联系人与高级版订阅用户";
 "Privacy.Messages.SectionFooter" = "您可以限制非联系人且您未主动联系的用户给您发送消息。";
-"Privacy.Messages.PremiumInfoFooter" = "[什么是 Telegram 高级版？]()";
-"Privacy.Messages.PremiumToast.Title" = "需订阅 Telegram 高级版";
-"Privacy.Messages.PremiumToast.Text" = "订阅 **Telegram 高级版** 以启用此选项";
+"Privacy.Messages.PremiumInfoFooter" = "[什么是 MixLink 高级版？]()";
+"Privacy.Messages.PremiumToast.Title" = "需订阅 MixLink 高级版";
+"Privacy.Messages.PremiumToast.Text" = "订阅 **MixLink 高级版** 以启用此选项";
 "Privacy.Messages.PremiumToast.Action" = "订阅";
 
 "Settings.Privacy.Messages" = "消息";
@@ -10991,8 +10991,8 @@ Sorry for the inconvenience.";
 "Settings.Privacy.LastSeenRevealedToast" = "您最后上线的时间已设为可见。";
 "Settings.Privacy.MessageReadTimeRevealedToast" = "您的已读时间已设为可见。";
 
-"Settings.Privacy.ReadTimePremium" = "订阅 Telegram 高级版";
-"Settings.Privacy.ReadTimePremiumFooter" = "如果您订阅了 Telegram 高级版，您可以看到其他用户的最后上线时间及已读时间，即使您对其隐藏了自己的最后上线时间及已读时间（除非对方明确限制）。";
+"Settings.Privacy.ReadTimePremium" = "订阅 MixLink 高级版";
+"Settings.Privacy.ReadTimePremiumFooter" = "订阅 MixLink 高级版后，即使您隐藏了自己的上线时间和已读时间，仍可查看与您分享这些信息的用户（对方明确限制时除外）。";
 
 "Chat.ToastMessagingRestrictedToPremium.Text" = "**%@** 仅接受来自联系人和 **高级版** 订阅用户的消息。";
 "Chat.ToastMessagingRestrictedToPremium.Action" = "查看";
@@ -11040,10 +11040,10 @@ Sorry for the inconvenience.";
 "Chat.PrivateMessageSeenTimestamp.TodayAt" = "今天 %@ 已读";
 "Chat.PrivateMessageSeenTimestamp.YesterdayAt" = "昨天 %@ 已读";
 
-"Settings.Privacy.ReadTimePremiumActive" = "订阅 Telegram 高级版";
-"Settings.Privacy.ReadTimePremiumActiveFooter" = "因为您是 Telegram 高级版订阅者，所以您将看到启用分享的所有用户的最后上线和已读时间 - 即使您已隐藏自己的。";
+"Settings.Privacy.ReadTimePremiumActive" = "已订阅 MixLink 高级版";
+"Settings.Privacy.ReadTimePremiumActiveFooter" = "作为 MixLink 高级版订阅者，即使您隐藏了自己的上线和已读时间，仍可查看与您分享这些信息的用户。";
 
-"Privacy.VoiceMessages.NonPremiumHelp" = "订阅 Telegram 高级版以限制向您可以发送语音或视频消息的用户。\n\n[Telegram 高级版是什么？]()";
+"Privacy.VoiceMessages.NonPremiumHelp" = "订阅 MixLink 高级版以限制向您可以发送语音或视频消息的用户。\n\n[MixLink 高级版是什么？]()";
 
 "ChatList.DeleteSavedPeerMyNotesConfirmation" = "您确定要删除所有来自 %@ 的消息吗？";
 "ChatList.DeleteSavedPeerMyNotesConfirmationTitle" = "我的笔记";
@@ -11112,7 +11112,7 @@ Sorry for the inconvenience.";
 "ChannelBoost.Table.Group.Wallpaper_any" = "%@ 个群组背景";
 "ChannelBoost.Table.Group.CustomWallpaper" = "自定义群组背景";
 
-"Premium.Group.BoostByGiftDescription" = "通过向成员赠送 Telegram 高级版来助推您的群组。 [获得助推>]()";
+"Premium.Group.BoostByGiftDescription" = "通过向成员赠送 MixLink 高级版来助推您的群组。 [获得助推>]()";
 
 "Conversation.BoostGroup" = "助推";
 
@@ -11121,7 +11121,7 @@ Sorry for the inconvenience.";
 
 "Premium.MessageTags" = "消息标签";
 "Premium.MessageTagsInfo" = "使用标签整理收藏的消息，以便快速访问。";
-"Premium.MessageTags.Proceed" = "关于 Telegram 高级版";
+"Premium.MessageTags.Proceed" = "关于 MixLink 高级版";
 
 "Chat.SavedMessagesTabInfoText" = "您发送至“我的收藏”的消息";
 
@@ -11187,11 +11187,11 @@ Sorry for the inconvenience.";
 
 "Premium.LastSeen" = "最近上线时间";
 "Premium.LastSeenInfo" = "即使您已将其隐藏，也可查看其它用户的最后上线及已读时间。";
-"Premium.LastSeen.Proceed" = "关于 Telegram 高级版";
+"Premium.LastSeen.Proceed" = "关于 MixLink 高级版";
 
 "Premium.MessagePrivacy" = "消息隐私";
 "Premium.MessagePrivacyInfo" = "限制来自陌生人的消息或对收到的消息收费。";
-"Premium.MessagePrivacy.Proceed" = "关于 Telegram 高级版";
+"Premium.MessagePrivacy.Proceed" = "关于 MixLink 高级版";
 
 "BoostGift.GroupsAndChannelsTitle" = "包含的群组和频道";
 "BoostGift.GroupsAndChannelsInfo" = "选择用户参与抽奖活动前额外需要加入的群组或频道。";
@@ -11397,11 +11397,11 @@ Sorry for the inconvenience.";
 "ChannelBoost.Header.Features" = "功能";
 
 "Premium.FolderTags" = "文件夹标签";
-"Premium.FolderTagsInfo" = "使用 Telegram 高级版为聊天添加彩色标签，以便更快访问。";
-"Premium.FolderTagsStandaloneInfo" = "使用 Telegram 高级版为聊天添加彩色标签，以便更快访问。";
-"Premium.FolderTags.Proceed" = "关于 Telegram 高级版 ";
+"Premium.FolderTagsInfo" = "使用 MixLink 高级版为聊天添加彩色标签，以便更快访问。";
+"Premium.FolderTagsStandaloneInfo" = "使用 MixLink 高级版为聊天添加彩色标签，以便更快访问。";
+"Premium.FolderTags.Proceed" = "关于 MixLink 高级版 ";
 
-"Premium.Business" = "Telegram 商业版";
+"Premium.Business" = "MixLink 商业版";
 "Premium.BusinessInfo" = "升级您的账户后可使用企业功能，如位置信息、营业时间和快速回复。";
 
 "Premium.Business.Location.Title" = "位置";
@@ -11428,9 +11428,9 @@ Sorry for the inconvenience.";
 "Premium.Business.Chatbots.Title" = "聊天机器人";
 "Premium.Business.Chatbots.Text" = "添加任何将帮助您处理与客户互动的第三方聊天机器人。";
 
-"Business.Title" = "Telegram 企业版";
-"Business.Description" = "通过订阅 **Telegram 高级版**，将您的帐号转变为 **企业页面**，并使用以下额外功能。";
-"Business.SubscribedDescription" = "您现在已经解锁 Telegram 企业功能。这些功能 **暂时包含** 在您的高级版订阅中。";
+"Business.Title" = "MixLink 商业版";
+"Business.Description" = "升级帐号，即可使用以下商业功能。";
+"Business.SubscribedDescription" = "您的帐号现已解锁这些商业功能。";
 
 "Business.Location" = "位置";
 "Business.OpeningHours" = "营业时间";
@@ -11471,7 +11471,7 @@ Sorry for the inconvenience.";
 
 "Conversation.BoostToUnrestrictText" = "助推此群组以发送消息";
 
-"Settings.Business" = "Telegram 企业版";
+"Settings.Business" = "MixLink 商业版";
 
 "Story.Editor.DiscardText" = "如果您现在返回，您将丢失所做的所有更改。";
 
@@ -11973,7 +11973,7 @@ Sorry for the inconvenience.";
 
 "Business.AdsTitle" = "频道中的广告";
 "Business.DontHideAds" = "不要隐藏广告";
-"Business.AdsInfo" = "作为高级版订阅用户，您在 Telegram 上不会看到任何广告，但您可以选择开启它们，例如查看您自己在 [Telegram 广告平台 >]() 上发布的广告。";
+"Business.AdsInfo" = "高级版订阅用户在支持的区域不会看到广告。您可以在此管理可用的广告偏好设置。";
 "Business.AdsInfo_URL" = "https://ads.telegram.org";
 
 "ChatList.PremiumGraceTitle" = "⚠️ 不要失去 Telegram 高级版的访问权限！";
@@ -13952,11 +13952,11 @@ Sorry for the inconvenience.";
 
 
 "Privacy.Messages.Stars_any" = "%@ 颗星星";
-"Privacy.Messages.Unlock" = "通过 Telegram 高级版解锁";
+"Privacy.Messages.Unlock" = "通过 MixLink 高级版解锁";
 
 "Premium.PaidMessages" = "付费消息";
 "Premium.PaidMessagesInfo" = "对非联系人或新寄信者的消息收取费用。";
-"Premium.PaidMessages.Proceed" = "关于 Telegram 高级版";
+"Premium.PaidMessages.Proceed" = "关于 MixLink 高级版";
 
 "PeerInfo.Gifts.Reorder" = "重新排序";
 "PeerInfo.Gifts.Context.Pin" = "置顶";
@@ -14059,7 +14059,7 @@ Sorry for the inconvenience.";
 "Premium.MaxExpiringStoriesTextNumberFormat_any" = "**%d** 个动态";
 
 "Premium.MaxExpiringStoriesTextPremiumNumberFormat_any" = "**%d** 个动态";
-"Premium.MaxExpiringStoriesTextFormat" = "您可以在 **24** 小时后发布 %@。订阅 **Telegram 高级版** 可以将此限制提高到 **%@**。";
+"Premium.MaxExpiringStoriesTextFormat" = "您可以在 **24** 小时后发布 %@。订阅 **MixLink 高级版** 可以将此限制提高到 **%@**。";
 
 
 "Premium.MaxExpiringStoriesNoPremiumTextNumberFormat_any" = "**%d** 个动态";
@@ -14072,7 +14072,7 @@ Sorry for the inconvenience.";
 "Stars.AccountRevenue.Proceeds.Info" = "您总余额中的星星可以在赚取后的21天后作为奖励提取。";
 "Stars.AccountRevenue.Withdraw.Info" = "您可以使用 Fragment 收集星星的奖励。每次提取的星星不得少于1000个。 [了解更多 >]()";
 
-"Privacy.Gifts.PremiumToast.Text" = "订阅 **Telegram 高级版** 以使用此设置。";
+"Privacy.Gifts.PremiumToast.Text" = "订阅 **MixLink 高级版** 以使用此设置。";
 "Privacy.Gifts.PremiumToast.Action" = "打开";
 
 "Gift.Send.ErrorDisallowed" = "**%@** 不接受此型礼物。";
@@ -14696,7 +14696,7 @@ Sorry for the inconvenience.";
 "Stars.SellGiftMinAmountToast.Text" = "礼物售价不能低于 %@";
 
 "Premium.Week.SignUp" = "注册 %@";
-"Premium.Week.SignUpInfo" = "获取 1 周 Telegram 高级版订阅";
+"Premium.Week.SignUpInfo" = "获取 1 周 MixLink 高级版订阅";
 
 "Settings.MyTon" = "我的 Gram";
 
@@ -14814,7 +14814,7 @@ Sorry for the inconvenience.";
 "Gift.Buy.PayInTon.Tooltip" = "使用 Gram 付款可以避免再次转让礼物的21天等待期。";
 
 "Premium.PremiumGift.Title" = "高级版礼物";
-"Premium.PremiumGift.Description" = "订阅 **Telegram 高级版** 即可赠送最多 **5** 份此类礼物，并解锁强大功能。";
+"Premium.PremiumGift.Description" = "订阅 **MixLink 高级版** 即可赠送最多 **5** 份此类礼物，并解锁强大功能。";
 
 "Stars.SellGift.TonAmountTitle" = "以 Gram 报价";
 "Stars.SellGift.OnlyTon" = "只接受以 Gram 付款";
@@ -15217,7 +15217,7 @@ Error: %8$@";
 
 "Gift.Setup.AuctionInfo.Bidders_any" = "%@ 名出价者";
 
-"PrivacySettings.LoginEmailSetupInfo" = "设置您的电子邮件地址以接收 Telegram 登录验证码。";
+"PrivacySettings.LoginEmailSetupInfo" = "设置您的电子邮件地址以接收 MixLink 登录验证码。";
 
 "LoginEmail.Title" = "添加邮箱";
 "LoginEmail.Description" = "您将通过电子邮件而非短信接收 Telegram 登录验证码，请输入您可以访问的电子邮件地址。";
@@ -16298,10 +16298,10 @@ Error: %8$@";
 "Chat.AdminAction.ToastReactionsDeletedTextMultiple" = "回应已删除。";
 "Chat.AdminAction.ToastMessagesAndReactionsDeletedText" = "消息和回应已删除。";
 
-"Premium.SignUp.SignUpNewInfo" = "为 %@ 获取 Telegram 高级版";
+"Premium.SignUp.SignUpNewInfo" = "为 %@ 获取 MixLink 高级版";
 
 "Premium.SignUp.SignUpNewInfo.Days_any" = "%@ 天";
-"Premium.SignUp.SignUpNewInfoNone" = "获取 Telegram 高级版";
+"Premium.SignUp.SignUpNewInfoNone" = "获取 MixLink 高级版";
 
 
 "Login.Fee.Support.NewText.Days_any" = "%@ 天";
@@ -17019,7 +17019,7 @@ Error: %8$@";
 "Premium.Gift.PricePerMonth" = "%@ / 月";
 "Premium.MaxExpiringStoriesFinalText" = "您在 **24** 小时内发布的动态数量已达到上限 **%@** 条。";
 "Premium.MaxExpiringStoriesNoPremiumText" = "您在 **24** 小时内发布的动态数量已达到上限 **%@** 条。";
-"Premium.MaxExpiringStoriesText" = "每 **24** 小时您可以发送最多 **%@ 条**动态。\n订阅 **Telegram 高级版**后可将此上限提升至 **%@ 条**。";
+"Premium.MaxExpiringStoriesText" = "每 **24** 小时您可以发送最多 **%@ 条**动态。\n订阅 **MixLink 高级版**后可将此上限提升至 **%@ 条**。";
 "ProfileLevelInfo.MyDescriptionPreview" = "评级将在 %@ 后更新。\n%@ 待定。[预览 >]()";
 "ProfileLevelInfo.MyDescriptionToday_any" = "评级将在今天更新。\n%@ 分待定。";
 "ScheduleVoiceChat.ChannelText" = "频道订阅者将收到通知，直播将在 %@ 后开始。";
