@@ -480,7 +480,7 @@ final class LocalizationListControllerNode: ViewControllerTracingNode {
             let isPremium = peer?.isPremium ?? false
                         
             var entries: [LanguageListEntry] = []
-            var activeLanguageCode: String?
+            var activeLanguageCode: String? = presentationData.strings.primaryComponent.languageCode
             if let localizationSettings = sharedData.entries[SharedDataKeys.localizationSettings]?.get(LocalizationSettings.self) {
                 activeLanguageCode = localizationSettings.primaryComponent.languageCode
             }

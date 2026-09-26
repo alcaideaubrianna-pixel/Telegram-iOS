@@ -53,7 +53,9 @@ func _internal_synchronizedLocalizationListState(postbox: Postbox, network: Netw
     return network.request(Api.functions.langpack.getLanguages(langPack: ""))
     |> retryRequest
     |> mapToSignal { languages -> Signal<Never, NoError> in
-        let infos: [LocalizationInfo] = languages.map(LocalizationInfo.init(apiLanguage:))
+        var infos: [LocalizationInfo] = languages.map(LocalizationInfo.init(apiLanguage:))
+        infos.removeAll(where: { $0.languageCode.lowercased() == LocalizationInfo.builtInSimplifiedChinese.languageCode })
+        infos.append(.builtInSimplifiedChinese)
         return postbox.transaction { transaction -> Void in
             updateLocalizationListStateInteractively(transaction: transaction, { current in
                 var current = current

@@ -10,6 +10,20 @@ public struct LocalizationInfo: PostboxCoding, Codable, Equatable {
     public let totalStringCount: Int32
     public let translatedStringCount: Int32
     public let platformUrl: String
+
+    public static var builtInSimplifiedChinese: LocalizationInfo {
+        return LocalizationInfo(
+            languageCode: "zh-hans",
+            baseLanguageCode: nil,
+            customPluralizationCode: nil,
+            title: "Chinese (Simplified)",
+            localizedTitle: "简体中文",
+            isOfficial: true,
+            totalStringCount: 0,
+            translatedStringCount: 0,
+            platformUrl: "https://translations.telegram.org/zh-hans/"
+        )
+    }
     
     public init(languageCode: String, baseLanguageCode: String?, customPluralizationCode: String?, title: String, localizedTitle: String, isOfficial: Bool, totalStringCount: Int32, translatedStringCount: Int32, platformUrl: String) {
         self.languageCode = languageCode

@@ -9,6 +9,9 @@ public enum RequestLocalizationPreviewError {
 }
 
 func _internal_requestLocalizationPreview(network: Network, identifier: String) -> Signal<LocalizationInfo, RequestLocalizationPreviewError> {
+    if [LocalizationInfo.builtInSimplifiedChinese.languageCode, "zh-hans-beta"].contains(identifier.lowercased()) {
+        return .single(.builtInSimplifiedChinese)
+    }
     return network.request(Api.functions.langpack.getLanguage(langPack: "", langCode: identifier))
     |> mapError { _ -> RequestLocalizationPreviewError in
         return .generic

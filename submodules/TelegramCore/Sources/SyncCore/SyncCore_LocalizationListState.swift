@@ -5,7 +5,7 @@ public struct LocalizationListState: Codable, Equatable {
     public var availableSavedLocalizations: [LocalizationInfo]
     
     public static var defaultSettings: LocalizationListState {
-        return LocalizationListState(availableOfficialLocalizations: [], availableSavedLocalizations: [])
+        return LocalizationListState(availableOfficialLocalizations: [.builtInSimplifiedChinese], availableSavedLocalizations: [])
     }
     
     public init(availableOfficialLocalizations: [LocalizationInfo], availableSavedLocalizations: [LocalizationInfo]) {
@@ -16,7 +16,11 @@ public struct LocalizationListState: Codable, Equatable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: StringCodingKey.self)
 
-        self.availableOfficialLocalizations = (try? container.decode([LocalizationInfo].self, forKey: "availableOfficialLocalizations")) ?? []
+        var availableOfficialLocalizations = (try? container.decode([LocalizationInfo].self, forKey: "availableOfficialLocalizations")) ?? []
+        if !availableOfficialLocalizations.contains(where: { $0.languageCode.lowercased() == LocalizationInfo.builtInSimplifiedChinese.languageCode }) {
+            availableOfficialLocalizations.append(.builtInSimplifiedChinese)
+        }
+        self.availableOfficialLocalizations = availableOfficialLocalizations
         self.availableSavedLocalizations = (try? container.decode([LocalizationInfo].self, forKey: "availableSavedLocalizations")) ?? []
     }
     

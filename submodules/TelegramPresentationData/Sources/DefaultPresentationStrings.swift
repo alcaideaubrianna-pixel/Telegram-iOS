@@ -43,8 +43,8 @@ public func formatWithArgumentRanges(_ value: String, _ ranges: [(Int, NSRange)]
 
 private let defaultLanguageLocalization: (code: String, resource: String, name: String) = {
     for language in Locale.preferredLanguages {
-        let identifier = Locale(identifier: language).identifier.lowercased()
-        if identifier == "zh-hans" || identifier.hasPrefix("zh-cn") || identifier.hasPrefix("zh-sg") {
+        let identifier = Locale(identifier: language).identifier.lowercased().replacingOccurrences(of: "_", with: "-")
+        if identifier == "zh-hans" || identifier.hasPrefix("zh-hans-") || identifier == "zh-cn" || identifier.hasPrefix("zh-cn-") || identifier == "zh-sg" || identifier.hasPrefix("zh-sg-") {
             return ("zh-hans", "zh-Hans", "简体中文")
         }
         if identifier.hasPrefix("en") {

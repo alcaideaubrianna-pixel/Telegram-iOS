@@ -108,7 +108,66 @@ public enum DownloadAndApplyLocalizationError {
     case generic
 }
 
+private func _internal_builtInSimplifiedChineseLocalization() -> Localization? {
+    guard let path = Bundle.main.path(forResource: "Localizable", ofType: "strings", inDirectory: nil, forLocalization: "zh-Hans"),
+          let data = try? Data(contentsOf: URL(fileURLWithPath: path)),
+          let propertyList = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil),
+          let strings = propertyList as? [String: String] else {
+        return nil
+    }
+
+    let entries = strings.keys.sorted().compactMap { key -> LocalizationEntry? in
+        guard let value = strings[key] else {
+            return nil
+        }
+        return .string(key: key, value: value)
+    }
+    return Localization(version: 0, entries: entries)
+}
+
+private func _internal_applyBuiltInLocalization(accountManager: AccountManager<TelegramAccountManagerTypes>, postbox: Postbox, network: Network, localization: Localization) -> Signal<Void, DownloadAndApplyLocalizationError> {
+    let info = LocalizationInfo.builtInSimplifiedChinese
+    return accountManager.transaction { transaction -> Signal<Void, DownloadAndApplyLocalizationError> in
+        transaction.updateSharedData(SharedDataKeys.localizationSettings, { _ in
+            return PreferencesEntry(LocalizationSettings(
+                primaryComponent: LocalizationComponent(
+                    languageCode: info.languageCode,
+                    localizedName: info.localizedTitle,
+                    localization: localization,
+                    customPluralizationCode: info.customPluralizationCode
+                ),
+                secondaryComponent: nil
+            ))
+        })
+
+        return postbox.transaction { transaction -> Void in
+            updateLocalizationListStateInteractively(transaction: transaction, { state in
+                var state = state
+                state.availableOfficialLocalizations.removeAll(where: { $0.languageCode.lowercased() == info.languageCode })
+                state.availableOfficialLocalizations.append(info)
+                return state
+            })
+        }
+        |> mapToSignal { _ -> Signal<Void, NoError> in
+            network.context.updateApiEnvironment { current in
+                return current?.withUpdatedLangPackCode(info.languageCode)
+            }
+            return .single(())
+        }
+        |> castError(DownloadAndApplyLocalizationError.self)
+    }
+    |> castError(DownloadAndApplyLocalizationError.self)
+    |> switchToLatest
+}
+
 func _internal_downloadAndApplyLocalization(accountManager: AccountManager<TelegramAccountManagerTypes>, postbox: Postbox, network: Network, languageCode: String) -> Signal<Void, DownloadAndApplyLocalizationError> {
+    if [LocalizationInfo.builtInSimplifiedChinese.languageCode, "zh-hans-beta"].contains(languageCode.lowercased()) {
+        guard let localization = _internal_builtInSimplifiedChineseLocalization() else {
+            return .fail(.generic)
+        }
+        return _internal_applyBuiltInLocalization(accountManager: accountManager, postbox: postbox, network: network, localization: localization)
+    }
+
     return _internal_requestLocalizationPreview(network: network, identifier: languageCode)
     |> mapError { _ -> DownloadAndApplyLocalizationError in
         return .generic
