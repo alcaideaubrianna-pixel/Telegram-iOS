@@ -1,3 +1,4 @@
+third-party/*
 fastlane/README.md
 fastlane/report.xml
 fastlane/test_output/*
@@ -84,3 +85,6 @@ xcode-files
 **/node_modules/
 tools/sim-watcher/dist/
 .mcp.json
+.spec-workflow
+.pi
+.agents

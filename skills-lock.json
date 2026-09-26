@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "using-bitrise-ci": {
+      "source": "bitrise-io/agent-skills",
+      "sourceType": "github",
+      "skillPath": "using-bitrise-ci/SKILL.md",
+      "computedHash": "dbdec0da262fc637b74de3b9419d22240790e43d578c48db51d1c400443d3d21"
+    }
+  }
+}
