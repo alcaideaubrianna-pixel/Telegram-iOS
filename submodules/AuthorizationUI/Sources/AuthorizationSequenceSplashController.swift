@@ -82,11 +82,9 @@ public final class AuthorizationSequenceSplashController: ViewController {
         self.supportedOrientations = ViewControllerSupportedOrientations(regularSize: .all, compactSize: .portrait)
         
         self.statusBar.statusBarStyle = theme.intro.statusBarStyle.style
-
-        let defaultLocalizationCode = defaultPresentationStrings.primaryComponent.languageCode
         
         self.controller.startMessaging = { [weak self] in
-            self?.activateLocalization(defaultLocalizationCode)
+            self?.activateLocalization(nil)
         }
         self.controller.startMessagingInAlternativeLanguage = { [weak self] code in
             if let code = code {
@@ -95,7 +93,7 @@ public final class AuthorizationSequenceSplashController: ViewController {
         }
         
         self.startButton.pressed = { [weak self] in
-            self?.activateLocalization(defaultLocalizationCode)
+            self?.activateLocalization(nil)
         }
         
         self.controller.createStartButton = { [weak self] width in
@@ -190,7 +188,7 @@ public final class AuthorizationSequenceSplashController: ViewController {
         }
     }
     
-    private func activateLocalization(_ code: String) {
+    private func activateLocalization(_ selectedCode: String?) {
         let currentCode = self.accountManager.transaction { transaction -> String in
             if let current = transaction.getSharedData(SharedDataKeys.localizationSettings)?.get(LocalizationSettings.self) {
                 return current.primaryComponent.languageCode
@@ -213,6 +211,8 @@ public final class AuthorizationSequenceSplashController: ViewController {
             if let suggestedCode = suggestedCode {
                 _ = TelegramEngineUnauthorized(account: strongSelf.account).localization.markSuggestedLocalizationAsSeenInteractively(languageCode: suggestedCode).start()
             }
+
+            let code = selectedCode ?? currentCode
             
             if currentCode == code {
                 strongSelf.pressNext(strings: nil)

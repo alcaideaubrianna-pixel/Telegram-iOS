@@ -1,1 +1,15 @@
 "CFBundleDisplayName" = "密联";
+
+/* Localized versions of Info.plist keys */
+
+"NSContactsUsageDescription" = "MixLink 需要访问通讯录，以便您找到并联系好友。";
+"NSLocationWhenInUseUsageDescription" = "发送位置时，MixLink 需要访问您的位置，以便在地图上显示。";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "当您在聊天中与好友分享实时位置时，MixLink 需要在后台访问您的位置，以便在分享期间持续更新。";
+"NSLocationAlwaysUsageDescription" = "当您在聊天中与好友分享实时位置时，MixLink 需要在后台访问您的位置，以便持续更新。您也可以通过 Apple Watch 发送位置。";
+"NSMotionUsageDescription" = "拍摄照片和视频时，MixLink 会使用运动传感器信息判断设备方向。";
+"NSCameraUsageDescription" = "MixLink 需要访问相机，以便您拍摄和分享照片、视频并进行视频通话。";
+"NSPhotoLibraryUsageDescription" = "MixLink 需要访问照片图库，以便您选择和分享照片、视频。";
+"NSPhotoLibraryAddUsageDescription" = "MixLink 需要权限将您拍摄的照片和视频保存到照片图库。";
+"NSMicrophoneUsageDescription" = "MixLink 需要访问麦克风，以便录制和分享语音消息及有声视频。";
+"NSSiriUsageDescription" = "您可以使用 Siri 通过 MixLink 发送消息。";
+"NSFaceIDUsageDescription" = "您可以使用 Face ID 解锁 MixLink。";

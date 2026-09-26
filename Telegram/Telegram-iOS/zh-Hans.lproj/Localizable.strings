@@ -492,7 +492,7 @@
 "Contacts.TabTitle" = "联系人";
 "Contacts.Title" = "联系人";
 "Contacts.FailedToSendInvitesMessage" = "发生错误。";
-"Contacts.AccessDeniedError" = "Telegram 无法访问您的通讯录";
+"Contacts.AccessDeniedError" = "MixLink 无法访问您的通讯录";
 "Contacts.AccessDeniedHelpLandscape" = "请前往您 %@ 的「系统设置 - 隐私 - 通讯录」，\n然后开启 Telegram 的权限即可。";
 "Contacts.AccessDeniedHelpPortrait" = "请在您的 %@ 上打开“设置” > “隐私” > “通讯录”，然后将 Telegram 的权限打开。";
 "Contacts.AccessDeniedHelpON" = "开启";
@@ -1264,32 +1264,32 @@
 
 "AccessDenied.Title" = "请授权访问";
 
-"AccessDenied.Contacts" = "Telegram 基于您已有的联系人列表与他人通讯。\n\n请在您的设备上打开“设置” > “隐私” > “通讯录”，然后将 Telegram 的权限打开。";
+"AccessDenied.Contacts" = "MixLink 基于您已有的联系人列表与他人通讯。\n\n请在您的设备上打开“设置” > “隐私” > “通讯录”，然后将 MixLink 的权限打开。";
 
-"AccessDenied.VoiceMicrophone" = "Telegram 需要访问您的麦克风，以便您发送语音消息。\n\n请在您的设备上打开“设置” > “隐私” > “麦克风”，然后将 Telegram 的权限打开。";
+"AccessDenied.VoiceMicrophone" = "MixLink 需要访问您的麦克风，以便您发送语音消息。\n\n请在您的设备上打开“设置” > “隐私” > “麦克风”，然后将 MixLink 的权限打开。";
 
-"AccessDenied.VideoMicrophone" = "Telegram 需要访问您的麦克风，以便您在视频中录制声音。\n\n请在您的设备上打开“设置” > “隐私” > “麦克风”，然后将 Telegram 的权限打开。";
+"AccessDenied.VideoMicrophone" = "MixLink 需要访问您的麦克风，以便您在视频中录制声音。\n\n请在您的设备上打开“设置” > “隐私” > “麦克风”，然后将 MixLink 的权限打开。";
 
-"AccessDenied.MicrophoneRestricted" = "Telegram 无法访问麦克风。\n\n请在您的设备上打开“设置” > “通用” > “访问限制” > “麦克风”，然后将 Telegram 的权限打开。";
+"AccessDenied.MicrophoneRestricted" = "MixLink 无法访问麦克风。\n\n请在您的设备上打开“设置” > “通用” > “访问限制” > “麦克风”，然后将 MixLink 的权限打开。";
 
 
-"AccessDenied.Camera" = "Telegram 需要访问您的相机，以便您拍照或录像。\n\n请在您的设备上打开“设置” > “隐私” > “相机”，然后将 Telegram 的权限打开。";
+"AccessDenied.Camera" = "MixLink 需要访问您的相机，以便您拍照或录像。\n\n请在您的设备上打开“设置” > “隐私” > “相机”，然后将 MixLink 的权限打开。";
 
-"AccessDenied.CameraRestricted" = "Telegram 无法访问相机。\n\n请在您的设备上打开“设置” > “通用” > “访问限制” > “相机”，然后将 Telegram 的权限打开。";
+"AccessDenied.CameraRestricted" = "MixLink 无法访问相机。\n\n请在您的设备上打开“设置” > “通用” > “访问限制” > “相机”，然后将 MixLink 的权限打开。";
 
 "AccessDenied.CameraDisabled" = "此设备已被禁止使用相机。\n\n请前往「设置 - 通用 - 访问限制」中打开「相机」的开关。";
 
-"AccessDenied.PhotosAndVideos" = "Telegram 需要访问您的相册，以便您发送图片或视频。\n\n请在您的设备上打开“设置” > “隐私” > “照片”，然后将 Telegram 的权限打开。";
+"AccessDenied.PhotosAndVideos" = "MixLink 需要访问您的相册，以便您发送图片或视频。\n\n请在您的设备上打开“设置” > “隐私” > “照片”，然后将 MixLink 的权限打开。";
 
-"AccessDenied.SaveMedia" = "Telegram 需要访问您的相册，以便您保存图片或视频。\n\n请在您的设备上打开“设置” > “隐私” > “照片”，然后将 Telegram 的权限打开。";
+"AccessDenied.SaveMedia" = "MixLink 需要访问您的相册，以便您保存图片或视频。\n\n请在您的设备上打开“设置” > “隐私” > “照片”，然后将 MixLink 的权限打开。";
 
-"AccessDenied.PhotosRestricted" = "Telegram 无法访问照片。\n\n请前往「设置 - 隐私 - 照片」中开启 Telegram 权限。";
+"AccessDenied.PhotosRestricted" = "MixLink 无法访问照片。\n\n请前往「设置 - 隐私 - 照片」中开启 MixLink 权限。";
 
-"AccessDenied.LocationDenied" = "Telegram 需要访问您的位置信息，以便您将其分享给联系人。\n\n请在您的设备上打开“设置” > “隐私” > “定位服务”，然后将 Telegram 的权限打开。";
+"AccessDenied.LocationDenied" = "MixLink 需要访问您的位置信息，以便您将其分享给联系人。\n\n请在您的设备上打开“设置” > “隐私” > “定位服务”，然后将 MixLink 的权限打开。";
 
-"AccessDenied.LocationDisabled" = "Telegram 需要访问您的位置信息，以便您将其分享给联系人。\n\n请在您的设备上打开“设置” > “隐私” > “定位服务”，然后将 Telegram 的权限打开。";
+"AccessDenied.LocationDisabled" = "MixLink 需要访问您的位置信息，以便您将其分享给联系人。\n\n请在您的设备上打开“设置” > “隐私” > “定位服务”，然后将 MixLink 的权限打开。";
 
-"AccessDenied.LocationTracking" = "Telegram 需要访问您的位置信息，以便您与朋友分享位置。\n\n请在您的设备上打开“设置” > “隐私” > “定位服务”，然后将 Telegram 的权限打开。";
+"AccessDenied.LocationTracking" = "MixLink 需要访问您的位置信息，以便您与朋友分享位置。\n\n请在您的设备上打开“设置” > “隐私” > “定位服务”，然后将 MixLink 的权限打开。";
 
 "AccessDenied.Settings" = "设置";
 
@@ -1463,7 +1463,7 @@
 
 "ChangePhone.ErrorOccupied" = "手机号码 %@ 已经和一个 Telegram 帐号绑定。请先删除该帐号再迁移到此新号码。";
 
-"AccessDenied.LocationTracking" = "Telegram 需要访问您的位置信息，以便您与朋友分享位置。\n\n请在您的设备上打开“设置” > “隐私” > “定位服务”，然后将 Telegram 的权限打开。";
+"AccessDenied.LocationTracking" = "MixLink 需要访问您的位置信息，以便您与朋友分享位置。\n\n请在您的设备上打开“设置” > “隐私” > “定位服务”，然后将 MixLink 的权限打开。";
 
 "PrivacySettings.AuthSessions" = "活跃会话";
 "AuthSessions.Title" = "活跃会话";
@@ -1821,7 +1821,7 @@
 "Watch.Stickers.StickerPacks" = "贴纸包";
 
 "Watch.Location.Current" = "当前位置信息";
-"Watch.Location.Access" = "允许 Telegram 获取您的位置";
+"Watch.Location.Access" = "允许 MixLink 获取您的位置";
 
 "Watch.AuthRequired" = "若要开始，请先在手机上登录到 Telegram";
 
@@ -1951,7 +1951,7 @@
 "PrivacyLastSeenSettings.GroupsAndChannelsHelp" = "上面的选项可以决定谁能将您添加到群组/频道。";
 "MusicPlayer.VoiceNote" = "语音消息";
 
-"Watch.Microphone.Access" = "允许 Telegram 获取您手机上的麦克风权限";
+"Watch.Microphone.Access" = "允许 MixLink 获取您手机上的麦克风权限";
 
 "Settings.AppleWatch" = "Apple Watch";
 "AppleWatch.Title" = "Apple Watch";
@@ -2286,7 +2286,7 @@ Unused sets are archived when you add more.";
 "Conversation.JumpToDate" = "跳转到此日期";
 "Conversation.AddToReadingList" = "添加到阅读列表";
 
-"AccessDenied.CallMicrophone" = "Telegram 需要访问您的麦克风，以便您进行语音通话。\n\n请在您的设备上打开“设置” > “隐私” > “麦克风”，然后将 Telegram 的权限打开。";
+"AccessDenied.CallMicrophone" = "MixLink 需要访问您的麦克风，以便您进行语音通话。\n\n请在您的设备上打开“设置” > “隐私” > “麦克风”，然后将 MixLink 的权限打开。";
 
 "Call.EncryptionKey.Title" = "加密密钥";
 
@@ -2618,8 +2618,8 @@ Unused sets are archived when you add more.";
 "SharedMedia.CategoryLinks" = "链接";
 "SharedMedia.CategoryOther" = "音乐";
 
-"AccessDenied.VideoMessageCamera" = "Telegram 需要访问您的相机，以便您录制视频信息。\n\n请在您的设备上打开“设置” > “隐私” > “相机”，然后将 Telegram 的权限打开。";
-"AccessDenied.VideoMessageMicrophone" = "Telegram 需要访问您的麦克风，以便您发送视频消息。\n\n请在您的设备上打开“设置” > “隐私” > “麦克风”，然后将 Telegram 的权限打开。";
+"AccessDenied.VideoMessageCamera" = "MixLink 需要访问您的相机，以便您录制视频信息。\n\n请在您的设备上打开“设置” > “隐私” > “相机”，然后将 MixLink 的权限打开。";
+"AccessDenied.VideoMessageMicrophone" = "MixLink 需要访问您的麦克风，以便您发送视频消息。\n\n请在您的设备上打开“设置” > “隐私” > “麦克风”，然后将 MixLink 的权限打开。";
 
 "ChatSettings.AutomaticVideoMessageDownload" = "自动下载视频消息";
 
@@ -3069,7 +3069,7 @@ Unused sets are archived when you add more.";
 
 "NotificationSettings.ContactJoined" = "新联系人";
 
-"AccessDenied.LocationAlwaysDenied" = "如果您想要和朋友共享实时位置信息，只有授予 Telegram 定位服务权限才能在应用处于后台时依旧能保持共享。\n\n请前往「设置 - 隐私 - 定位服务」中将 Telegram 设置为“总是”。";
+"AccessDenied.LocationAlwaysDenied" = "如果您想要和朋友共享实时位置信息，只有授予 MixLink 定位服务权限才能在应用处于后台时依旧能保持共享。\n\n请前往「设置 - 隐私 - 定位服务」中将 MixLink 设置为“总是”。";
 
 "UserInfo.UnblockConfirmation" = "要将“%@”移出黑名单吗？";
 
@@ -3157,16 +3157,16 @@ Unused sets are archived when you add more.";
 
 "Privacy.PaymentsClearInfoDoneHelp" = "已清除付款信息";
 
-"InfoPlist.NSContactsUsageDescription" = "为了让您在任何设备上联系朋友，Telegram 会将您的联系人信息即时同步到高度加密的 Telegram 云服务器。";
-"InfoPlist.NSLocationWhenInUseUsageDescription" = "Telegram 需要此权限以便在您需要时向您的朋友发送位置信息。";
+"InfoPlist.NSContactsUsageDescription" = "为了让您在任何设备上联系朋友，MixLink 会将您的联系人信息即时同步到高度加密的 MixLink 云服务器。";
+"InfoPlist.NSLocationWhenInUseUsageDescription" = "MixLink 需要此权限以便在您需要时向您的朋友发送位置信息。";
 "InfoPlist.NSCameraUsageDescription" = "我们需要此权限来拍摄和分享照片和视频，以及进行视频通话。";
 "InfoPlist.NSPhotoLibraryUsageDescription" = "需要此权限才能分享照片和视频或将新内容保存到您的设备。";
 "InfoPlist.NSPhotoLibraryAddUsageDescription" = "需要此权限才能分享照片和视频或将新内容保存到您的设备。";
 "InfoPlist.NSMicrophoneUsageDescription" = "我们需要此权限来录制语音消息/有声视频，并分享给他人。";
 "InfoPlist.NSSiriUsageDescription" = "您可以使用 Siri 发送消息。";
-"InfoPlist.NSLocationAlwaysAndWhenInUseUsageDescription" = "当您选择在一个聊天中实时共享您的实时位置时，Telegram 需要后台应用刷新权限以在实时共享期间即时更新位置信息。";
-"InfoPlist.NSLocationAlwaysUsageDescription" = "当您选择在一个聊天中实时共享您的实时位置时，Telegram 需要后台应用刷新权限以在实时共享期间即时更新位置信息。您也需要此权限来从 Apple Watch 发送位置信息。";
-"InfoPlist.NSLocationWhenInUseUsageDescription" = "Telegram 需要此权限以便在您需要时向您的朋友发送位置信息。";
+"InfoPlist.NSLocationAlwaysAndWhenInUseUsageDescription" = "当您选择在一个聊天中实时共享您的实时位置时，MixLink 需要后台应用刷新权限以在实时共享期间即时更新位置信息。";
+"InfoPlist.NSLocationAlwaysUsageDescription" = "当您选择在一个聊天中实时共享您的实时位置时，MixLink 需要后台应用刷新权限以在实时共享期间即时更新位置信息。您也需要此权限来从 Apple Watch 发送位置信息。";
+"InfoPlist.NSLocationWhenInUseUsageDescription" = "MixLink 需要此权限以便在您需要时向您的朋友发送位置信息。";
 "InfoPlist.NSFaceIDUsageDescription" = "您可以使用 Face ID 解锁应用。";
 
 "Privacy.Calls.P2PNever" = "从不";
@@ -3922,11 +3922,11 @@ Unused sets are archived when you add more.";
 "Permissions.PrivacyPolicy" = "隐私政策";
 
 "Contacts.PermissionsTitle" = "访问通讯录";
-"Contacts.PermissionsText" = "请允许 Telegram 访问您的通讯录，以便查找您的朋友。";
+"Contacts.PermissionsText" = "请允许 MixLink 访问您的通讯录，以便查找您的朋友。";
 "Contacts.PermissionsAllow" = "允许访问";
 "Contacts.PermissionsAllowInSettings" = "在设置中允许";
 "Contacts.PermissionsSuppressWarningTitle" = "是否保持通讯录停用？";
-"Contacts.PermissionsSuppressWarningText" = "您将不会知道您的朋友何时加入Telegram 。 我们建议在“设置”中启用通讯录访问。";
+"Contacts.PermissionsSuppressWarningText" = "您将不会知道您的朋友何时加入MixLink 。 我们建议在“设置”中启用通讯录访问。";
 "Contacts.PermissionsKeepDisabled" = "保持停用";
 "Contacts.PermissionsEnable" = "开启";
 
@@ -4136,7 +4136,7 @@ Unused sets are archived when you add more.";
 "Undo.DeletedChannel" = "频道已删除。";
 "Undo.DeletedGroup" = "群组已删除。";
 
-"AccessDenied.Wallpapers" = "Telegram 需要访问您的相册，以便您可以设置自定义壁纸。\n\n请在您的设备上打开“设置” > “隐私” > “照片”，然后将 Telegram 的权限打开。";
+"AccessDenied.Wallpapers" = "MixLink 需要访问您的相册，以便您可以设置自定义壁纸。\n\n请在您的设备上打开“设置” > “隐私” > “照片”，然后将 MixLink 的权限打开。";
 
 "Conversation.ChatBackground" = "聊天壁纸";
 "Conversation.ViewBackground" = "查看壁纸";
@@ -5699,7 +5699,7 @@ Sorry for the inconvenience.";
 "Call.Audio" = "语音通话";
 "Call.AudioRouteMute" = "将自己静音";
 
-"AccessDenied.VideoCallCamera" = "Telegram 需要访问您的相机，以便您进行视频通话。\n\n请在您的设备上打开“设置” > “隐私” > “相机”，然后将 Telegram 的权限打开。";
+"AccessDenied.VideoCallCamera" = "MixLink 需要访问您的相机，以便您进行视频通话。\n\n请在您的设备上打开“设置” > “隐私” > “相机”，然后将 MixLink 的权限打开。";
 
 
 
@@ -5853,7 +5853,7 @@ Sorry for the inconvenience.";
 "Conversation.EditingPhotoPanelTitle" = "编辑照片";
 
 "Media.LimitedAccessTitle" = "访问相册受限";
-"Media.LimitedAccessText" = "您没有允许 Telegram 访问全部照片。";
+"Media.LimitedAccessText" = "您没有允许 MixLink 访问全部照片。";
 "Media.LimitedAccessManage" = "管理";
 "Media.LimitedAccessSelectMore" = "选择更多照片……";
 "Media.LimitedAccessChangeSettings" = "修改设置";
@@ -7325,8 +7325,8 @@ Sorry for the inconvenience.";
 
 
 
-"AccessDenied.QrCode" = "Telegram 需要访问您的相册，以便您扫描二维码。\n请在您的设备上打开“设置” > “隐私” > “照片”，然后将 Telegram 的权限打开。";
-"AccessDenied.QrCamera" = "Telegram 需要摄像头权限以扫描二维码。\n\n请前往设备设置 > 隐私 > 相机，将 Telegram 权限设为开启。";
+"AccessDenied.QrCode" = "MixLink 需要访问您的相册，以便您扫描二维码。\n请在您的设备上打开“设置” > “隐私” > “照片”，然后将 MixLink 的权限打开。";
+"AccessDenied.QrCamera" = "MixLink 需要摄像头权限以扫描二维码。\n\n请前往设备设置 > 隐私 > 相机，将 MixLink 权限设为开启。";
 
 "Share.ShareToInstagramStories" = "分享至 Instagram Stories";
 
@@ -7439,8 +7439,8 @@ Sorry for the inconvenience.";
 "Attachment.MediaAccessText" = "分享无限数目的照片和视频 \n每个高达2 GB。";
 "Attachment.MediaAccessStoryText" = "分享无限数量的图片和视频，每个文件大小限制为 2 GB。";
 
-"Attachment.LimitedMediaAccessText" = "您已限制 Telegram 访问照片。";
-"Attachment.CameraAccessText" = "Telegram 需要访问相机以拍照和录像。";
+"Attachment.LimitedMediaAccessText" = "您已限制 MixLink 访问照片。";
+"Attachment.CameraAccessText" = "MixLink 需要访问相机以拍照和录像。";
 "Attachment.Manage" = "管理";
 
 "Attachment.OpenSettings" = "跳转到设置";
@@ -7674,7 +7674,7 @@ Sorry for the inconvenience.";
 "Premium.AppIcons.Proceed" = "解锁高级会员图标";
 "Premium.NoAds.Proceed" = "关于 MixLink 高级版";
 
-"AccessDenied.LocationPreciseDenied" = "要在此聊天中分享您的具体位置，请在设置 > 隐私 > 定位服务 > Telegram 中开启精确位置。";
+"AccessDenied.LocationPreciseDenied" = "要在此聊天中分享您的具体位置，请在设置 > 隐私 > 定位服务 > MixLink 中开启精确位置。";
 
 "Chat.MultipleTypingPair" = "%@ 和 %@";
 "Chat.MultipleTypingMore" = "%@ 以及 %@ 位用户";
@@ -9674,7 +9674,7 @@ Sorry for the inconvenience.";
 "Story.Camera.SwipeLeftRelease" = "松开以锁定";
 "Story.Camera.SwipeRightToFlip" = "向右滑动以翻转";
 
-"Story.Camera.AccessPlaceholderTitle" = "允许 Telegram 访问您的摄像头和麦克风";
+"Story.Camera.AccessPlaceholderTitle" = "允许 MixLink 访问您的摄像头和麦克风";
 "Story.Camera.AccessPlaceholderText" = "这能让您分享照片并录制视频。";
 "Story.Camera.AccessOpenSettings" = "打开设置";
 
@@ -12678,7 +12678,7 @@ Sorry for the inconvenience.";
 
 "WebBrowser.Done" = "完成";
 
-"AccessDenied.LocationWeather" = "Telegram 需要访问您的位置，以便您可以将天气微件添加到动态中。\n\n请前往“设置” > “隐私” > “定位服务”，并将 Telegram 设定为开启。";
+"AccessDenied.LocationWeather" = "MixLink 需要访问您的位置，以便您可以将天气微件添加到动态中。\n\n请前往“设置” > “隐私” > “定位服务”，并将 MixLink 设定为开启。";
 
 "Story.Editor.TooltipWeatherLimitText" = "一条动态中不能添加多个天气贴纸。";
 
@@ -14385,7 +14385,7 @@ Sorry for the inconvenience.";
 "Chat.TrimVoiceMessageToResume.Text" = "该范围以外的音频将会被丢弃，录制也会随即开始。";
 "Chat.TrimVoiceMessageToResume.Proceed" = "继续";
 
-"Contacts.LimitedAccess.Text" = "您已限制 Telegram 访问全部通讯录。";
+"Contacts.LimitedAccess.Text" = "您已限制 MixLink 访问全部通讯录。";
 "Contacts.LimitedAccess.Manage" = "管理";
 
 "Media.PhotoHdOn" = "该照片会以高分辨率发送。";
@@ -14730,7 +14730,7 @@ Sorry for the inconvenience.";
 
 "Chat.SensitiveContentShort" = "18+";
 
-"AccessDenied.AgeVerificationCamera" = "Telegram 需要访问您的相机以进行年龄验证。 \n\n打开您设备的设置> 隐私权 > 相机，并将 Telegram 设置为开启。";
+"AccessDenied.AgeVerificationCamera" = "MixLink 需要访问您的相机以进行年龄验证。 \n\n打开您设备的设置> 隐私权 > 相机，并将 MixLink 设置为开启。";
 
 "PeerInfo.Gifts.Collections.All" = "所有礼物";
 "PeerInfo.Gifts.Collections.Add" = "添加收藏集";

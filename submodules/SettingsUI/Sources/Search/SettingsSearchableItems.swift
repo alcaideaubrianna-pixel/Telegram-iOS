@@ -4253,6 +4253,34 @@ private func helpSearchableItems(context: AccountContext) -> [SettingsSearchable
     
     items.append(
         SettingsSearchableItem(
+            id: "features",
+            title: strings.Settings_Tips,
+            alternate: [],
+            icon: .tips,
+            breadcrumbs: [],
+            present: { context, navigationController, present in
+                let controller = OverlayStatusController(theme: presentationData.theme, type: .loading(cancelled: nil))
+                present(.immediate, controller)
+                
+                let _ = (context.engine.peers.resolvePeerByName(name: strings.Settings_TipsUsername, referrer: nil)
+                |> mapToSignal { result -> Signal<EnginePeer?, NoError> in
+                    guard case let .result(result) = result else {
+                        return .complete()
+                    }
+                    return .single(result)
+                }
+                |> deliverOnMainQueue).startStandalone(next: { [weak controller] peer in
+                    controller?.dismiss()
+                    if let peer, let navigationController {
+                        context.sharedContext.navigateToChatController(NavigateToChatControllerParams(navigationController: navigationController, context: context, chatLocation: .peer(peer)))
+                    }
+                })
+            }
+        )
+    )
+    
+    items.append(
+        SettingsSearchableItem(
             id: "privacy-policy",
             title: strings.Permissions_PrivacyPolicy,
             alternate: [],

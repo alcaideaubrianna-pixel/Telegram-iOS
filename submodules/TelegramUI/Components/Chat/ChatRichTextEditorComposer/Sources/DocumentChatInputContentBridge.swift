@@ -71,7 +71,6 @@ public func chatInputContent(
                 items: resolvedItems,
                 displayWidth: media.displayWidth,
                 alignment: chatInputMediaAlignment(fromAlignment: media.alignment),
-                displayMode: media.displayMode == .slideshow ? .slideshow : .mosaic,
                 caption: chatInputRuns(fromRuns: media.caption, resolveEmoji: resolveEmoji)
             )))
         case let .table(table):
@@ -195,13 +194,10 @@ private func chatInputTable(
                 runs: chatInputRuns(fromRuns: cellRuns(fromBlocks: cell.blocks), resolveEmoji: resolveEmoji),
                 background: cell.background.map(chatInputColor(fromColor:)),
                 horizontalAlignment: chatInputTextAlignment(fromAlignment: cell.horizontalAlignment),
-                verticalAlignment: chatInputTableVerticalAlignment(fromCore: cell.verticalAlignment),
-                isHeader: cell.isHeader,
-                colspan: cell.colspan,
-                rowspan: cell.rowspan
+                verticalAlignment: chatInputTableVerticalAlignment(fromCore: cell.verticalAlignment)
             )
         }
-        return ChatInputTableRow(height: row.height, cells: cells)
+        return ChatInputTableRow(height: row.height, isHeader: row.isHeader, cells: cells)
     }
     return ChatInputTable(columns: columns, rows: rows)
 }
@@ -344,7 +340,6 @@ private func documentBlocks(
             },
             displayWidth: media.displayWidth,
             alignment: mediaAlignment(fromChatInputAlignment: media.alignment),
-            displayMode: media.displayMode == .slideshow ? .slideshow : .mosaic,
             caption: runs(fromChatInputRuns: media.caption, registerEmoji: registerEmoji)
         ))]
     case let .table(table):
@@ -458,13 +453,10 @@ private func tableBlock(
                 ))],
                 background: cell.background.map(color(fromChatInputColor:)),
                 horizontalAlignment: textAlignment(fromChatInputAlignment: cell.horizontalAlignment),
-                verticalAlignment: verticalAlignment(fromChatInput: cell.verticalAlignment),
-                isHeader: cell.isHeader,
-                colspan: cell.colspan,
-                rowspan: cell.rowspan
+                verticalAlignment: verticalAlignment(fromChatInput: cell.verticalAlignment)
             )
         }
-        return Row(id: BlockID.generate(), height: row.height, cells: cells)
+        return Row(id: BlockID.generate(), height: row.height, isHeader: row.isHeader, cells: cells)
     }
     return TableBlock(id: BlockID.generate(), columns: columns, rows: rows)
 }

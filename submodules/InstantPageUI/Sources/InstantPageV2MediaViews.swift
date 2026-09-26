@@ -91,8 +91,7 @@ func makeMediaWrapper(
     renderContext: InstantPageV2RenderContext,
     theme: InstantPageTheme,
     openMedia: @escaping (InstantPageMedia) -> Void,
-    longPressMedia: @escaping (InstantPageMedia) -> Void,
-    emptyColor: UIColor? = nil
+    longPressMedia: @escaping (InstantPageMedia) -> Void
 ) -> InstantPageImageNode {
     let imageNode = InstantPageImageNode(
         context: renderContext.context,
@@ -112,7 +111,6 @@ func makeMediaWrapper(
         fileReferenceForMedia: renderContext.fileReference,
         autoDownloadImage: renderContext.shouldAutoDownloadImage,
         autoDownloadFile: renderContext.shouldAutoDownloadFile,
-        emptyColor: emptyColor,
         getPreloadedResource: { _ in nil }
     )
     imageNode.frame = CGRect(origin: .zero, size: frame.size)

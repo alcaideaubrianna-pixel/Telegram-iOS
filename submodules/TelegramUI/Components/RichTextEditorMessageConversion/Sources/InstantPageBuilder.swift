@@ -58,10 +58,7 @@ func buildInstantPage(from blocks: [Block], media: [String: Media]) -> InstantPa
                         continue
                     }
                 }
-                switch mediaBlock.displayMode {
-                case .mosaic:    pageBlocks.append(.collage(items: innerBlocks, caption: caption))
-                case .slideshow: pageBlocks.append(.slideshow(items: innerBlocks, caption: caption))
-                }
+                pageBlocks.append(.collage(items: innerBlocks, caption: caption))
             } else if let resolved = media[mediaBlock.mediaID] {
                 switch mediaBlock.kind {
                 case .image, .video, .audio:
@@ -177,8 +174,7 @@ private func buildListBlocks(from paragraphs: ArraySlice<ParagraphBlock>) -> [In
     return result
 }
 
-/// A table block → `.table`, mapping each cell's own per-cell H+V alignment, per-cell header flag, and
-/// per-cell colspan/rowspan (editor `Int`, default 1, forwarded as InstantPage `Int32`).
+/// A table block → `.table`, mapping each cell's own per-cell H+V alignment and the header row.
 private func tableBlock(_ table: TableBlock) -> InstantPageBlock {
     let rows = table.rows.map { row -> InstantPageTableRow in
         let cells = row.cells.map { cell -> InstantPageTableCell in
@@ -202,11 +198,11 @@ private func tableBlock(_ table: TableBlock) -> InstantPageBlock {
             }
             return InstantPageTableCell(
                 text: cellRichText(cell),
-                header: cell.isHeader,
+                header: row.isHeader,
                 alignment: alignment,
                 verticalAlignment: vAlignment,
-                colspan: Int32(cell.colspan),
-                rowspan: Int32(cell.rowspan)
+                colspan: 1,
+                rowspan: 1
             )
         }
         return InstantPageTableRow(cells: cells)

@@ -10,7 +10,6 @@ import RichTextEditorCore
 import RichTextEditorUIKit
 import ChatInputTextNode
 import CheckNode
-import TelegramPresentationData
 
 /// `RichTextChecklistMarkerView` host wrapper backing a checklist item's checkbox with a `CheckNode`
 /// (an `ASDisplayNode`, so we host its `.view` — this is a `UIView`, not a node). The editor frames this
@@ -35,11 +34,13 @@ private final class HostChecklistCheckboxView: UIView, RichTextChecklistMarkerVi
     }
 }
 
-/// `ChatRichTextInputNode` backend composing the TextKit-2 `RichTextEditorView`.
+/// `ChatRichTextInputNode` backend composing the TextKit-2 `RichTextEditorView`. The default composer on
+/// iOS 17+ (the `forceLegacyTextInput` flag opts back out to the legacy input — see
+/// `ChatTextInputPanelNode.loadTextInputNode`). Phase 1 implements
+/// display, layout, editing, and selection geometry; spoiler reveal, typing attributes, and the full
+/// delegate suite are safe stubs (Phase 2+).
 @available(iOS 13.0, *)
 public final class RichTextEditorChatInputNode: ASDisplayNode, ChatRichTextInputNode {
-    private let strings: PresentationStrings
-    
     private let editorView = RichTextEditorView()
     private let baseFontSize: CGFloat = 17.0
 
@@ -106,12 +107,10 @@ public final class RichTextEditorChatInputNode: ASDisplayNode, ChatRichTextInput
 
     public var asNode: ASDisplayNode { self }
 
-    public init(strings: PresentationStrings) {
+    public override init() {
         #if DEBUG && false
         RichTextEditorView.debugShowLayoutOverlay = true
         #endif
-        
-        self.strings = strings
         
         super.init()
     }
@@ -147,8 +146,7 @@ public final class RichTextEditorChatInputNode: ASDisplayNode, ChatRichTextInput
         RichTextEditorChatInputNode.applyComposerLayoutMetrics(to: self.editorView)
         // Suppress the editor's built-in placeholders ("Type something…" / list hints): the chat input panel
         // draws its own placeholder ("Message", etc.), so the editor's would double up.
-        
-        self.editorView.placeholders = RichTextEditorPlaceholders(body: "", listEnd: "", listOutdent: "", pullQuote: self.strings.RichText_PlaceholderQuote, blockQuote: self.strings.RichText_PlaceholderQuote, codeBlock: self.strings.RichText_PlaceholderCode)
+        self.editorView.placeholders = RichTextEditorPlaceholders(body: "", listEnd: "", listOutdent: "", pullQuote: "Type a quote here", blockQuote: "Type a quote here", codeBlock: "Type code here")
         // The composer sits over the input panel's own background — clear the editor's document "page"
         // background (`.systemBackground`, opaque white in light mode) so the panel shows through. `nil`
         // (no background) rather than `.clear`: same transparency, but signals "unset" and avoids an
@@ -260,12 +258,7 @@ public final class RichTextEditorChatInputNode: ASDisplayNode, ChatRichTextInput
             guard let self, let fileId = Int64(id), let provider = self.emojiViewProvider else { return nil }
             let attribute = self.customEmojiAttributes[fileId]
                 ?? ChatTextInputTextCustomEmojiAttribute(interactivelySelectedFromPackId: nil, fileId: fileId, file: nil)
-            guard let view = provider(attribute) else { return nil }
-            // The panel-supplied provider is typed `-> UIView?` (the `ChatRichTextInputNode` protocol seam),
-            // but it hands back an `EmojiTextAttachmentView` — a `RichTextEmojiView` (conformance declared in
-            // `ChatTextInputPanelNode`) — so the editor can keep its `dynamicColor` synced to the text color.
-            // A non-conforming fallback view resolves to nil (the editor retries on the next layout pass).
-            return view as? (UIView & RichTextEmojiView)
+            return provider(attribute)
         }
 
         // Formula rendering is owned by the chat host; math-rendering dependencies live above this module.
@@ -279,7 +272,7 @@ public final class RichTextEditorChatInputNode: ASDisplayNode, ChatRichTextInput
         // but never renders. Both `mediaItemViewFactory` and `mediaByID` are read LAZILY, so the panel may set
         // the factory after this registration. The returned `(UIView & RichTextMediaItemView)?` is assignable
         // to the provider's `RichTextMediaItemView?` return type.
-        self.editorView.registerMediaViewProvider { [weak self] items, _, _, existing in
+        self.editorView.registerMediaViewProvider { [weak self] items, _, existing in
             guard let self, let factory = self.mediaItemViewFactory else { return nil }
             let resolved: [(media: EngineMedia, naturalSize: CGSize, isSpoiler: Bool)] = items.compactMap { item in
                 guard let media = self.mediaByID[item.mediaID] else { return nil }

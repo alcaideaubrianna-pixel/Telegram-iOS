@@ -44,5 +44,3 @@ public struct Document: Codable, Equatable {
         layoutDirection = try c.decodeIfPresent(DocumentLayoutDirection.self, forKey: .layoutDirection) ?? .auto
     }
 }
-
-public typealias RichTextEditorCoreDocument = Document

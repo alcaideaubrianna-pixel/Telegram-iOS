@@ -21,7 +21,6 @@ final class SelectionHighlightView: UIView {
         guard let ctx = UIGraphicsGetCurrentContext(), let canvas = canvas else { return }
         canvas.drawNonTableSelectionHighlight(in: ctx)
         canvas.drawMarkedTextUnderline(in: ctx)
-        canvas.drawSpellingUnderlines(in: ctx)
     }
 }
 
@@ -41,7 +40,6 @@ final class CellSelectionView: UIView {
     override func draw(_ rect: CGRect) {
         guard let ctx = UIGraphicsGetCurrentContext() else { return }
         owner?.drawCellSelection(in: ctx)
-        owner?.drawCellSpelling(in: ctx)
     }
 }
 

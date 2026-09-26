@@ -7,12 +7,17 @@
 //
 
 #import "RMGeometry.h"
+
 #import "RMIntroViewController.h"
 #import "RMIntroPageView.h"
 
+#include "animations.h"
+#include "objects.h"
+#include "texture_helper.h"
+
 #import <SSignalKit/SSignalKit.h>
 
-#import <LegacyComponents/TGModernButton.h>
+#import <LegacyComponents/LegacyComponents.h>
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
@@ -81,15 +86,13 @@ typedef enum {
 
 @interface RMIntroViewController () <UIGestureRecognizerDelegate>
 {
-    NSArray *_headlines;
-    NSArray *_descriptions;
-    NSMutableArray *_pageViews;
-    NSInteger _currentPage;
-    UIScrollView *_pageScrollView;
-    UIPageControl *_pageControl;
-
+    id _didEnterBackgroundObserver;
+    id _willEnterBackgroundObserver;
+    
     UIColor *_backgroundColor;
     UIColor *_primaryColor;
+    UIColor *_buttonColor;
+    UIColor *_accentColor;
     UIColor *_regularDotColor;
     UIColor *_highlightedDotColor;
     
@@ -98,11 +101,11 @@ typedef enum {
     SMetaDisposable *_localizationsDisposable;
     TGSuggestedLocalization *_alternativeLocalizationInfo;
     
-    NSDictionary<NSString *, NSString *> *_introStrings;
+    SVariable *_alternativeLocalization;
+    NSDictionary<NSString *, NSString *> *_englishStrings;
     
     UIView *_wrapperView;
     UIView *_startButton;
-    UIImageView *_brandMarkView;
     
     bool _loadedView;
 }
@@ -111,7 +114,7 @@ typedef enum {
 
 @implementation RMIntroViewController
 
-- (instancetype)initWithBackgroundColor:(UIColor *)backgroundColor primaryColor:(UIColor *)primaryColor buttonColor:(UIColor *)__unused buttonColor accentColor:(UIColor *)accentColor regularDotColor:(UIColor *)regularDotColor highlightedDotColor:(UIColor *)highlightedDotColor suggestedLocalizationSignal:(SSignal *)suggestedLocalizationSignal
+- (instancetype)initWithBackgroundColor:(UIColor *)backgroundColor primaryColor:(UIColor *)primaryColor buttonColor:(UIColor *)buttonColor accentColor:(UIColor *)accentColor regularDotColor:(UIColor *)regularDotColor highlightedDotColor:(UIColor *)highlightedDotColor suggestedLocalizationSignal:(SSignal *)suggestedLocalizationSignal
 {
     self = [super init];
     if (self != nil)
@@ -120,6 +123,8 @@ typedef enum {
         
         _backgroundColor = backgroundColor;
         _primaryColor = primaryColor;
+        _buttonColor = buttonColor;
+        _accentColor = accentColor;
         _regularDotColor = regularDotColor;
         _highlightedDotColor = highlightedDotColor;
                 
@@ -135,7 +140,8 @@ typedef enum {
             @"Tour.Text3",
             @"Tour.Text4",
             @"Tour.Text5",
-            @"Tour.Text6"
+            @"Tour.Text6",
+            @"Tour.StartButton"
         ];
         
         NSString *localizationName = @"en";
@@ -154,25 +160,37 @@ typedef enum {
             localizationPath = [[NSBundle mainBundle] pathForResource:@"en" ofType:@"lproj"];
         }
         NSBundle *bundle = localizationPath != nil ? [NSBundle bundleWithPath:localizationPath] : nil;
-        NSMutableDictionary *introStrings = [[NSMutableDictionary alloc] init];
+        NSMutableDictionary *englishStrings = [[NSMutableDictionary alloc] init];
         for (NSString *key in stringKeys) {
             if (bundle != nil) {
                 NSString *value = [bundle localizedStringForKey:key value:key table:nil];
                 if (value != nil) {
-                    introStrings[key] = value;
+                    englishStrings[key] = value;
                 } else {
-                    introStrings[key] = key;
+                    englishStrings[key] = key;
                 }
             } else {
-                introStrings[key] = key;
+                englishStrings[key] = key;
             }
         }
-        _introStrings = introStrings;
+        _englishStrings = englishStrings;
         
-        _headlines = @[ _introStrings[@"Tour.Title1"], _introStrings[@"Tour.Title2"],  _introStrings[@"Tour.Title6"], _introStrings[@"Tour.Title3"], _introStrings[@"Tour.Title4"], _introStrings[@"Tour.Title5"]];
-        _descriptions = @[_introStrings[@"Tour.Text1"], _introStrings[@"Tour.Text2"],  _introStrings[@"Tour.Text6"], _introStrings[@"Tour.Text3"], _introStrings[@"Tour.Text4"], _introStrings[@"Tour.Text5"]];
-
+        _headlines = @[ _englishStrings[@"Tour.Title1"], _englishStrings[@"Tour.Title2"],  _englishStrings[@"Tour.Title6"], _englishStrings[@"Tour.Title3"], _englishStrings[@"Tour.Title4"], _englishStrings[@"Tour.Title5"]];
+        _descriptions = @[_englishStrings[@"Tour.Text1"], _englishStrings[@"Tour.Text2"],  _englishStrings[@"Tour.Text6"], _englishStrings[@"Tour.Text3"], _englishStrings[@"Tour.Text4"], _englishStrings[@"Tour.Text5"]];
+        
         __weak RMIntroViewController *weakSelf = self;
+        _didEnterBackgroundObserver = [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidEnterBackgroundNotification object:nil queue:nil usingBlock:^(__unused NSNotification *notification)
+        {
+            __strong RMIntroViewController *strongSelf = weakSelf;
+            [strongSelf stopTimer];
+        }];
+        
+        _willEnterBackgroundObserver = [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillEnterForegroundNotification object:nil queue:nil usingBlock:^(__unused NSNotification *notification)
+        {
+            __strong RMIntroViewController *strongSelf = weakSelf;
+            [strongSelf loadGL];
+            [strongSelf startTimer];
+        }];
         
         _alternativeLanguageButton = [[TGModernButton alloc] init];
         _alternativeLanguageButton.modernHighlight = true;
@@ -181,6 +199,8 @@ typedef enum {
         _alternativeLanguageButton.titleLabel.font = [UIFont systemFontOfSize:18.0];
         _alternativeLanguageButton.hidden = true;
         [_alternativeLanguageButton addTarget:self action:@selector(alternativeLanguageButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+        
+        _alternativeLocalization = [[SVariable alloc] init];
         
         _localizationsDisposable = [[suggestedLocalizationSignal deliverOn:[SQueue mainQueue]] startStrictWithNext:^(TGSuggestedLocalization *next) {
             __strong RMIntroViewController *strongSelf = weakSelf;
@@ -206,9 +226,27 @@ typedef enum {
     return self;
 }
 
+- (void)startTimer
+{
+    if (_updateAndRenderTimer == nil)
+    {
+        _updateAndRenderTimer = [NSTimer timerWithTimeInterval:1.0f / 60.0f target:self selector:@selector(updateAndRender) userInfo:nil repeats:true];
+        [[NSRunLoop mainRunLoop] addTimer:_updateAndRenderTimer forMode:NSRunLoopCommonModes];
+    }
+}
+
+- (void)stopTimer
+{
+    if (_updateAndRenderTimer != nil)
+    {
+        [_updateAndRenderTimer invalidate];
+        _updateAndRenderTimer = nil;
+    }
+}
+
 - (void)animateIn {
-    CGPoint logoTargetPosition = _brandMarkView.center;
-    _brandMarkView.center = CGPointMake(self.view.bounds.size.width / 2.0, self.view.bounds.size.height / 2.0);
+    CGPoint logoTargetPosition = _glkView.center;
+    _glkView.center = CGPointMake(self.view.bounds.size.width / 2.0, self.view.bounds.size.height / 2.0);
     
     RMIntroPageView *firstPage = (RMIntroPageView *)[_pageViews firstObject];
     CGPoint headerTargetPosition = firstPage.headerLabel.center;
@@ -223,64 +261,83 @@ typedef enum {
     CGPoint buttonTargetPosition = _startButton.center;
     _startButton.center = CGPointMake(buttonTargetPosition.x, buttonTargetPosition.y + 220.0);
     
-    _brandMarkView.transform = CGAffineTransformMakeScale(0.66, 0.66);
+    _glkView.transform = CGAffineTransformMakeScale(0.66, 0.66);
         
     [UIView animateWithDuration:0.65 delay:0.15 usingSpringWithDamping:1.2f initialSpringVelocity:0.0 options:kNilOptions animations:^{
-        _brandMarkView.center = logoTargetPosition;
+        _glkView.center = logoTargetPosition;
         firstPage.headerLabel.center = headerTargetPosition;
         firstPage.descriptionLabel.center = descriptionTargetPosition;
         _pageControl.center = pageControlTargetPosition;
         _startButton.center = buttonTargetPosition;
-        _brandMarkView.transform = CGAffineTransformIdentity;
+        _glkView.transform = CGAffineTransformIdentity;
     } completion:nil];
     
-    _brandMarkView.alpha = 0.0;
+    _glkView.alpha = 0.0;
     _pageScrollView.alpha = 0.0;
     _pageControl.alpha = 0.0;
     _startButton.alpha = 0.0;
     
     [UIView animateWithDuration:0.3 delay:0.15 options:kNilOptions animations:^{
-        _brandMarkView.alpha = 1.0;
+        _glkView.alpha = 1.0;
         _pageScrollView.alpha = 1.0;
         _pageControl.alpha = 1.0;
         _startButton.alpha = 1.0;
     } completion:nil];
 }
 
-- (void)loadBrandMark
+- (void)loadGL
 {
-    if (_brandMarkView != nil) {
-        return;
+#if TARGET_OS_SIMULATOR && defined(__aarch64__)
+    return;
+#endif
+    
+    if (/*[[UIApplication sharedApplication] applicationState] != UIApplicationStateBackground*/true && !_isOpenGLLoaded)
+    {
+        _context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+        if (!_context)
+            NSLog(@"Failed to create ES context");
+        
+        bool isIpad = ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad);
+        
+        CGFloat size = 200;
+        if (isIpad)
+            size *= 1.2;
+        
+        int height = 50;
+        if (isIpad)
+            height += 138 / 2;
+        
+        _glkView = [[GLKView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width / 2 - size / 2, height, size, size) context:_context];
+        _glkView.backgroundColor = _backgroundColor;
+        _glkView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+        _glkView.drawableDepthFormat = GLKViewDrawableDepthFormat24;
+        _glkView.drawableMultisample = GLKViewDrawableMultisample4X;
+        _glkView.enableSetNeedsDisplay = false;
+        _glkView.userInteractionEnabled = false;
+        _glkView.delegate = self;
+        
+        [self setupGL];
+        [self.view addSubview:_glkView];
+        
+        [self startTimer];
+        _isOpenGLLoaded = true;
     }
-
-    UIImage *image = [UIImage imageNamed:@"MixLink.png"];
-    if (image == nil) {
-        NSLog(@"Failed to load MixLink intro artwork");
-        return;
-    }
-
-    CGFloat size = 200.0;
-    CGFloat height = 50.0;
-    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
-        size *= 1.2;
-        height += 69.0;
-    }
-
-    _brandMarkView = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width / 2.0 - size / 2.0, height, size, size)];
-    _brandMarkView.image = image;
-    _brandMarkView.contentMode = UIViewContentModeScaleAspectFit;
-    _brandMarkView.backgroundColor = UIColor.whiteColor;
-    _brandMarkView.layer.cornerRadius = size * 0.16;
-    _brandMarkView.clipsToBounds = YES;
-    _brandMarkView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-    _brandMarkView.userInteractionEnabled = NO;
-    [self.view addSubview:_brandMarkView];
 }
 
-- (void)freeBrandMark
+- (void)freeGL
 {
-    [_brandMarkView removeFromSuperview];
-    _brandMarkView = nil;
+    if (!_isOpenGLLoaded)
+        return;
+
+    [self stopTimer];
+    
+    if ([EAGLContext currentContext] == _glkView.context)
+        [EAGLContext setCurrentContext:nil];
+
+    _context = nil;
+    [_glkView removeFromSuperview];
+    _glkView = nil;
+    _isOpenGLLoaded = false;
 }
 
 - (void)loadView {
@@ -307,7 +364,7 @@ typedef enum {
     
     self.view.backgroundColor = _backgroundColor;
     
-    [self loadBrandMark];
+    [self loadGL];
     
     _wrapperView = [[UIScrollView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:_wrapperView];
@@ -348,12 +405,9 @@ typedef enum {
 }
 
 - (UIView *)createAnimationSnapshot {
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:_brandMarkView.frame];
-    imageView.image = _brandMarkView.image;
-    imageView.contentMode = _brandMarkView.contentMode;
-    imageView.backgroundColor = _brandMarkView.backgroundColor;
-    imageView.layer.cornerRadius = _brandMarkView.layer.cornerRadius;
-    imageView.clipsToBounds = _brandMarkView.clipsToBounds;
+    UIImage *image = _glkView.snapshot;
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:_glkView.frame];
+    imageView.image = image;
     return imageView;
 }
 
@@ -431,7 +485,7 @@ typedef enum {
     CGFloat statusBarHeight = 0;
     
     CGFloat pageControlY = 0;
-    CGFloat brandMarkY = 0;
+    CGFloat glViewY = 0;
     CGFloat startButtonY = 0;
     CGFloat pageY = 0;
     
@@ -442,14 +496,14 @@ typedef enum {
     switch (deviceScreen)
     {
         case iPad:
-            brandMarkY = isVertical ? 121 + 90 : 121;
+            glViewY = isVertical ? 121 + 90 : 121;
             startButtonY = 120;
             pageY = isVertical ? 485 : 335;
             pageControlY = pageY + 200.0f;
             break;
             
         case iPadPro:
-            brandMarkY = isVertical ? 221 + 110 : 221;
+            glViewY = isVertical ? 221 + 110 : 221;
             startButtonY = 120;
             pageY = isVertical ? 605 : 435;
             pageControlY = pageY + 200.0f;
@@ -457,12 +511,12 @@ typedef enum {
             
         case Inch35:
             pageControlY = 162 / 2;
-            brandMarkY = 62 - 20;
+            glViewY = 62 - 20;
             startButtonY = 75;
             pageY = 215;
             pageControlY = pageY + 160.0f;
             if (!_alternativeLanguageButton.isHidden) {
-                brandMarkY -= 40.0f;
+                glViewY -= 40.0f;
                 pageY -= 40.0f;
                 pageControlY -= 40.0f;
                 startButtonY -= 30.0f;
@@ -472,7 +526,7 @@ typedef enum {
             break;
             
         case Inch4:
-            brandMarkY = 62;
+            glViewY = 62;
             startButtonY = 75;
             pageY = 245;
             pageControlY = pageY + 160.0f;
@@ -482,21 +536,21 @@ typedef enum {
             
         case Inch47:
             pageControlY = 162 / 2 + 10;
-            brandMarkY = 62 + 25;
+            glViewY = 62 + 25;
             startButtonY = 75 + 5;
             pageY = 245 + 50;
             pageControlY = pageY + 160.0f;
             break;
             
         case Inch55:
-            brandMarkY = 62 + 45;
+            glViewY = 62 + 45;
             startButtonY = 75 + 20;
             pageY = 245 + 85;
             pageControlY = pageY + 160.0f;
             break;
             
         case Inch65:
-            brandMarkY = 62 + 85;
+            glViewY = 62 + 85;
             startButtonY = 75 + 30;
             pageY = 245 + 125;
             pageControlY = pageY + 160.0f;
@@ -511,7 +565,7 @@ typedef enum {
     }
     
     _pageControl.frame = CGRectMake(0, pageControlY, self.view.bounds.size.width, 7);
-    _brandMarkView.frame = CGRectChangedOriginY(_brandMarkView.frame, brandMarkY - statusBarHeight);
+    _glkView.frame = CGRectChangedOriginY(_glkView.frame, glViewY - statusBarHeight);
     
     CGFloat startButtonWidth = MIN(430.0 - 48.0, self.view.bounds.size.width - 48.0f);
     UIView *startButton = self.createStartButton(startButtonWidth);
@@ -537,14 +591,14 @@ typedef enum {
 {
     [super viewWillAppear:animated];
     
-    [self loadBrandMark];
+    [self loadGL];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
     
-    [self freeBrandMark];
+    [self freeGL];
 }
 
 - (void)startButtonPress
@@ -554,9 +608,63 @@ typedef enum {
     }
 }
 
+- (void)updateAndRender
+{
+    [_glkView display];
+}
+
 - (void)dealloc
 {
+    [[NSNotificationCenter defaultCenter] removeObserver:_didEnterBackgroundObserver];
+    [[NSNotificationCenter defaultCenter] removeObserver:_willEnterBackgroundObserver];
+    
     [_localizationsDisposable dispose];
+    
+    [self freeGL];
+}
+
+- (void)setupGL
+{
+    [EAGLContext setCurrentContext:_glkView.context];
+    
+    UIColor *color = _backgroundColor;
+    
+    CGFloat red = 0.0f;
+    CGFloat green = 0.0f;
+    CGFloat blue = 0.0f;
+    if ([color getRed:&red green:&green blue:&blue alpha:NULL]) {
+    } else if ([color getWhite:&red alpha:NULL]) {
+        green = red;
+        blue = red;
+    }
+    set_intro_background_color(red, green, blue);
+    
+    set_telegram_textures(setup_texture(@"telegram_sphere.png", color), setup_texture(@"telegram_plane1.png", color));
+    
+    set_ic_textures(setup_texture(@"ic_bubble_dot.png", color), setup_texture(@"ic_bubble.png", color), setup_texture(@"ic_cam_lens.png", color), setup_texture(@"ic_cam.png", color), setup_texture(@"ic_pencil.png", color), setup_texture(@"ic_pin.png", color), setup_texture(@"ic_smile_eye.png", color), setup_texture(@"ic_smile.png", color), setup_texture(@"ic_videocam.png", color));
+    
+    set_fast_textures(setup_texture(@"fast_body.png", color), setup_texture(@"fast_spiral.png", color), setup_texture(@"fast_arrow.png", color), setup_texture(@"fast_arrow_shadow.png", color));
+    
+    set_free_textures(setup_texture(@"knot_up1.png", color), setup_texture(@"knot_down.png", color));
+    
+    set_powerful_textures(setup_texture(@"powerful_mask.png", color), setup_texture(@"powerful_star.png", color), setup_texture(@"powerful_infinity.png", color), setup_texture(@"powerful_infinity_white.png", color));
+    
+    set_private_textures(setup_texture(@"private_door.png", color), setup_texture(@"private_screw.png", color));
+    
+    on_surface_created();
+    on_surface_changed(200, 200, 1, 0,0,0,0,0);
+}
+
+#pragma mark - GLKView delegate methods
+
+- (void)glkView:(GLKView *)__unused view drawInRect:(CGRect)__unused rect
+{
+    double time = CFAbsoluteTimeGetCurrent();
+    
+    set_page((int)_currentPage);
+    set_date(time);
+    
+    on_draw_frame();
 }
 
 static CGFloat x;
@@ -572,6 +680,10 @@ NSInteger _current_page_end;
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    CGFloat offset = (scrollView.contentOffset.x - _currentPage * scrollView.frame.size.width) / self.view.frame.size.width;
+    
+    set_scroll_offset((float)offset);
+    
     if (justEndDragging)
     {
         justEndDragging = false;
