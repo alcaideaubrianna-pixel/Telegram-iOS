@@ -111,9 +111,25 @@ workflows:
                 envman add --key BITRISE_IPA_PATH --value "$IPA_PATH"
                 echo "IPA prepared for upload: $(basename "$IPA_PATH")"
 
+      - script@1:
+          title: Prepare App Store Connect API key
+          inputs:
+            - content: |
+                #!/usr/bin/env bash
+                set -euo pipefail
+
+                test -n "${MIXLINK_ASC_PRIVATE_KEY:-}"
+                API_KEY_PATH="$BITRISE_SOURCE_DIR/build/AuthKey_9J6A6YKJ7C.p8"
+                mkdir -p "$(dirname "$API_KEY_PATH")"
+                printf '%s\n' "$MIXLINK_ASC_PRIVATE_KEY" > "$API_KEY_PATH"
+                chmod 600 "$API_KEY_PATH"
+                envman add --key MIXLINK_ASC_API_KEY_URL --value "file://$API_KEY_PATH"
+
       - deploy-to-itunesconnect-application-loader@2:
           inputs:
-            - connection: api_key
+            - connection: "off"
+            - api_key_path: "$MIXLINK_ASC_API_KEY_URL"
+            - api_issuer: "85c346bd-f59d-4a4a-92a8-6de6d9c26d3b"
             - app_id: "6815920240"
             - bundle_id: "$MIXLINK_BUNDLE_ID"
             - ipa_path: "$BITRISE_IPA_PATH"
