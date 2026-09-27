@@ -532,7 +532,7 @@
 "Conversation.Contact" = "联系人信息";
 "Conversation.BlockUser" = "屏蔽此用户";
 "Conversation.UnblockUser" = "将此用户移出黑名单";
-"Conversation.UnsupportedMedia" = "此消息不支持您当前版本的 MixLink。更新应用即可查看：https://MixLink.org/update";
+"Conversation.UnsupportedMedia" = "此消息不支持您当前版本的 MixLink。更新应用即可查看：https://MixLink.cc/update";
 "Conversation.EncryptionWaiting" = "等待 %@ 上线…";
 "Conversation.EncryptionProcessing" = "交换加密密钥中…";
 "Conversation.EmptyPlaceholder" = "暂无消息…";
@@ -717,7 +717,7 @@
 
 // Encryption Key
 "EncryptionKey.Title" = "加密密钥";
-"EncryptionKey.Description" = "这是您与“%1$@”私密对话加密密钥的可视化图片。\n\n如果这张图片看起来和“%2$@”设备上的图片完全一致，端到端加密则是安全的。\n\n了解详情请前往 MixLink.org 的 FAQ";
+"EncryptionKey.Description" = "这是您与“%1$@”私密对话加密密钥的可视化图片。\n\n如果这张图片看起来和“%2$@”设备上的图片完全一致，端到端加密则是安全的。\n\n了解详情请前往 MixLink.cc 的 FAQ";
 
 // Conversation media
 "ConversationMedia.Title" = "媒体";
@@ -754,7 +754,7 @@
 "Settings.ChatBackground" = "聊天壁纸";
 "Settings.Support" = "向我们提问";
 "Settings.FAQ" = "常见问题";
-"Settings.FAQ_URL" = "https://MixLink.org/faq#general-questions";
+"Settings.FAQ_URL" = "https://MixLink.cc/faq#general-questions";
 "Settings.FAQ_Intro" = "常见问题页面提供故障排查建议和问题解答。如需更多帮助，请联系支持团队。";
 "Settings.FAQ_Button" = "查看常见问题";
 "Settings.SaveIncomingPhotos" = "自动保存图片";
@@ -2906,7 +2906,7 @@ Unused sets are archived when you add more.";
 "SocksProxySetup.UseForCalls" = "对通话启用代理";
 "SocksProxySetup.UseForCallsHelp" = "使用代理服务器可能降低通话质量。";
 
-"InviteText.URL" = "https://MixLink.org/dl";
+"InviteText.URL" = "https://MixLink.cc/dl";
 "InviteText.SingleContact" = "嗨，我在使用 MixLink 聊天。加入我们吧！从这里下载：%@";
 
 
@@ -3357,7 +3357,7 @@ Unused sets are archived when you add more.";
 "Passport.InfoTitle" = "什么是身份验证？";
 "Passport.InfoText" = "您可以使用身份验证，安全地向网站或服务提供所需信息。\n\n您的个人信息和证件均受到端到端加密保护，只有在您授权后才会分享。";
 "Passport.InfoLearnMore" = "了解更多";
-"Passport.InfoFAQ_URL" = "https://MixLink.org/faq#passport";
+"Passport.InfoFAQ_URL" = "https://MixLink.cc/faq#passport";
 
 "Passport.PassportInformation" = "通行证信息";
 "Passport.RequestedInformation" = "所需信息";
@@ -5458,11 +5458,11 @@ Sorry for the inconvenience.";
 "FeaturedStickers.OtherSection" = "其他贴纸";
 
 "ChatList.GenericPsaAlert" = "在聊天列表中提供公共服务通知。";
-"ChatList.PsaAlert.covid" = "此信息为您提供正在发生的新冠肺炎疫情相关公共服务公告。了解有关此计划的更多咨询：https://MixLink.org/blog/coronavirus";
+"ChatList.PsaAlert.covid" = "此信息为您提供正在发生的新冠肺炎疫情相关公共服务公告。了解有关此计划的更多咨询：https://MixLink.cc/blog/coronavirus";
 "ChatList.GenericPsaLabel" = "公共服务通告";
 "ChatList.PsaLabel.covid" = "新冠病毒肺炎";
 "Chat.GenericPsaTooltip" = "这是一则公共服务通告";
-"Chat.PsaTooltip.covid" = "此信息为您提供正在发生的新冠肺炎疫情相关公共服务公告。了解有关此计划的更多咨询：https://MixLink.org/blog/coronavirus";
+"Chat.PsaTooltip.covid" = "此信息为您提供正在发生的新冠肺炎疫情相关公共服务公告。了解有关此计划的更多咨询：https://MixLink.cc/blog/coronavirus";
 
 "Message.GenericForwardedPsa" = "公共服务通告\n来自： %@";
 "Message.ForwardedPsa.covid" = "新冠病毒肺炎通知\n来自：%@";
@@ -6956,9 +6956,9 @@ Sorry for the inconvenience.";
 
 "SponsoredMessageMenu.Info" = "什么是赞助消息？";
 "SponsoredMessageInfoScreen.Title" = "什么是赞助消息？";
-"SponsoredMessageInfoScreen.MarkdownText" = "与其他应用不同，MixLink 不会将您的隐私数据用于投放定向广告。[查看隐私政策了解更多](https://MixLink.org/privacy#5-6-no-ads-based-on-user-data)\n您之所以看到这条消息，仅是因为有人选择使用此公开的一对多频道推广其信息。这意味着 MixLink 不会通过挖掘和分析用户画像来投放广告，查看频道的所有用户都会看到同样的赞助商消息。\n\n与其他应用不同，MixLink 不会追踪您是否点击赞助商消息，也不会基于您的活跃数据生成用户画像。为了避免来自第三方的窥探，我们还禁止在赞助商消息中插入外部链接。我们相信每个人都有保护隐私的权利，而线上平台应该尊重这一点。\n\nMixLink 向数亿用户提供免费和无限制的服务，这意味着服务器和流量的巨大开销。为了保持独立且始终如一地秉持理念，MixLink 已开发一种付费工具以推广信息，同时保证用户的隐私。我们欢迎负责任的广告商访问：[url]\n\n广告不应再是滥用用户隐私的代名词。让我们共同携手，重新定义科技公司的运营模式。";
+"SponsoredMessageInfoScreen.MarkdownText" = "与其他应用不同，MixLink 不会将您的隐私数据用于投放定向广告。[查看隐私政策了解更多](https://MixLink.cc/privacy#5-6-no-ads-based-on-user-data)\n您之所以看到这条消息，仅是因为有人选择使用此公开的一对多频道推广其信息。这意味着 MixLink 不会通过挖掘和分析用户画像来投放广告，查看频道的所有用户都会看到同样的赞助商消息。\n\n与其他应用不同，MixLink 不会追踪您是否点击赞助商消息，也不会基于您的活跃数据生成用户画像。为了避免来自第三方的窥探，我们还禁止在赞助商消息中插入外部链接。我们相信每个人都有保护隐私的权利，而线上平台应该尊重这一点。\n\nMixLink 向数亿用户提供免费和无限制的服务，这意味着服务器和流量的巨大开销。为了保持独立且始终如一地秉持理念，MixLink 已开发一种付费工具以推广信息，同时保证用户的隐私。我们欢迎负责任的广告商访问：[url]\n\n广告不应再是滥用用户隐私的代名词。让我们共同携手，重新定义科技公司的运营模式。";
 "SponsoredMessageInfo.Action" = "了解更多";
-"SponsoredMessageInfo.Url" = "https://ads.MixLink.org";
+"SponsoredMessageInfo.Url" = "https://ads.MixLink.cc";
 
 "Chat.NavigationNoChannels" = "暂无未读频道";
 
@@ -7254,7 +7254,7 @@ Sorry for the inconvenience.";
 
 "AuthSessions.HeaderInfo" = "扫描兼容桌面端或网页版应用的二维码，即可关联该设备。";
 "AuthSessions.LinkDesktopDevice" = "添加设备";
-"AuthSessions.AddDevice.ScanInstallInfo" = "前往 [getdesktop.MixLink.org](desktop) 或 [web.MixLink.org](web) 获取二维码";
+"AuthSessions.AddDevice.ScanInstallInfo" = "前往 [getdesktop.MixLink.cc](desktop) 或 [web.MixLink.cc](web) 获取二维码";
 
 "Channel.AdminLog.MessageSent" = "%@ 发送了这条消息：";
 
@@ -7796,8 +7796,8 @@ Sorry for the inconvenience.";
 "Conversation.CopyProtectionSavingDisabledSecret" = "不可保存消息";
 "Conversation.CopyProtectionForwardingDisabledSecret" = "不可转发消息";
 
-"Settings.Terms_URL" = "https://MixLink.org/tos";
-"Settings.PrivacyPolicy_URL" = "https://MixLink.org/privacy";
+"Settings.Terms_URL" = "https://MixLink.cc/tos";
+"Settings.PrivacyPolicy_URL" = "https://MixLink.cc/privacy";
 
 "Stickers.PremiumPackInfoText" = "该贴纸包包含高级版贴纸，譬如该贴纸。";
 "Stickers.PremiumPackView" = "查看";
@@ -7914,7 +7914,7 @@ Sorry for the inconvenience.";
 "DeleteAccount.MessageHistoryTitle" = "您的消息历史记录";
 "DeleteAccount.MessageHistoryText" = "您的聊天对象将会保留与您的历史消息记录，包括您在私密聊天中分享的消息。\n\n您可以在任何时候为双方删除任何消息，但如果您删除了帐号，这将无法实现。";
 
-"DeleteAccount.DeleteMessagesURL" = "https://MixLink.org/faq#q-can-i-delete-my-messages";
+"DeleteAccount.DeleteMessagesURL" = "https://MixLink.cc/faq#q-can-i-delete-my-messages";
 
 "DeleteAccount.EnterPhoneNumber" = "请输入您的手机号码";
 "DeleteAccount.InvalidPhoneNumberError" = "手机号码格式不正确，请重新输入。";
@@ -9245,7 +9245,7 @@ Sorry for the inconvenience.";
 "WebApp.LaunchMoreInfo" = "本机器人的更多信息";
 "WebApp.LaunchConfirmation" = "您将连接到该机器人的网站以启动其 Web 应用。";
 "WebApp.LaunchTermsConfirmation" = "此小程序即表示您同意 [小程序服务条款]()。";
-"WebApp.LaunchTermsConfirmation_URL" = "https://MixLink.org/tos/mini-apps";
+"WebApp.LaunchTermsConfirmation_URL" = "https://MixLink.cc/tos/mini-apps";
 "WebApp.LaunchOpenApp" = "打开应用";
 
 "WallpaperPreview.PreviewInNightMode" = "在深色模式下预览此壁纸。";
@@ -9981,7 +9981,7 @@ Sorry for the inconvenience.";
 "WebApp.DisclaimerText" = "您即将使用一个 **不属于 MixLink** 的独立第三方小程序。您必须同意小程序使用条款后才能继续。";
 "WebApp.DisclaimerAgree" = "我同意 [使用条款]()";
 "WebApp.DisclaimerContinue" = "继续";
-"WebApp.Disclaimer_URL" = "https://MixLink.org/tos/mini-apps";
+"WebApp.Disclaimer_URL" = "https://MixLink.cc/tos/mini-apps";
 
 "WebApp.ShortcutsAdded" = "**%@** 快捷方式已添加到附件菜单中。";
 "WebApp.ShortcutsSettingsAdded" = "**%@** 快捷方式已添加至附件菜单和设置中。";
@@ -11655,7 +11655,7 @@ Sorry for the inconvenience.";
 
 "ChatbotSetup.TitleItem" = "自动聊天";
 "ChatbotSetup.Text" = "为您的帐号添加机器人，帮助您自动处理和回复收到的消息。";
-"ChatbotSetup.TextLink" = "https://MixLink.org/blog/MixLink-business#chatbots-for-business";
+"ChatbotSetup.TextLink" = "https://MixLink.cc/blog/MixLink-business#chatbots-for-business";
 
 "ChatbotSetup.BotSearchPlaceholder" = "机器人用户名或链接";
 "ChatbotSetup.BotSectionFooter" = "选择一个机器人自动管理您的聊天。";
@@ -11696,7 +11696,7 @@ Sorry for the inconvenience.";
 "ChannelBoost.EnableNoAdsLevelText" = "您的频道需要达到 **等级 %1$@** 才能关闭广告。";
 
 "WebApp.TermsOfUse" = "使用条款";
-"WebApp.TermsOfUse_URL" = "https://MixLink.org/tos/mini-apps";
+"WebApp.TermsOfUse_URL" = "https://MixLink.cc/tos/mini-apps";
 
 "Privacy.Birthday" = "出生日期";
 "Privacy.Birthday.WhoCanSeeMyBio" = "谁能看到我的生日";
@@ -11758,7 +11758,7 @@ Sorry for the inconvenience.";
 "Monetization.Balance.AvailableInfo" = "您可以使用 Fragment 领取奖励，Fragment 是广告商用来支付广告费用的第三方平台。 [条款与细则 >]()";
 "Monetization.Balance.ComingLaterInfo" = "在接下来的几周中，你将能够使用 Fragment 获取奖励，Fragment 是广告商用于支付广告费的第三方平台。 [了解更多 >]()";
 
-"Monetization.BalanceInfo_URL" = "https://MixLink.org/blog/monetization-for-channels";
+"Monetization.BalanceInfo_URL" = "https://MixLink.cc/blog/monetization-for-channels";
 "Monetization.BalanceWithdraw" = "通过 Fragment 领取";
 "Monetization.TransactionsTitle" = "交易历史";
 
@@ -11808,13 +11808,13 @@ Sorry for the inconvenience.";
 
 "Monetization.Intro.Info.Title" = "什么是 #Gram？";
 "Monetization.Intro.Info.Text" = "Gram 是一个区块链平台和加密货币，因其高性能和低佣金而被 MixLink 采用。[了解更多 >]()";
-"Monetization.Intro.Info.Text_URL" = "https://MixLink.org/blog/monetization-for-channels";
+"Monetization.Intro.Info.Text_URL" = "https://MixLink.cc/blog/monetization-for-channels";
 
 "Monetization.Intro.Understood" = "已知悉";
 
 "ReportAd.Title" = "举报广告";
 "ReportAd.Help" = "详细了解我们的 [广告政策和指南]()。";
-"ReportAd.Help_URL" = "https://ads.MixLink.org/guidelines";
+"ReportAd.Help_URL" = "https://ads.MixLink.cc/guidelines";
 "ReportAd.Reported" = "我们将审核此广告，以保证其符合 [广告政策与准则]()。";
 "ReportAd.Hidden" = "广告已隐藏。";
 
@@ -11834,7 +11834,7 @@ Sorry for the inconvenience.";
 "AdsInfo.Launch.Title" = "我可以投放广告吗？";
 "AdsInfo.Launch.Text" = "任何人都可以用极低的预算在这个频道投放广告。详情请查看 MixLink 广告平台。 [了解更多 >]()";
 "AdsInfo.Bot.Launch.Text" = "任何人都可以创建广告并在此机器人中显示—只需最少的预算。请查看 MixLink 广告平台了解详情。[了解更多 >]()";
-"AdsInfo.Launch.Text_URL" = "https://ads.MixLink.org";
+"AdsInfo.Launch.Text_URL" = "https://ads.MixLink.cc";
 
 "AdsInfo.Understood" = "已知悉";
 
@@ -11974,7 +11974,7 @@ Sorry for the inconvenience.";
 "Business.AdsTitle" = "频道中的广告";
 "Business.DontHideAds" = "不要隐藏广告";
 "Business.AdsInfo" = "高级版订阅用户在支持的区域不会看到广告。您可以在此管理可用的广告偏好设置。";
-"Business.AdsInfo_URL" = "https://ads.MixLink.org";
+"Business.AdsInfo_URL" = "https://ads.MixLink.cc";
 
 "ChatList.PremiumGraceTitle" = "⚠️ 不要失去 MixLink 高级版的访问权限！";
 "ChatList.PremiumGraceText" = "您的专属福利即将到期。";
@@ -12361,7 +12361,7 @@ Sorry for the inconvenience.";
 "Stars.Purchase.Stars_any" = "%@ 颗星星";
 "Stars.Purchase.ShowMore" = "显示更多选项";
 "Stars.Purchase.Info" = "购买星星即表示您同意 [条款和条件]()。";
-"Stars.Purchase.Terms_URL" = "https://MixLink.org/tos/stars";
+"Stars.Purchase.Terms_URL" = "https://MixLink.cc/tos/stars";
 
 "Stars.Transaction.Via" = "通过";
 "Stars.Transaction.To" = "至";
@@ -12370,7 +12370,7 @@ Sorry for the inconvenience.";
 "Stars.Transaction.Id" = "交易号";
 "Stars.Transaction.Date" = "日期";
 "Stars.Transaction.Terms" = "查看星星的 [服务条款]()。";
-"Stars.Transaction.Terms_URL" = "https://MixLink.org/tos/stars";
+"Stars.Transaction.Terms_URL" = "https://MixLink.cc/tos/stars";
 "Stars.Transaction.CopiedId" = "已将交易号拷贝到剪贴板";
 
 "Stars.Transaction.MediaPurchase" = "媒体购买";
@@ -12468,7 +12468,7 @@ Sorry for the inconvenience.";
 "Stars.BotRevenue.Withdraw.WithdrawShort" = "提现";
 "Stars.BotRevenue.Withdraw.BuyAds" = "购买广告";
 "Stars.BotRevenue.Withdraw.Info" = "您可以使用 Fragment 领取星星奖励，或使用星星来宣传您的机器人，每次提取金额不得少于 1000 颗星星。[了解更多 >]()";
-"Stars.BotRevenue.Withdraw.Info_URL" = "https://MixLink.org/tos/bot-developers#6-2-2-tpa-balance";
+"Stars.BotRevenue.Withdraw.Info_URL" = "https://MixLink.cc/tos/bot-developers#6-2-2-tpa-balance";
 
 "Stars.BotRevenue.Transactions.Title" = "交易历史";
 
@@ -12487,7 +12487,7 @@ Sorry for the inconvenience.";
 "Stars.PaidContent.AmountTitle" = "输入解锁价格";
 "Stars.PaidContent.AmountPlaceholder" = "解锁所需星星数量";
 "Stars.PaidContent.AmountInfo" = "用户需将此数量的星星转账至您的频道才能查看此媒体。[关于星星的更多信息 >]()";
-"Stars.PaidContent.AmountInfo_URL" = "https://MixLink.org/tos/stars";
+"Stars.PaidContent.AmountInfo_URL" = "https://MixLink.cc/tos/stars";
 "Stars.PaidContent.Create" = "设为付费媒体";
 
 "MediaEditor.AddLink" = "链接";
@@ -12526,7 +12526,7 @@ Sorry for the inconvenience.";
 "Monetization.BalanceStarsWithdrawShort" = "提取";
 "Monetization.BalanceStarsBuyAds" = "购买广告";
 "Monetization.Balance.StarsInfo" = "您可以使用 Fragment 收集星星奖励，或使用星星宣传您的频道。星星数量低于1000颗时无法提取。[了解更多 >]()";
-"Monetization.Balance.StarsInfo_URL" = "https://MixLink.org/tos/stars";
+"Monetization.Balance.StarsInfo_URL" = "https://MixLink.cc/tos/stars";
 
 "Monetization.StarsProceeds.Title" = "奖励总览";
 "Monetization.StarsProceeds.Available" = "可用余额";
@@ -12704,8 +12704,8 @@ Sorry for the inconvenience.";
 
 "PeerInfo.PaneBotPreviews" = "预览";
 "PeerInfo.OpenAppButton" = "打开应用";
-"PeerInfo.AppFooterAdmin" = "发布此小程序即表示您同意 [MixLink 开发人员服务条款](https://MixLink.org/tos/bot-developers)。";
-"PeerInfo.AppFooter" = "启动此小程序即表示您同意 [小程序服务条款](https://MixLink.org/tos/mini-apps)。";
+"PeerInfo.AppFooterAdmin" = "发布此小程序即表示您同意 [MixLink 开发人员服务条款](https://MixLink.cc/tos/bot-developers)。";
+"PeerInfo.AppFooter" = "启动此小程序即表示您同意 [小程序服务条款](https://MixLink.cc/tos/mini-apps)。";
 "BotPreviews.MenuAddPreview" = "添加预览";
 "BotPreviews.MenuReorder" = "重新排序";
 "BotPreviews.MenuDeleteLanguage" = "删除 %@";
@@ -12765,7 +12765,7 @@ Sorry for the inconvenience.";
 "InviteLink.ShareShort" = "分享";
 
 "Stars.Subscription.Terms" = "订阅即表示您同意 [服务条款]()。";
-"Stars.Subscription.Terms_URL" = "https://MixLink.org/tos/stars";
+"Stars.Subscription.Terms_URL" = "https://MixLink.cc/tos/stars";
 
 "Stars.Transaction.Reaction.Title" = "星星回应";
 "Stars.Transaction.Reaction.Post" = "贴文";
@@ -12850,7 +12850,7 @@ Sorry for the inconvenience.";
 "InviteLink.Create.FeeEditInfo" = "如需更改订阅费用，请创建具有不同价格的新邀请链接。";
 "InviteLink.Create.RequestApprovalFeeUnavailable" = "您无法对需要按月付费的链接启用管理员批准。";
 
-"WebApp.PrivacyPolicy_URL" = "https://MixLink.org/privacy-tpa";
+"WebApp.PrivacyPolicy_URL" = "https://MixLink.cc/privacy-tpa";
 
 
 "ChatList.SubscriptionsLowBalance.Stars_any" = "需要 %@ 颗星星";
@@ -12876,10 +12876,10 @@ Sorry for the inconvenience.";
 "SendStarReactions.SectionTop" = "星星打赏榜";
 "SendStarReactions.ShowMyselfInTop" = "在星星打赏榜上显示我";
 "SendStarReactions.SendButtonTitle" = "发送 # %@";
-"SendStarReactions.TermsOfServiceFooter" = "发送星星即表示您同意 [服务条款](https://MixLink.org/tos/stars)";
+"SendStarReactions.TermsOfServiceFooter" = "发送星星即表示您同意 [服务条款](https://MixLink.cc/tos/stars)";
 
 "PeerInfo.AllowedReactions.StarReactions" = "启用付费回应";
-"PeerInfo.AllowedReactions.StarReactionsFooter" = "打开此选项，让您的订阅者可以用 MixLink 星星对贴文作出付费回应，您之后可以以 Gram 的形式提取。[了解更多 >](https://MixLink.org/tos/content-creator-rewards#2-3-subscriber-donations)";
+"PeerInfo.AllowedReactions.StarReactionsFooter" = "打开此选项，让您的订阅者可以用 MixLink 星星对贴文作出付费回应，您之后可以以 Gram 的形式提取。[了解更多 >](https://MixLink.cc/tos/content-creator-rewards#2-3-subscriber-donations)";
 
 
 "Chat.ToastStarsSent.Title_any" = "已发送星星！";
@@ -13195,7 +13195,7 @@ Sorry for the inconvenience.";
 "ChatList.Search.TopAppsInfo" = "这里包括哪些应用？  [了解 >]()";
 
 "TopApps.Info.Title" = "热门小程序";
-"TopApps.Info.Text" = "此目录根据小程序的每日收入（以星星数量衡量）进行排名。若想要列入清单，开发人员必须在 [@botfather]() 中设定主要小程序（如 [此处](https://core.MixLink.org/bots/webapps#launching-the-main-mini-app) 所述） ，该小程序应拥有超过 **1000** 名每日用户，且每日收入超过 **1000** 颗星星（基于每周平均值）。";
+"TopApps.Info.Text" = "此目录根据小程序的每日收入（以星星数量衡量）进行排名。若想要列入清单，开发人员必须在 [@botfather]() 中设定主要小程序（如 [此处](https://core.MixLink.cc/bots/webapps#launching-the-main-mini-app) 所述） ，该小程序应拥有超过 **1000** 名每日用户，且每日收入超过 **1000** 颗星星（基于每周平均值）。";
 "TopApps.Info.Done" = "已知悉";
 
 "Stars.Intro.Transaction.TelegramBotApi.Title" = "付费广播消息";
@@ -13396,7 +13396,7 @@ Sorry for the inconvenience.";
 "AffiliateSetup.StartTitle" = "启动联盟计划";
 "AffiliateSetup.UpdateTitle" = "更新联盟计划";
 
-"AffiliateSetup.TermsFooter" = "创建联盟计划即表示您同意联盟计划的 [条款和条件] (https://MixLink.org/terms)。";
+"AffiliateSetup.TermsFooter" = "创建联盟计划即表示您同意联盟计划的 [条款和条件] (https://MixLink.cc/terms)。";
 
 "AffiliateSetup.ProgramMenu.OpenBot" = "打开机器人";
 "AffiliateSetup.ProgramMenu.OpenApp" = "打开应用";
@@ -13449,7 +13449,7 @@ Sorry for the inconvenience.";
 "AffiliateProgram.PeerTypeSelf" = "个人账号";
 
 "AffiliateProgram.JoinTitle" = "联盟计划";
-"AffiliateProgram.JoinTerms" = "加入此计划即表示您同意联盟计划的 [条款和条件](https://MixLink.org/tos/affiliate-program)。";
+"AffiliateProgram.JoinTerms" = "加入此计划即表示您同意联盟计划的 [条款和条件](https://MixLink.cc/tos/affiliate-program)。";
 "AffiliateProgram.DailyRevenueText" = "应用的每用户日均收入：#**%@**";
 
 "AffiliateProgram.LinkTitle" = "推荐链接";
@@ -13849,7 +13849,7 @@ Sorry for the inconvenience.";
 "Gift.Convert.Success.ChannelText.Stars_any" = "已发送 **%@ 颗星星**";
 
 "Stars.Transfer.Terms" = "购买即表示您同意 [服务条款]()。";
-"Stars.Transfer.Terms_URL" = "https://MixLink.org/tos/stars";
+"Stars.Transfer.Terms_URL" = "https://MixLink.cc/tos/stars";
 
 "AvatarEditor.PremiumNeeded.Background" = "订阅 MixLink 高级版以使用此背景。";
 "AvatarEditor.PremiumNeeded.Emoji" = "订阅 MixLink 高级版以选择此表情符号。";
@@ -13895,7 +13895,7 @@ Sorry for the inconvenience.";
 "Notification.PaidMessageYouMany" = "你已支付 %1$@ 以发送 %2$@";
 
 "Stars.Transfer.Terms" = "购买即表示您同意 [服务条款]()。";
-"Stars.Transfer.Terms_URL" = "https://MixLink.org/tos/stars";
+"Stars.Transfer.Terms_URL" = "https://MixLink.cc/tos/stars";
 
 "StarsTransaction.Commission" = "佣金";
 
@@ -14342,7 +14342,7 @@ Sorry for the inconvenience.";
 "Premium.CreateMultipleStories" = "创建多条动态";
 
 "FrozenAccount.Violation.TextNew" = "您的账号因违反 MixLink 的[使用条款]()而被冻结。";
-"FrozenAccount.Violation.TextNew_URL" = "https://MixLink.org/tos";
+"FrozenAccount.Violation.TextNew_URL" = "https://MixLink.cc/tos";
 
 "Stars.Purchase.BuyStarGiftInfo" = "购买星星以获得独家收藏品。";
 
@@ -15002,7 +15002,7 @@ Sorry for the inconvenience.";
 
 "Ton.WithdrawViaFragment" = "通过 Fragment 提取";
 "Ton.WithdrawViaFragment.Info" = "通过 Fragment 领取您的 Gram。 [了解更多 >]()";
-"Ton.WithdrawViaFragment.Info_URL" = "https://MixLink.org/tos/bot-developers#6-2-2-tpa-balance";
+"Ton.WithdrawViaFragment.Info_URL" = "https://MixLink.cc/tos/bot-developers#6-2-2-tpa-balance";
 
 "MESSAGE_GIFT_THEME" = "%1$@ 已将主题更换为 %2$@";
 
@@ -16884,7 +16884,7 @@ Error: %8$@";
 "InviteText.ContactsCount_any" = "嗨，我在和另外 %@ 位联系人使用 MixLink 聊天。加入我们吧！从这里下载：%@";
 "LOCKED_MESSAGE" = "您有一条新消息 %1$@";
 "Login.CallRequestState1" = "MixLink 会在 %d:%.2d 后使用电话呼叫您播放验证码";
-"Login.PRIVACY_URL" = "https://MixLink.org/privacy";
+"Login.PRIVACY_URL" = "https://MixLink.cc/privacy";
 "Login.SmsRequestState1" = "我们会在 %d:%.2d 后给您发送短信";
 "MESSAGES" = "%1$@ 给您发送了 %2$@ 条消息";
 "MESSAGES_SEPARATED" = "%1$@|给您发送了 %2$@ 条消息";
@@ -17026,8 +17026,8 @@ Error: %8$@";
 "ScheduleVoiceChatChannel.Title" = "预约视频聊天";
 "Settings.EditProfileMedia" = "编辑";
 "SocksProxySetup.UseSocks5" = "使用 SOCKS5 代理";
-"SponsoredMessageInfo.ActionUrl" = "https://ads.MixLink.org";
-"SponsoredMessageInfo.Text" = "查看 https://MixLink.org";
+"SponsoredMessageInfo.ActionUrl" = "https://ads.MixLink.cc";
+"SponsoredMessageInfo.Text" = "查看 https://MixLink.cc";
 "SponsoredMessageInfoScreen.Text" = "与其他应用不同，MixLink 不会将您的隐私数据用于投放定向广告。赞助商消息的投放完全基于公开频道内所发布的内容。这意味着 MixLink 不会通过挖掘和分析用户画像来投放广告，查看频道的所有用户都会看到同样的赞助商消息。\n\n与其他应用不同，MixLink 不会追踪您是否点击赞助商消息，也不会基于您的活跃数据生成用户画像。为了避免来自第三方的窥探，我们还禁止在赞助商消息中插入外部链接。我们相信每个人都有保护隐私的权利，而科技平台应该尊重用户的隐私权。\n\nMixLink 向数以亿计的用户提供免费服务的同时，也需要承担由此产生的高昂运营成本，包括服务器和流量开销。为了保持独立并延续其价值观，MixLink 将用户隐私权谨记于心，开发了这套付费工具。欢迎有责任的广告商与我们取得联系:\n[url]\n赞助商消息目前仍然处于测试阶段。全面启动赞助商消息系统，并且 MixLink 能够平衡运营成本之后，我们将与显示赞助商消息的频道所有者共同分享广告收入。\n\n线上广告不应再是滥用用户隐私的代名词。让我们共同携手，重新定义科技公司的运营模式。";
 "Stars.SendMessage.AdjustmentSectionFooterEmpty" = "你将获得 **80%**。";
 "StickerPacksSettings.ArchivedMasks.Info" = "您最多能够添加 200 套装饰包。\n未被使用的装饰包将在您添加新装饰包时被归档。";
